@@ -6,11 +6,14 @@ eseguiti a intervalli fissi, come per esempio l'**avvio delle scansioni** dei si
 del PA per la verifica della corrispondenza dei requisiti e la **cancellazione
 dei risultati di scansione più vecchi**.
 
-Nell'utilizzo tramite **docker-compose.yml** ricordarsi di impostare la corretta
-variabile d'ambiente che specifica l'url del config-service da utilizzare::
+Nell'utilizzo tramite **docker-compose.yml** ricordarsi di impostare nel **.env**
+la corretta variabile d'ambiente che specifica l'url del config-service da
+utilizzare e la password per l'autenticazione Basic Auth con il
+*config-service*::
 
   environment:
-    - confighost:https://dica33.ba.cnr.it/config-service/config
+    - confighost=${CONFIG_HOST}
+    - spring.security.oauth2.client.registration.oidc.client-secret=${OIDC_CLIENT_SECRET}
 
 Le informazioni di configurazione dei cron relativi ai workflow possono essere
 visualizzate all'url **/tasks/workflowCronConfig**.

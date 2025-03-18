@@ -76,7 +76,6 @@ con Bearer Token.
 E' necessario configurare l'idp da utilizzare per validare i token OAuth tramite
 le due proprietà mostrate nell'esempio seguente::
 
-
   - spring.security.oauth2.resourceserver.jwt.issuer-uri=https://dica33.ba.cnr.it/keycloak/realms/trasparenzai
   - spring.security.oauth2.resourceserver.jwt.jwk-set-uri=https://dica33.ba.cnr.it/keycloak/realms/trasparenzai/protocol/openid-connect/certs
 
