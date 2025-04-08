@@ -19,12 +19,14 @@ REST, è integrata quindi con un IDP OAuth2.
 IL servizio in staging realizzato per ANAC utilizza
 `Keycloak <https://www.keycloak.org>`_ come IDP OAuth2.
 
-Il grafico sottostante riassume i componenti principali del sistema.
+Il grafico in :numref:`overview-diagram-img` sottostante riassume i componenti principali del sistema.
 
+.. _overview-diagram-img:
 .. figure:: images/trasparenzai-overview-diagram.png
   :width: 800
   :alt: TrasparenzAI - Overview Diagram
 
+  TrasparenzAI - Overview Diagram
 
 *Rispetto a una tipica architettura a microservizi è stato scelto di non
 introdurre al momento un API Gateway e un Service Discovery, in quanto 

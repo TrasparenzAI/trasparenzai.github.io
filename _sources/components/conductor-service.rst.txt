@@ -56,7 +56,6 @@ Il flusso `principale <https://github.com/cnr-anac/workflow-definition/blob/main
 | crawler_uri                | URL di base del microservizio Crawler                          | *URL*                       | No     |
 +----------------------------+----------------------------------------------------------------+-----------------------------+--------+
 
-
 Il primo `TASK <https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L8-L22>`__ del flusso si occupa di invocare l'aggiornamento della configurazione del microservizio delle regole, dopo aver valorizzato la variabile necessaria al controllo delle pagine elaborate, 
 il flusso invoca il `microservizio delle PA <https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L71-L85>`__  descritto in :ref:`Public Sites Service` e recupera le informazioni necessarie.
 
@@ -69,24 +68,27 @@ rielaborati i risultati con i codici *400* e *407* con i timeout massimi ed eseg
 
 Infine viene eseguito il `TASK <https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L581-L596>`__ per elaborare la Mappa geolocalizzata dei risultati.
 
-Di seguito l'immagine del flusso:
+In :numref:`main-flow-img` l'immagine del flusso:
 
+.. _main-flow-img:
 .. figure:: https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/crawler_amministrazione_trasparente.png
   :width: 800
-  :alt: Main - Amministrazione Trasparente
+  :alt: Flusso principale - Amministrazione Trasparente
+
+  Flusso principale - Amministrazione Trasparente
 
 RULE DETAIL
 -----------
 
-Il flusso `Rule Detail <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json>`__ eseguito per una singola PA passata come parametro 
+Il flusso `Rule Detail <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json>`__ come mostrato in :numref:`rule-detail-img` viene eseguito per una singola PA passata come parametro 
 in input `ipa <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L860>`__, controlla inizialmente la `presenza della URL istituzionale <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L19-L28>`__ 
 e successivamente invoca il `crawler <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L38-L52>`__ il cui risultato viene passato 
 al `microservizio delle regole <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L76-L92>`__ la cui risposta è utilizzata 
 come input al `Task dei risultati <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L261-L277>`__    
 
-Di seguito l'immagine del flusso:
-
+.. _rule-detail-img:
 .. figure:: https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/rule_detail_workflow.png
-  :width: 800
-  :alt: Rule Detail - Amministrazione Trasparente
+  :alt: Dettaglio Regola - Amministrazione Trasparente
+
+  Dettaglio Regola - Amministrazione Trasparente
 

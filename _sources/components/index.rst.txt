@@ -11,7 +11,7 @@ I componenti sviluppati per il progetto sono:
   * https://github.com/cnr-anac/result-service
   * https://github.com/cnr-anac/result-aggregator-service
   * https://github.com/cnr-anac/task-scheduler-service
-  * https://github.com/cnr-anac/configuration-service
+  * https://github.com/cnr-anac/conductor
   * https://github.com/cnr-anac/workflow-definition
   * https://github.com/cnr-anac/ui-service
 
@@ -21,7 +21,7 @@ come esempio per progetti di crawling e analisi di siti di web similari.
 I componenti stati sviluppati principalmente in Java 
 (con `Spring Boot <https://spring.io/projects/spring-boot>`_) e Python 
 (`FastAPI <https://fastapi.tiangolo.com/>`_ e `Uvicorn <https://www.uvicorn.org/>`_) 
-per la parte backend e typescript (`AngularJS <https://angularjs.org/>`_) per
+per la parte backend e typescript (`Angular <https://angular.dev/>`_) per
 la parte frontend.
 
 I software opensource utilizzati sono:

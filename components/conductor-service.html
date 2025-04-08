@@ -688,6 +688,18 @@
     </div>
 
     
+    <button data-toggle="collapse" data-target="#figures-index" aria-expanded="true" class="sidebar-btn p-3 sidebar-btn--desktop collapsed" type="button" aria-controls="figures-index">
+      indice delle figure
+      <span class="it-collapse float-right"></span>
+      <span class="it-expand float-right"></span>
+    </button>
+    <div id="figures-index" class="figures-index--menu sidebar-list--wrapper sidebar-accordion-content collapse">
+      <ul>
+<li><a class="reference internal" href="../architecture/index.html#id1">Fig. 2.1 - TrasparenzAI - Overview Diagram</a></li>
+</ul>
+
+    </div>
+    
 
     
 
@@ -839,7 +851,10 @@
       </div>
 
       <div id="figures-index-mobile" class="figures-index--menu tab-pane sidebar-list--wrapper fade" role="tabpanel" aria-labelledby="figures-index-mobile-tab">
-        None
+        <ul>
+<li><a class="reference internal" href="../architecture/index.html#id1">Fig. 2.1 - TrasparenzAI - Overview Diagram</a></li>
+</ul>
+
       </div>
 
       <div id="table-index-mobile" class="table-index--menu tab-pane sidebar-list--wrapper fade" role="tabpanel" aria-labelledby="table-index-mobile-tab">
@@ -991,21 +1006,26 @@ del flusso <a class="reference external" href="https://github.com/cnr-anac/workf
 <p>All'uscita del <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L52-L60" rel="noopener noreferrer" target="_blank">TASK delle PA</a>, se il flusso è stato eseguito non per una singola PA, allora vengono
 rielaborati i risultati con i codici <em>400</em> e <em>407</em> con i timeout massimi ed eseguiti i flussi <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_result_failed.json" rel="noopener noreferrer" target="_blank">Crawler Result Failed</a>.</p>
 <p>Infine viene eseguito il <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L581-L596" rel="noopener noreferrer" target="_blank">TASK</a> per elaborare la Mappa geolocalizzata dei risultati.</p>
-<p>Di seguito l'immagine del flusso:</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/crawler_amministrazione_trasparente.png"><img alt="Main - Amministrazione Trasparente" src="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/crawler_amministrazione_trasparente.png" style="width: 800px;" /></a>
+<p>In <a class="reference internal" href="#main-flow-img"><span class="std std-numref">Fig. 3.1</span></a> l'immagine del flusso:</p>
+<figure class="align-default" id="id1">
+<span id="main-flow-img"></span><a class="reference internal image-reference" href="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/crawler_amministrazione_trasparente.png"><img alt="Flusso principale - Amministrazione Trasparente" src="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/crawler_amministrazione_trasparente.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1 </span><span class="caption-text">Flusso principale - Amministrazione Trasparente</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
 </figure>
 </section>
 <section id="rule-detail">
 <h2><span class="section-number">3.7.2. </span>RULE DETAIL<a class="headerlink" href="#rule-detail" title="Link to this heading">¶</a></h2>
-<p>Il flusso <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json" rel="noopener noreferrer" target="_blank">Rule Detail</a> eseguito per una singola PA passata come parametro
+<p>Il flusso <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json" rel="noopener noreferrer" target="_blank">Rule Detail</a> come mostrato in <a class="reference internal" href="#rule-detail-img"><span class="std std-numref">Fig. 3.2</span></a> viene eseguito per una singola PA passata come parametro
 in input <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L860" rel="noopener noreferrer" target="_blank">ipa</a>, controlla inizialmente la <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L19-L28" rel="noopener noreferrer" target="_blank">presenza della URL istituzionale</a>
 e successivamente invoca il <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L38-L52" rel="noopener noreferrer" target="_blank">crawler</a> il cui risultato viene passato
 al <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L76-L92" rel="noopener noreferrer" target="_blank">microservizio delle regole</a> la cui risposta è utilizzata
 come input al <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L261-L277" rel="noopener noreferrer" target="_blank">Task dei risultati</a></p>
-<p>Di seguito l'immagine del flusso:</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/rule_detail_workflow.png"><img alt="Rule Detail - Amministrazione Trasparente" src="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/rule_detail_workflow.png" style="width: 800px;" /></a>
+<figure class="align-default" id="id2">
+<span id="rule-detail-img"></span><img alt="Dettaglio Regola - Amministrazione Trasparente" src="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/rule_detail_workflow.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Dettaglio Regola - Amministrazione Trasparente</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
 </figure>
 </section>
 </section>
