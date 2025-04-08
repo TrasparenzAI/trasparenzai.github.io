@@ -4,7 +4,7 @@ Coordinatore delle attività di crawling
 Il coordinatore è basato su `Netflix - Conductor <https://conductor-oss.org>`__ una piattaforma gratuita e open source per l'orchestrazione dei microservizi, attraverso flussi di lavoro che definiscono le interazioni tra servizi, 
 il progetto principale è stato `forkato <https://github.com/cnr-anac/conductor>`__ per permettere e gestire l'autenticazione e l'autorizzazione sull'esecuzione dei flussi e sul passaggio della stessa ai microservizi invocati dal flusso. 
 
-Nel progetto sono presenti le definizioni in formato *json* dei flussi necessari al completamento degli obiettivi del progetto.
+Nel progetto `workflow-definition <https://github.com/cnr-anac/workflow-definition>`__ sono presenti le definizioni in formato *json* dei flussi necessari al completamento degli obiettivi del progetto.
 
 Main - Amministrazione Trasparente
 ----------------------------------
@@ -58,7 +58,7 @@ Il flusso `principale <https://github.com/cnr-anac/workflow-definition/blob/main
 
 
 Il primo `TASK <https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L8-L22>`__ del flusso si occupa di invocare l'aggiornamento della configurazione del microservizio delle regole, dopo aver valorizzato la variabile necessaria al controllo delle pagine elaborate, 
-il flusso invoca il `microservizio delle PA <https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L71-L85>`__ e recupera le informazioni necessarie.
+il flusso invoca il `microservizio delle PA <https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L71-L85>`__  descritto in :ref:`Public Sites Service` e recupera le informazioni necessarie.
 
 Il blocco recuperato contentente le informazioni di *n* PA viene parcellizzato in base al parametro fornito in input **page_size** e diviso per *10*, 
 utilizzando infine il `TASK FORK/JOIN <https://orkes.io/content/reference-docs/operators/fork-join>`__ vengono eseguiti in parallello *10* istanze 

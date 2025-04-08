@@ -70,9 +70,15 @@
 <header class="container-fluid container-fluid--desktop px-0 header">
   <nav class="navbar navbar-expand-lg primary-bg-a7 navbar-dark slim-header justify-content-start p-0 pl-lg-4 pr-lg-5">
     <span class="navbar-brand ml-4">
-      <a class="text-white" href="https://www.cnr.it">Consiglio Nazionale delle Ricerche</a>
+      <a class="text-white" href="https://www.cnr.it">
+        <span class="d-none d-sm-inline">Consiglio Nazionale delle Ricerche</span> 
+        <span class="d-inline d-sm-none">CNR</span> 
+      </a>
        - 
-      <a class="text-white" href="https://www.anticorruzione.it">Autorità Nazionale Anticorruzione</a>
+      <a class="text-white" href="https://www.anticorruzione.it">
+        <span class="d-none d-sm-inline">Autorità Nazionale Anticorruzione</span>
+        <span class="d-inline d-sm-none">ANAC</span>
+      </a>
     </span>
     <button class="navbar-toggler collapsed text-white px-2 py-0 mr-3"
       type="button"
@@ -862,7 +868,7 @@
 <h1><span class="section-number">3.7. </span>Coordinatore delle attività di crawling<a class="headerlink" href="#coordinatore-delle-attivita-di-crawling" title="Link to this heading">¶</a></h1>
 <p>Il coordinatore è basato su <a class="reference external" href="https://conductor-oss.org" rel="noopener noreferrer" target="_blank">Netflix - Conductor</a> una piattaforma gratuita e open source per l'orchestrazione dei microservizi, attraverso flussi di lavoro che definiscono le interazioni tra servizi,
 il progetto principale è stato <a class="reference external" href="https://github.com/cnr-anac/conductor" rel="noopener noreferrer" target="_blank">forkato</a> per permettere e gestire l'autenticazione e l'autorizzazione sull'esecuzione dei flussi e sul passaggio della stessa ai microservizi invocati dal flusso.</p>
-<p>Nel progetto sono presenti le definizioni in formato <em>json</em> dei flussi necessari al completamento degli obiettivi del progetto.</p>
+<p>Nel progetto <a class="reference external" href="https://github.com/cnr-anac/workflow-definition" rel="noopener noreferrer" target="_blank">workflow-definition</a> sono presenti le definizioni in formato <em>json</em> dei flussi necessari al completamento degli obiettivi del progetto.</p>
 <section id="main-amministrazione-trasparente">
 <h2><span class="section-number">3.7.1. </span>Main - Amministrazione Trasparente<a class="headerlink" href="#main-amministrazione-trasparente" title="Link to this heading">¶</a></h2>
 <p>Il flusso <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json" rel="noopener noreferrer" target="_blank">principale</a> necessita dei seguenti parametri di input per la sua corretta invocazione:</p>
@@ -978,7 +984,7 @@ il progetto principale è stato <a class="reference external" href="https://gith
 </tbody>
 </table>
 <p>Il primo <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L8-L22" rel="noopener noreferrer" target="_blank">TASK</a> del flusso si occupa di invocare l'aggiornamento della configurazione del microservizio delle regole, dopo aver valorizzato la variabile necessaria al controllo delle pagine elaborate,
-il flusso invoca il <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L71-L85" rel="noopener noreferrer" target="_blank">microservizio delle PA</a> e recupera le informazioni necessarie.</p>
+il flusso invoca il <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L71-L85" rel="noopener noreferrer" target="_blank">microservizio delle PA</a>  descritto in <a class="reference internal" href="../installation/public-sites-service.html#public-sites-service"><span class="std std-ref">Public Sites Service</span></a> e recupera le informazioni necessarie.</p>
 <p>Il blocco recuperato contentente le informazioni di <em>n</em> PA viene parcellizzato in base al parametro fornito in input <strong>page_size</strong> e diviso per <em>10</em>,
 utilizzando infine il <a class="reference external" href="https://orkes.io/content/reference-docs/operators/fork-join" rel="noopener noreferrer" target="_blank">TASK FORK/JOIN</a> vengono eseguiti in parallello <em>10</em> istanze
 del flusso <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_workflow.json" rel="noopener noreferrer" target="_blank">Rule</a> valorizzando il parametro in input <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_workflow.json#L278" rel="noopener noreferrer" target="_blank">companies</a>.</p>
