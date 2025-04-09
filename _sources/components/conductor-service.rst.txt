@@ -37,9 +37,9 @@ Flusso principale - Amministrazione Trasparente
      - vuoto
      - Si
    * - **crawling_mode**
-     - Modalità base di esecuzione del crawler può assumere i valori (httpStream/htmlSource)
+     - Modalità base di esecuzione del crawler può assumere i valori (**httpStream** / **htmlSource**)
      - httpStream
-     - Si
+     - No
    * - **crawler_save_object**
      - Booleano indica se salvare sempre la pagina HTML
      - false
