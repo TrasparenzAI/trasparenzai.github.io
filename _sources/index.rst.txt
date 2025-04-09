@@ -29,10 +29,9 @@ La piattaforma è disponibile all'indirizzo:
  - https://www.trasparenzai.it
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :numbered:
    :hidden:
-   :caption: Indice dei contenuti
 
    overview/index
    architecture/index

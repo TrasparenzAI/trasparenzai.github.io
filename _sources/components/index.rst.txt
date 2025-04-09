@@ -37,8 +37,7 @@ Del software *Conductor* è stato effettuato un fork per introdurre l'autenticaz
 come client OAuth2 nei task che interagiscono con le API REST della piattaforma.
 
 .. toctree::
-   :maxdepth: 2
-   :hidden:
+   :maxdepth: 3
    :caption: Descrizione dei componenti
 
    public-sites-service
