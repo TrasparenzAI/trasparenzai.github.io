@@ -650,7 +650,7 @@
       <ul>
 <li><a class="reference internal" href="../architecture/index.html#id1">Fig. 2.1 - TrasparenzAI - Overview Diagram</a></li>
 <li><a class="reference internal" href="conductor-service.html#id2">Fig. 3.1 - Flusso principale - Amministrazione Trasparente</a></li>
-<li><a class="reference internal" href="conductor-service.html#id3">Fig. 3.2 - Dettaglio Regola - Amministrazione Trasparente</a></li>
+<li><a class="reference internal" href="conductor-service.html#id3">Fig. 3.2 - Flusso per singola Amministrazione</a></li>
 </ul>
 
     </div>
@@ -774,7 +774,7 @@
         <ul>
 <li><a class="reference internal" href="../architecture/index.html#id1">Fig. 2.1 - TrasparenzAI - Overview Diagram</a></li>
 <li><a class="reference internal" href="conductor-service.html#id2">Fig. 3.1 - Flusso principale - Amministrazione Trasparente</a></li>
-<li><a class="reference internal" href="conductor-service.html#id3">Fig. 3.2 - Dettaglio Regola - Amministrazione Trasparente</a></li>
+<li><a class="reference internal" href="conductor-service.html#id3">Fig. 3.2 - Flusso per singola Amministrazione</a></li>
 </ul>
 
       </div>
@@ -807,7 +807,7 @@
   <section id="rule-service">
 <h1><span class="section-number">3.6. </span>Rule Service<a class="headerlink" href="#rule-service" title="Link to this heading">¶</a></h1>
 <p>Rule Service è il componente che definisce ed implementa le regole relative al D.Lgs. n. 33-2013 sulla trasparenza nella PA.</p>
-<p>Fornisce l'albero delle regole definito in <a class="reference external" href="https://github.com/cnr-anac/rule-service/blob/main/src/main/resources/application.yaml" rel="noopener noreferrer" target="_blank">application.yaml</a> oppure all'interno del <a class="reference internal" href="../installation/config-service.html#config-service"><span class="std std-ref">Config service</span></a> ,
+<p>Fornisce l'albero delle regole definito in <a class="reference external" href="https://github.com/cnr-anac/rule-service/blob/main/src/main/resources/application.yaml" rel="noopener noreferrer" target="_blank">application.yaml</a> oppure all'interno del <a class="reference internal" href="config-service.html"><span class="doc">Config Service</span></a> ,
 che quindi può essere modificato o ampliato sia attraverso variabili di ambiente o della JVM prima di avviare il servizio,
 oppure aggiornando la configurazione per poi successivamente invocare l'endpoint <a class="reference external" href="http://localhost:8080/actuator/refresh" rel="noopener noreferrer" target="_blank">dell'actuator</a> per recepire le modifiche.</p>
 <p>É possibile interagire con il servizio attraverso degli endpoint REST che permettono la consultazione dell'albero

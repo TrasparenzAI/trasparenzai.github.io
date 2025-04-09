@@ -650,7 +650,7 @@
       <ul>
 <li><a class="reference internal" href="../architecture/index.html#id1">Fig. 2.1 - TrasparenzAI - Overview Diagram</a></li>
 <li><a class="reference internal" href="#id2">Fig. 3.1 - Flusso principale - Amministrazione Trasparente</a></li>
-<li><a class="reference internal" href="#id3">Fig. 3.2 - Dettaglio Regola - Amministrazione Trasparente</a></li>
+<li><a class="reference internal" href="#id3">Fig. 3.2 - Flusso per singola Amministrazione</a></li>
 </ul>
 
     </div>
@@ -774,7 +774,7 @@
         <ul>
 <li><a class="reference internal" href="../architecture/index.html#id1">Fig. 2.1 - TrasparenzAI - Overview Diagram</a></li>
 <li><a class="reference internal" href="#id2">Fig. 3.1 - Flusso principale - Amministrazione Trasparente</a></li>
-<li><a class="reference internal" href="#id3">Fig. 3.2 - Dettaglio Regola - Amministrazione Trasparente</a></li>
+<li><a class="reference internal" href="#id3">Fig. 3.2 - Flusso per singola Amministrazione</a></li>
 </ul>
 
       </div>
@@ -845,82 +845,87 @@ il progetto principale è stato <a class="reference external" href="https://gith
 <td><p>vuoto</p></td>
 <td><p>Si</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>crawler_save_object</strong></p></td>
+<tr class="row-even"><td><p><strong>crawling_mode</strong></p></td>
+<td><p>Modalità base di esecuzione del crawler può assumere i valori (httpStream/htmlSource)</p></td>
+<td><p>httpStream</p></td>
+<td><p>Si</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>crawler_save_object</strong></p></td>
 <td><p>Booleano indica se salvare sempre la pagina HTML</p></td>
 <td><p>false</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>crawler_save_screenshot</strong></p></td>
+<tr class="row-even"><td><p><strong>crawler_save_screenshot</strong></p></td>
 <td><p>Booleano indica se salvare sempre lo screenshot della pagina</p></td>
 <td><p>false</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>rule_name</strong></p></td>
+<tr class="row-odd"><td><p><strong>rule_name</strong></p></td>
 <td><p>Nome della regola</p></td>
 <td><p>amministrazione-trasparente</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>root_rule</strong></p></td>
+<tr class="row-even"><td><p><strong>root_rule</strong></p></td>
 <td><p>Nome della regola di base dell'albero</p></td>
 <td><p>amministrazione-trasparente</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>execute_child</strong></p></td>
+<tr class="row-odd"><td><p><strong>execute_child</strong></p></td>
 <td><p>Booleano indica se controllare le regole figlie</p></td>
 <td><p>true</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>id_ipa_from</strong></p></td>
+<tr class="row-even"><td><p><strong>id_ipa_from</strong></p></td>
 <td><p>Identificativo numerico della PA da cui partire</p></td>
 <td><p>0</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>connection_timeout</strong></p></td>
+<tr class="row-odd"><td><p><strong>connection_timeout</strong></p></td>
 <td><p>Timeout in millisecondi della connessione</p></td>
 <td><p>60000</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>read_timeout</strong></p></td>
+<tr class="row-even"><td><p><strong>read_timeout</strong></p></td>
 <td><p>Timeout in millisecondi della lettura</p></td>
 <td><p>60000</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>connection_timeout_max</strong></p></td>
+<tr class="row-odd"><td><p><strong>connection_timeout_max</strong></p></td>
 <td><p>Timeout in millisecondi della connessione</p></td>
 <td><p>120000</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>read_timeout_max</strong></p></td>
+<tr class="row-even"><td><p><strong>read_timeout_max</strong></p></td>
 <td><p>Timeout in millisecondi della lettura</p></td>
 <td><p>120000</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>crawler_child_type</strong></p></td>
+<tr class="row-odd"><td><p><strong>crawler_child_type</strong></p></td>
 <td><p>Modalità di esecuzione dei flussi figli (SUB/START)_WORKFLOW</p></td>
 <td><p>START_WORKFLOW</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>rule_base_url</strong></p></td>
+<tr class="row-even"><td><p><strong>rule_base_url</strong></p></td>
 <td><p>URL di base del microservizio delle Regole</p></td>
 <td><p><em>URL</em></p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>public_company_base_url</strong></p></td>
+<tr class="row-odd"><td><p><strong>public_company_base_url</strong></p></td>
 <td><p>URL di base del microservizio delle PA</p></td>
 <td><p><em>URL</em></p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>result_aggregator_base_url</strong></p></td>
+<tr class="row-even"><td><p><strong>result_aggregator_base_url</strong></p></td>
 <td><p>URL di base del microservizio Aggregato</p></td>
 <td><p><em>URL</em></p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>result_base_url</strong></p></td>
+<tr class="row-odd"><td><p><strong>result_base_url</strong></p></td>
 <td><p>URL di base del microservizio dei Risultati</p></td>
 <td><p><em>URL</em></p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>crawler_uri</strong></p></td>
+<tr class="row-even"><td><p><strong>crawler_uri</strong></p></td>
 <td><p>URL di base del microservizio Crawler</p></td>
 <td><p><em>URL</em></p></td>
 <td><p>No</p></td>
@@ -954,9 +959,9 @@ e successivamente invoca il <a class="reference external" href="https://github.c
 al <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L76-L92" rel="noopener noreferrer" target="_blank">microservizio delle regole</a> la cui risposta è utilizzata
 come input al <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L261-L277" rel="noopener noreferrer" target="_blank">Task dei risultati</a></p>
 <figure class="align-default" id="id3">
-<span id="rule-detail-img"></span><img alt="Dettaglio Regola - Amministrazione Trasparente" src="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/rule_detail_workflow.png" />
+<span id="rule-detail-img"></span><img alt="Flusso per singola Amministrazione" src="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/rule_detail_workflow.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Dettaglio Regola - Amministrazione Trasparente</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+<p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Flusso per singola Amministrazione</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>

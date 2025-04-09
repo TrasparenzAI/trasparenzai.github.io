@@ -36,6 +36,10 @@ Flusso principale - Amministrazione Trasparente
      - Se valorizzato individua la singola PA
      - vuoto
      - Si
+   * - **crawling_mode**
+     - Modalità base di esecuzione del crawler può assumere i valori (httpStream/htmlSource)
+     - httpStream
+     - Si
    * - **crawler_save_object**
      - Booleano indica se salvare sempre la pagina HTML
      - false
@@ -137,7 +141,7 @@ come input al `Task dei risultati <https://github.com/cnr-anac/workflow-definiti
 
 .. _rule-detail-img:
 .. figure:: https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/rule_detail_workflow.png
-  :alt: Dettaglio Regola - Amministrazione Trasparente
+  :alt: Flusso per singola Amministrazione
 
-  Dettaglio Regola - Amministrazione Trasparente
+  Flusso per singola Amministrazione
 
