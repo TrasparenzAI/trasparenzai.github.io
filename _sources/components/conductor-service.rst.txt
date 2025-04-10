@@ -37,7 +37,9 @@ Flusso principale - Amministrazione Trasparente
      - vuoto
      - Si
    * - **crawling_mode**
-     - Modalità base di esecuzione del crawler può assumere i valori (**httpStream** / **htmlSource**)
+     - Modalità base di esecuzione del crawler può assumere i valori
+         1. httpStream 
+         2. htmlSource
      - httpStream
      - No
    * - **crawler_save_object**
@@ -81,7 +83,9 @@ Flusso principale - Amministrazione Trasparente
      - 120000
      - No
    * - **crawler_child_type**
-     - Modalità di esecuzione dei flussi figli (SUB/START)_WORKFLOW
+     - Modalità di esecuzione dei flussi figli può assumere i valori
+         1. SUB_WORKFLOW 
+         2. START_WORKFLOW
      - START_WORKFLOW
      - No
    * - **rule_base_url**
