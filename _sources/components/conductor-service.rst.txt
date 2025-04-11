@@ -140,7 +140,7 @@ Flusso per singola Amministrazione
 Il flusso `Rule Detail <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json>`__ come mostrato in :numref:`rule-detail-img` viene eseguito per una singola PA passata come parametro 
 in input `ipa <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L860>`__, controlla inizialmente la `presenza della URL istituzionale <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L19-L28>`__ 
 e successivamente invoca il `crawler <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L38-L52>`__ il cui risultato viene passato 
-al `microservizio delle regole <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L76-L92>`__ la cui risposta è utilizzata 
+al `microservizio delle regole <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L76-L92>`__ e la cui risposta è utilizzata 
 come input al `Task dei risultati <https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L261-L277>`__    
 
 .. _rule-detail-img:
