@@ -3,7 +3,7 @@ Rule Service
 
 Rule Service è il componente che definisce ed implementa le regole relative al D.Lgs. n. 33-2013 sulla trasparenza nella PA.
 
-Fornisce l'albero delle regole definito in `application.yaml <https://github.com/cnr-anac/rule-service/blob/main/src/main/resources/application.yaml>`__ oppure all'interno del :doc:`config-service` ,
+Fornisce l'albero delle regole definito in `application.yaml <https://github.com/cnr-anac/rule-service/blob/main/src/main/resources/application.yaml#L66-L554>`__ oppure all'interno del :doc:`config-service` ,
 che quindi può essere modificato o ampliato sia attraverso variabili di ambiente o della JVM prima di avviare il servizio,
 oppure aggiornando la configurazione per poi successivamente invocare l'endpoint `dell'actuator <http://localhost:8080/actuator/refresh>`__ per recepire le modifiche. 
 
