@@ -141,7 +141,7 @@ come input al `Task dei risultati <https://github.com/cnr-anac/workflow-definiti
 
 .. _rule-detail-img:
 .. figure:: https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/rule_detail_workflow.png
-  :width: 800
+  :height: 600
   :alt: Flusso per singola Amministrazione
 
   Flusso per singola Amministrazione
