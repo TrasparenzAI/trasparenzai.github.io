@@ -47,4 +47,5 @@ come client OAuth2 nei task che interagiscono con le API REST della piattaforma.
    task-scheduler-service
    rule-service
    conductor-service
+   ui-service
    

@@ -32,7 +32,7 @@
     <link rel="index" title="Indice" href="../index.html">
     <link rel="top" title="Documentazione progetto TrasparenzAI (Bozza non definitiva)" href="../index.html">
     <link rel="up" title="3. Componenti principali" href="index.html">
-    <link rel="next" title="4. Risultati ottenuti" href="../results/index.html">
+    <link rel="next" title="3.8. UI service" href="ui-service.html">
     <link rel="prev" title="3.6. Rule Service" href="rule-service.html">
 
 
@@ -617,6 +617,7 @@
 <li class="toctree-l2"><a class="reference internal" href="task-scheduler-service.html">3.5. Task Scheduler Service</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rule-service.html">3.6. Rule Service</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">3.7. Conductor service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui-service.html">3.8. UI service</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../results/index.html">4. Risultati ottenuti</a></li>
@@ -651,6 +652,9 @@
 <li><a class="reference internal" href="../architecture/index.html#id1">Fig. 2.1 - TrasparenzAI - Overview Diagram</a></li>
 <li><a class="reference internal" href="#id2">Fig. 3.1 - Flusso principale - Amministrazione Trasparente</a></li>
 <li><a class="reference internal" href="#id3">Fig. 3.2 - Flusso per singola Amministrazione</a></li>
+<li><a class="reference internal" href="ui-service.html#id1">Fig. 3.3 - Home Page - Interfaccia Web</a></li>
+<li><a class="reference internal" href="ui-service.html#id2">Fig. 3.4 - Home Page - Carousel</a></li>
+<li><a class="reference internal" href="ui-service.html#id3">Fig. 3.5 - Home Page - Timeline</a></li>
 </ul>
 
     </div>
@@ -747,6 +751,7 @@
 <li class="toctree-l2"><a class="reference internal" href="task-scheduler-service.html">3.5. Task Scheduler Service</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rule-service.html">3.6. Rule Service</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">3.7. Conductor service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui-service.html">3.8. UI service</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../results/index.html">4. Risultati ottenuti</a></li>
@@ -775,6 +780,9 @@
 <li><a class="reference internal" href="../architecture/index.html#id1">Fig. 2.1 - TrasparenzAI - Overview Diagram</a></li>
 <li><a class="reference internal" href="#id2">Fig. 3.1 - Flusso principale - Amministrazione Trasparente</a></li>
 <li><a class="reference internal" href="#id3">Fig. 3.2 - Flusso per singola Amministrazione</a></li>
+<li><a class="reference internal" href="ui-service.html#id1">Fig. 3.3 - Home Page - Interfaccia Web</a></li>
+<li><a class="reference internal" href="ui-service.html#id2">Fig. 3.4 - Home Page - Carousel</a></li>
+<li><a class="reference internal" href="ui-service.html#id3">Fig. 3.5 - Home Page - Timeline</a></li>
 </ul>
 
       </div>
@@ -846,14 +854,7 @@ il progetto principale è stato <a class="reference external" href="https://gith
 <td><p>Si</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>crawling_mode</strong></p></td>
-<td><dl class="simple">
-<dt>Modalità base di esecuzione del crawler può assumere i valori</dt><dd><ol class="arabic simple">
-<li><p>httpStream</p></li>
-<li><p>htmlSource</p></li>
-</ol>
-</dd>
-</dl>
-</td>
+<td><p>Modalità base di esecuzione del crawler può assumere i valori <em>httpStream</em> e <em>htmlSource</em></p></td>
 <td><p>httpStream</p></td>
 <td><p>No</p></td>
 </tr>
@@ -908,14 +909,7 @@ il progetto principale è stato <a class="reference external" href="https://gith
 <td><p>No</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>crawler_child_type</strong></p></td>
-<td><dl class="simple">
-<dt>Modalità di esecuzione dei flussi figli può assumere i valori</dt><dd><ol class="arabic simple">
-<li><p>SUB_WORKFLOW</p></li>
-<li><p>START_WORKFLOW</p></li>
-</ol>
-</dd>
-</dl>
-</td>
+<td><p>Modalità di esecuzione dei flussi figli può assumere i valori <em>SUB_WORKFLOW</em> e <em>START_WORKFLOW</em></p></td>
 <td><p>START_WORKFLOW</p></td>
 <td><p>No</p></td>
 </tr>
@@ -984,7 +978,7 @@ come input al <a class="reference external" href="https://github.com/cnr-anac/wo
 
           
             <div class="footer-buttons footer-buttons--next" role="navigation" aria-label="footer navigation">
-                  <a href="../results/index.html" class="" title="4. Risultati ottenuti" accesskey="n" rel="next"><span class="section-number">4. </span>Risultati ottenuti</a>
+                  <a href="ui-service.html" class="" title="3.8. UI service" accesskey="n" rel="next"><span class="section-number">3.8. </span>UI service</a>
               </div>
             
           </div>
