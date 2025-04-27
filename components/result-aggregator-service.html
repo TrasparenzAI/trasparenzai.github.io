@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="it" class="no-js" prefix="og: http://ogp.me/ns#">
-
+<html
+   lang="it"
+  data-content_root="../"
+>
 <!--
   ~ Copyright (C) 2020  Consiglio Nazionale delle Ricerche
   ~
@@ -45,7 +47,7 @@
     <meta name="robots" content="noindex, nofollow">
 </head>
 
-<body class="docs-italia">
+<body class="docs-italia" role="main">
   <script>
 	if (document.location.href.indexOf('?payload=') >= 0)
 		document.body.className += ' loading';
@@ -830,7 +832,7 @@ la geolicazzazione degli enti</p></li>
 </div></blockquote>
 <dl class="simple">
 <dt>Il codice sorgente di questo componente è disponibile su GitHub:</dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://github.com/cnr-anac/result-aggregator-service" rel="noopener noreferrer" target="_blank">https://github.com/cnr-anac/result-aggregator-service</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cnr-anac/result-aggregator-service" rel="noreferrer" target="_blank">https://github.com/cnr-anac/result-aggregator-service</a></p></li>
 </ul>
 </dd>
 </dl>
@@ -842,21 +844,21 @@ e consultabili all'indirizzo /swagger-ui/index.html.</p>
 <a class="reference internal image-reference" href="../_images/openapi-result-service.png"><img alt="Interfaccia Swagger UI all'OpenAPI del servizio" src="../_images/openapi-result-service.png" style="width: 800px;" /></a>
 </figure>
 <p>L'OpenAPI del servizio di staging è disponibile all'indirizzo
-<a class="reference external" href="https://dica33.ba.cnr.it/result-aggregator-service/swagger-ui/index.html" rel="noopener noreferrer" target="_blank">https://dica33.ba.cnr.it/result-aggregator-service/swagger-ui/index.html</a>.</p>
+<a class="reference external" href="https://dica33.ba.cnr.it/result-aggregator-service/swagger-ui/index.html" rel="noreferrer" target="_blank">https://dica33.ba.cnr.it/result-aggregator-service/swagger-ui/index.html</a>.</p>
 </section>
 <section id="dipendenze-e-configurazione">
 <h2><span class="section-number">3.4.2. </span>Dipendenze e configurazione<a class="headerlink" href="#dipendenze-e-configurazione" title="Link to this heading">¶</a></h2>
 <p>Questo servizio ha due dipendenze dagli altri componenti per funzionare:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>il <a class="reference external" href="https://github.com/cnr-anac/result-service" rel="noopener noreferrer" target="_blank">Result Service</a> da cui
+<li><p>il <a class="reference external" href="https://github.com/cnr-anac/result-service" rel="noreferrer" target="_blank">Result Service</a> da cui
 leggere le info sulle verifiche</p></li>
-<li><p>il <a class="reference external" href="https://github.com/cnr-anac/public-sites-service" rel="noopener noreferrer" target="_blank">Public Site Service</a>
+<li><p>il <a class="reference external" href="https://github.com/cnr-anac/public-sites-service" rel="noreferrer" target="_blank">Public Site Service</a>
 da cui prelevare le info geografiche delle PA</p></li>
 </ul>
 </div></blockquote>
 <p>L'indirizzo di entrambi questi servizi è da configurabile nel file
-<a class="reference external" href="https://github.com/cnr-anac/result-aggregator-service/blob/main/src/main/resources/application.properties" rel="noopener noreferrer" target="_blank">application.properties</a>
+<a class="reference external" href="https://github.com/cnr-anac/result-aggregator-service/blob/main/src/main/resources/application.properties" rel="noreferrer" target="_blank">application.properties</a>
 oppure tramite variabili d'ambiente se avviato tramite Docker.</p>
 </section>
 <section id="sicurezza">
