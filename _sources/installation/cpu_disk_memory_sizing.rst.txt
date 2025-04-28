@@ -26,7 +26,7 @@ dei risultati e loro visualizzazione via Web.
    * - **Sistema operativo VM**
      - Ubuntu Server 24.04
    * - **Servizi e componenti**
-     - `config-service <https://cnr-anac.github.io/trasparenzai-doc/components/config-service.html>`__, `public-site-service <https://cnr-anac.github.io/trasparenzai-doc/components/public-site-service.html>`__, `result-aggregator-service <https://cnr-anac.github.io/trasparenzai-doc/components/result-aggregator-service.html>`__, `result-service <https://cnr-anac.github.io/trasparenzai-doc/components/result-service.html>`__, `ui-service <https://cnr-anac.github.io/trasparenzai-doc/components/ui-service.html>`__, `task-scheduler-service <https://cnr-anac.github.io/trasparenzai-doc/components/task-scheduler-service.html>`__, Traefik, Keycloak, Minio,
+     - `config-service <https://cnr-anac.github.io/trasparenzai-doc/components/config-service.html>`__, `public-site-service <https://cnr-anac.github.io/trasparenzai-doc/components/public-site-service.html>`__, `result-aggregator-service <https://cnr-anac.github.io/trasparenzai-doc/components/result-aggregator-service.html>`__, `result-service <https://cnr-anac.github.io/trasparenzai-doc/components/result-service.html>`__, `ui-service <https://cnr-anac.github.io/trasparenzai-doc/components/ui-service.html>`__, `task-scheduler-service <https://cnr-anac.github.io/trasparenzai-doc/components/task-scheduler-service.html>`__, `Traefik <https://github.com/traefik>`__, `Keycloak <https://github.com/keycloak/keycloak>`__, `Minio <https://github.com/minio/>`__
 
 .. _hwb-tab:
 .. list-table:: **Requisiti minimi SERVER-B**
@@ -64,4 +64,4 @@ dei risultati e loro visualizzazione via Web.
    * - **Sistema operativo VM**
      - Ubuntu Server 24.04
    * - **Servizi e componenti**
-     - crawler-service, Selenium + WebDriver Google Chrome
+     - crawler-service, `Selenium <https://github.com/Selenium/selenium>`__ (Chrome Driver)
