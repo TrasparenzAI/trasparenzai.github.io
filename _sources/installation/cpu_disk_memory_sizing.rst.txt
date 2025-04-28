@@ -64,4 +64,4 @@ dei risultati e loro visualizzazione via Web.
    * - **Sistema operativo VM**
      - Ubuntu Server 24.04
    * - **Servizi e componenti**
-     - crawler-service, `Selenium <https://github.com/Selenium/selenium>`__ (Chrome Driver)
+     - crawler-service, `Selenium (Chrome Driver) <https://github.com/Selenium/selenium>`__
