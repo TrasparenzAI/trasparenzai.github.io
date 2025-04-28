@@ -6,8 +6,8 @@ il progetto principale è stato `forkato <https://github.com/cnr-anac/conductor>
 
 Nel progetto `workflow-definition <https://github.com/cnr-anac/workflow-definition>`__ sono presenti le definizioni in formato *json* dei flussi necessari al completamento degli obiettivi del progetto.
 
-:term:`Flusso principale - Amministrazione Trasparente<Amministrazione Trasparente>`
-------------------------------------------------------------------------------------
+Flusso principale - Amministrazione Trasparente
+-----------------------------------------------
 
 .. important::
   Il flusso `principale <https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json>`__ necessita dei seguenti parametri di input per la sua corretta invocazione come mostrato in :numref:`main-flow-tab`
