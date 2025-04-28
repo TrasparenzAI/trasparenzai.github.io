@@ -822,7 +822,7 @@
           
   <section id="risorse-hardware-consigliate">
 <h1><span class="section-number">4.8. </span>Risorse hardware consigliate<a class="headerlink" href="#risorse-hardware-consigliate" title="Link to this heading">¶</a></h1>
-<p>I test di funzionamento in produzione hanno evidenziato la necessità di suddividere l'architettura del sistema su almeno 3 distinte virtual machine (<em>VM-A</em>, <em>VM-B</em>, <em>VM-C</em>). In particolare, attese le risorse computazionali necessarie ai vari processi, si consiglia l'installazione su sistemi diversi dei servizi: a) crawler; b) coordinamento (conductor-service); c) gestione dei risultati e visualizzazione via Web.</p>
+<p>I test di funzionamento in produzione hanno evidenziato la necessità di suddividere l'architettura del sistema su almeno 3 distinte virtual machine (<em>VM-A</em>, <em>VM-B</em>, <em>VM-C</em>). In particolare, attese le risorse computazionali necessarie ai vari servizi, si consiglia l'installazione della piattaforma <em>TrasparenzAI</em> su almeno tre sistemi separati: VM-A) crawler ; VM-B) coordinamento; VM-C) gestione dei risultati e visualizzazione via Web.</p>
 <p>Di seguito il dettaglio delle risorse dedicate alle 3 VM utilizzate per i test di funzionameto del sistema:</p>
 <span id="hwa-tab"></span><table class="docutils align-default" id="id1">
 <caption><span class="caption-number">Tabella 4.1 </span><span class="caption-text">Risorse VM-A</span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
@@ -831,7 +831,7 @@
 <td><p>VMware vSphere 7.5</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>HW CPU</strong></p></td>
-<td><p>Intel Xeon CPU E7-4890v2</p></td>
+<td><p>Intel Xeon Gold 6342</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>VM Virtual CPU</strong></p></td>
 <td><p>32 vCPU</p></td>
@@ -839,17 +839,14 @@
 <tr class="row-even"><td><p><strong>VM RAM</strong></p></td>
 <td><p>64GB</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>VM HDD data</strong></p></td>
-<td><p>1TB</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>VM HDD sistema operativo</strong></p></td>
+<tr class="row-odd"><td><p><strong>VM HDD sistema operativo</strong></p></td>
 <td><p>500GB</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Sistema operativo VM</strong></p></td>
+<tr class="row-even"><td><p><strong>Sistema operativo VM</strong></p></td>
 <td><p>Ubuntu Server 24.04</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Servizi e componenti</strong></p></td>
-<td><p><a class="reference external" href="https://cnr-anac.github.io/trasparenzai-doc/components/config-service.html" rel="noreferrer" target="_blank">config-service</a>, <a class="reference external" href="https://cnr-anac.github.io/trasparenzai-doc/components/public-site-service.html" rel="noreferrer" target="_blank">public-site-service</a>, <a class="reference external" href="https://cnr-anac.github.io/trasparenzai-doc/components/result-aggregator-service.html" rel="noreferrer" target="_blank">result-aggregator-service</a>, <a class="reference external" href="https://cnr-anac.github.io/trasparenzai-doc/components/result-service.html" rel="noreferrer" target="_blank">result-service</a>, <a class="reference external" href="https://cnr-anac.github.io/trasparenzai-doc/components/ui-service.html" rel="noreferrer" target="_blank">ui-service</a>, <a class="reference external" href="https://cnr-anac.github.io/trasparenzai-doc/components/task-scheduler-service.html" rel="noreferrer" target="_blank">task-scheduler-service</a>, <a class="reference external" href="https://github.com/traefik" rel="noreferrer" target="_blank">Traefik</a>, <a class="reference external" href="https://github.com/keycloak/keycloak" rel="noreferrer" target="_blank">Keycloak</a>, <a class="reference external" href="https://github.com/minio/" rel="noreferrer" target="_blank">Minio</a></p></td>
+<tr class="row-odd"><td><p><strong>Servizi e componenti</strong></p></td>
+<td><p>crawler-service, <a class="reference external" href="https://github.com/Selenium/selenium" rel="noreferrer" target="_blank">Selenium (Chrome Driver)</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -889,7 +886,7 @@
 <td><p>VMware vSphere 7.5</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>HW CPU</strong></p></td>
-<td><p>Intel Xeon Gold 6342</p></td>
+<td><p>Intel Xeon CPU E7-4890v2</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>VM Virtual CPU</strong></p></td>
 <td><p>32 vCPU</p></td>
@@ -897,14 +894,17 @@
 <tr class="row-even"><td><p><strong>VM RAM</strong></p></td>
 <td><p>64GB</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>VM HDD sistema operativo</strong></p></td>
+<tr class="row-odd"><td><p><strong>VM HDD data</strong></p></td>
+<td><p>1TB</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>VM HDD sistema operativo</strong></p></td>
 <td><p>500GB</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Sistema operativo VM</strong></p></td>
+<tr class="row-odd"><td><p><strong>Sistema operativo VM</strong></p></td>
 <td><p>Ubuntu Server 24.04</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Servizi e componenti</strong></p></td>
-<td><p>crawler-service, <a class="reference external" href="https://github.com/Selenium/selenium" rel="noreferrer" target="_blank">Selenium (Chrome Driver)</a></p></td>
+<tr class="row-even"><td><p><strong>Servizi e componenti</strong></p></td>
+<td><p><a class="reference external" href="https://cnr-anac.github.io/trasparenzai-doc/components/config-service.html" rel="noreferrer" target="_blank">config-service</a>, <a class="reference external" href="https://cnr-anac.github.io/trasparenzai-doc/components/public-site-service.html" rel="noreferrer" target="_blank">public-site-service</a>, <a class="reference external" href="https://cnr-anac.github.io/trasparenzai-doc/components/result-aggregator-service.html" rel="noreferrer" target="_blank">result-aggregator-service</a>, <a class="reference external" href="https://cnr-anac.github.io/trasparenzai-doc/components/result-service.html" rel="noreferrer" target="_blank">result-service</a>, <a class="reference external" href="https://cnr-anac.github.io/trasparenzai-doc/components/ui-service.html" rel="noreferrer" target="_blank">ui-service</a>, <a class="reference external" href="https://cnr-anac.github.io/trasparenzai-doc/components/task-scheduler-service.html" rel="noreferrer" target="_blank">task-scheduler-service</a>, <a class="reference external" href="https://github.com/traefik" rel="noreferrer" target="_blank">Traefik</a>, <a class="reference external" href="https://github.com/keycloak/keycloak" rel="noreferrer" target="_blank">Keycloak</a>, <a class="reference external" href="https://github.com/minio/" rel="noreferrer" target="_blank">Minio</a></p></td>
 </tr>
 </tbody>
 </table>
