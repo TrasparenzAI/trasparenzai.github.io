@@ -1,4 +1,0 @@
-Risultati ottenuti
-==================
-
-[TODO] 

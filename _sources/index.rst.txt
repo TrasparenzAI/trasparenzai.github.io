@@ -36,7 +36,6 @@ La piattaforma è disponibile all'indirizzo:
    overview/index
    architecture/index
    components/index
-   results/index
    installation/index
 
    appendix
