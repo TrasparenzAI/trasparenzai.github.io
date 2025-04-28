@@ -15,7 +15,7 @@ Di seguito il dettaglio delle risorse dedicate alle 3 VM utilizzate per i test d
 **- VM-A**
 
 .. _hwa-tab:
-.. list-table:: Requisiti minimi SERVER-A
+.. list-table:: Risorse VM-A
 
    * - **Software di virtualizzazione**
      - VMware vSphere 7.5
@@ -39,7 +39,7 @@ Di seguito il dettaglio delle risorse dedicate alle 3 VM utilizzate per i test d
 **- VM-B**
 
 .. _hwb-tab:
-.. list-table:: Requisiti minimi SERVER-B
+.. list-table:: Risorse VM-B
 
    * - **Software di virtualizzazione**
      - VMware vSphere 7.5
@@ -63,7 +63,7 @@ Di seguito il dettaglio delle risorse dedicate alle 3 VM utilizzate per i test d
 **- VM-C**
 
 .. _hwc-tab:
-.. list-table:: Requisiti minimi SERVER-C
+.. list-table:: Risorse VM-C
 
    * - **Software di virtualizzazione**
      - VMware vSphere 7.5
