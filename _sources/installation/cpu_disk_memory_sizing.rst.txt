@@ -2,14 +2,17 @@ Risorse hardware consigliate
 =============================
 
 I test di funzionamento in produzione hanno evidenziato la necessità
-di suddividere su almeno 3 distinti virtual machine l'architettura del sistema (`SERVER-A <#hwa-tab>`__, `SERVER-B <#hwb-tab>`__, `SERVER-C <#hwc-tab>`__).
+di suddividere l'architettura del sistema su almeno 3 distinte virtual machine (`VM-A <#hwa-tab>`__, `VM-B <#hwb-tab>`__, `VM-C <#hwc-tab>`__).
 
 In particolare è consigliato di mantenere separata la parte del crawler,
 dalla parte del coordinamento (`conductor-service <https://cnr-anac.github.io/trasparenzai-doc/components/conductor-service.html>`__), dalla parte di gestione
 dei risultati e loro visualizzazione via Web.
 
+Di seguito il dettaglio delle risorse dedicate alle 3 VM utilizzate per i test di funzionameto del sistema:
 
-**Requisiti minimi SERVER-A**
+
+
+**- VM-A**
 
 .. _hwa-tab:
 .. list-table:: Requisiti minimi SERVER-A
@@ -32,7 +35,8 @@ dei risultati e loro visualizzazione via Web.
      - `config-service <https://cnr-anac.github.io/trasparenzai-doc/components/config-service.html>`__, `public-site-service <https://cnr-anac.github.io/trasparenzai-doc/components/public-site-service.html>`__, `result-aggregator-service <https://cnr-anac.github.io/trasparenzai-doc/components/result-aggregator-service.html>`__, `result-service <https://cnr-anac.github.io/trasparenzai-doc/components/result-service.html>`__, `ui-service <https://cnr-anac.github.io/trasparenzai-doc/components/ui-service.html>`__, `task-scheduler-service <https://cnr-anac.github.io/trasparenzai-doc/components/task-scheduler-service.html>`__, `Traefik <https://github.com/traefik>`__, `Keycloak <https://github.com/keycloak/keycloak>`__, `Minio <https://github.com/minio/>`__
 
 
-**Requisiti minimi SERVER-B**
+
+**- VM-B**
 
 .. _hwb-tab:
 .. list-table:: Requisiti minimi SERVER-B
@@ -55,7 +59,8 @@ dei risultati e loro visualizzazione via Web.
      - `rule-service <https://cnr-anac.github.io/trasparenzai-doc/components/rule-service.html>`__, `conductor-service <https://cnr-anac.github.io/trasparenzai-doc/components/conductor-service.html>`__
 
 
-**Requisiti minimi SERVER-C**
+
+**- VM-C**
 
 .. _hwc-tab:
 .. list-table:: Requisiti minimi SERVER-C
