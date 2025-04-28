@@ -5,7 +5,7 @@ I test di funzionamento in produzione hanno evidenziato la necessità
 di suddividere su almeno 3 distinti virtual machine l'architettura del sistema (`SERVER-A <https://cnr-anac.github.io/trasparenzai-doc/installation/cpu_disk_memory_sizing.html#hwa-tab>`__, `SERVER-B <https://cnr-anac.github.io/trasparenzai-doc/installation/cpu_disk_memory_sizing.html#hwb-tab>`__, `SERVER-C <https://cnr-anac.github.io/trasparenzai-doc/installation/cpu_disk_memory_sizing.html#hwc-tab>`__).
 
 In particolare è consigliato di mantenere separata la parte del crawler,
-dalla parte del coordinamento (conductor-service), dalla parte di gestione
+dalla parte del coordinamento (`conductor-service <https://cnr-anac.github.io/trasparenzai-doc/components/conductor-service.html>`__), dalla parte di gestione
 dei risultati e loro visualizzazione via Web.
 
 .. _hwa-tab:
@@ -26,7 +26,7 @@ dei risultati e loro visualizzazione via Web.
    * - **Sistema operativo VM**
      - Ubuntu Server 24.04
    * - **Servizi e componenti**
-     - config-service, public-site-service, result-aggregator-service, result-service, ui-service, task-scheduler-service, Traefik, Keycloak, Minio
+     - `config-service <https://cnr-anac.github.io/trasparenzai-doc/components/config-service.html>`__, `public-site-service <https://cnr-anac.github.io/trasparenzai-doc/components/public-site-service.html>`__, `result-aggregator-service <https://cnr-anac.github.io/trasparenzai-doc/components/result-aggregator-service.html>`__, `result-service <https://cnr-anac.github.io/trasparenzai-doc/components/result-service.html>`__, `ui-service <https://cnr-anac.github.io/trasparenzai-doc/components/ui-service.html>`__, `task-scheduler-service <https://cnr-anac.github.io/trasparenzai-doc/components/task-scheduler-service.html>`__, Traefik, Keycloak, Minio
 
 .. _hwb-tab:
 .. list-table:: **Requisiti minimi SERVER-B**
@@ -46,7 +46,7 @@ dei risultati e loro visualizzazione via Web.
    * - **Sistema operativo VM**
      - Ubuntu Server 24.04
    * - **Servizi e componenti**
-     - rule-service, conductor-service
+     - `rule-service <https://cnr-anac.github.io/trasparenzai-doc/components/rule-service.html>`__, `conductor-service <https://cnr-anac.github.io/trasparenzai-doc/components/conductor-service.html>`__
 
 .. _hwc-tab:
 .. list-table:: **Requisiti minimi SERVER-C**
