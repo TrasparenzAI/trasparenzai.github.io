@@ -26,3 +26,13 @@ Glossario
    IndicePA
       Fonte OpenData ufficiale che elenca tutte le Pubbliche Amministrazioni italiane,
       utilizzata per alimentare la base dati della piattaforma.
+   Traefik
+      Reverse proxy e bilanciatore di carico che gestisce il traffico HTTPS verso i microservizi.
+   Selenium Grid
+      Infrastruttura distribuita per il rendering delle pagine web dinamiche, basata su istanze multiple di browser Chrome.
+   OpenAPI / Swagger UI
+      Strumenti per la documentazione automatica e l’interazione diretta con le API REST esposte dai microservizi.
+   Microservizi
+      Architettura software modulare in cui ogni funzione di TrasparenzAI è realizzata come servizio indipendente e integrato.
+   Keycloak
+      Identity Provider opensource adottato per gestire l'autenticazione OAuth2 e la gestione dei ruoli utente.   
