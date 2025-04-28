@@ -671,6 +671,7 @@
     <div id="table-index" class="table-index--menu collapse sidebar-list--wrapper sidebar-accordion-content collapse">
       <ul>
 <li><a class="reference internal" href="../components/conductor-service.html#id1">Tab. 3.1 - Parametri di Input per il flusso principale</a></li>
+<li><a class="reference internal" href="#id1">Tab. 4.1 - **Requisiti minimi SERVER-A**</a></li>
 </ul>
 
     </div>
@@ -792,6 +793,7 @@
       <div id="table-index-mobile" class="table-index--menu tab-pane sidebar-list--wrapper fade" role="tabpanel" aria-labelledby="table-index-mobile-tab">
         <ul>
 <li><a class="reference internal" href="../components/conductor-service.html#id1">Tab. 3.1 - Parametri di Input per il flusso principale</a></li>
+<li><a class="reference internal" href="#id1">Tab. 4.1 - **Requisiti minimi SERVER-A**</a></li>
 </ul>
 
       </div>
@@ -820,32 +822,36 @@
 di suddividere su almeno 3 distinti virtual machine l'architettura del sistema (SERVER-A, SERVER-B, SERVER-C).</p>
 <p>In particolare è consigliato di mantenere separata la parte del crawler,
 dalla parte del coordinamento (conductor-service), dalla parte di gestione
-dei risultati e loro visualizzazione via Web.
-.. _hwa-tab:
-.. list-table:: Parametri di Input per il flusso principale</p>
-<blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">header-rows<span class="colon">:</span></dt>
-<dd class="field-odd"><p>1</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><ul>
-<li><p><em>Nome</em></p></li>
-<li><p><em>Descrizione</em></p></li>
-<li><p><em>Valore consigliato/default</em></p></li>
-<li><p><em>Può essere Vuoto?</em></p></li>
-</ul>
-</li>
-<li><ul>
-<li><p><strong>page_size</strong></p></li>
-<li><p>Dimensione della pagina per il recupero delle PA</p></li>
-<li><p>2000</p></li>
-<li><p>No</p></li>
-</ul>
-</li>
-</ul>
-</div></blockquote>
+dei risultati e loro visualizzazione via Web.</p>
+<span id="hwa-tab"></span><table class="docutils align-default" id="id1">
+<caption><span class="caption-number">Tabella 4.1 </span><span class="caption-text"><strong>Requisiti minimi SERVER-A</strong></span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
+<tbody>
+<tr class="row-odd"><td><p><strong>Software di virtualizzazione</strong></p></td>
+<td><p>VMware vSphere 7.5</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>HW CPU</strong></p></td>
+<td><p>Intel Xeon CPU E7-4890v2</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>VM Virtual CPU</strong></p></td>
+<td><p>32 vCPU</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>VM RAM</strong></p></td>
+<td><p>64GB</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>VM HDD data</strong></p></td>
+<td><p>1TB</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>VM HDD sistema operativo</strong></p></td>
+<td><p>500GB</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Sistema operativo VM</strong></p></td>
+<td><p>Ubuntu Server 24.04</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Servizi e componenti</strong></p></td>
+<td><p>config-service, public-site-service, result-aggregator-service, ui-service, task-scheduler-service, Traefik, Keycloak, Minio</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 
 
