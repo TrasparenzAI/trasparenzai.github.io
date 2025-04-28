@@ -1,7 +1,7 @@
 Risorse hardware consigliate
 =============================
 
-I test di funzionamento in produzione hanno evidenziato la necessità di suddividere l'architettura del sistema su almeno 3 distinte virtual machine (*VM-A*, *VM-B*, *VM-C*). In particolare, attese le risorse computazionali necessarie al funzionamento dei vari processi, si consiglia l'instalazione su sistemi diversi dei servizi di crawling, di coordinamento (conductor-service) e di gestione dei risultati visualizzazione via Web.
+I test di funzionamento in produzione hanno evidenziato la necessità di suddividere l'architettura del sistema su almeno 3 distinte virtual machine (*VM-A*, *VM-B*, *VM-C*). In particolare, attese le risorse computazionali necessarie ai vari processi, si consiglia l'instalazione su sistemi diversi dei servizi di crawling, di coordinamento (conductor-service) e di gestione dei risultati visualizzazione via Web.
 
 Di seguito il dettaglio delle risorse dedicate alle 3 VM utilizzate per i test di funzionameto del sistema:
 
