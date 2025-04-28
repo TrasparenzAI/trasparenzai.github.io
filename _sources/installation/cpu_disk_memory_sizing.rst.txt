@@ -1,12 +1,7 @@
 Risorse hardware consigliate
 =============================
 
-I test di funzionamento in produzione hanno evidenziato la necessità
-di suddividere l'architettura del sistema su almeno 3 distinte virtual machine (`VM-A <#hwa-tab>`__, `VM-B <#hwb-tab>`__, `VM-C <#hwc-tab>`__).
-
-In particolare è consigliato di mantenere separata la parte del crawler,
-dalla parte del coordinamento (`conductor-service <https://cnr-anac.github.io/trasparenzai-doc/components/conductor-service.html>`__), dalla parte di gestione
-dei risultati e loro visualizzazione via Web.
+I test di funzionamento in produzione hanno evidenziato la necessità di suddividere l'architettura del sistema su almeno 3 distinte virtual machine (*VM-A*, *VM-B*, *VM-C*). In particolare, attese le risorse computazionali necessarie al funzionamento dei vari processi, si consiglia l'instalazione su sistemi diversi dei servizi di crawling, di coordinamento (conductor-service) e di gestione dei risultati visualizzazione via Web.
 
 Di seguito il dettaglio delle risorse dedicate alle 3 VM utilizzate per i test di funzionameto del sistema:
 
