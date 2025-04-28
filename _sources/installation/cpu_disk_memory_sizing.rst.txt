@@ -8,8 +8,11 @@ In particolare è consigliato di mantenere separata la parte del crawler,
 dalla parte del coordinamento (`conductor-service <https://cnr-anac.github.io/trasparenzai-doc/components/conductor-service.html>`__), dalla parte di gestione
 dei risultati e loro visualizzazione via Web.
 
+
+**Requisiti minimi SERVER-A**
+
 .. _hwa-tab:
-.. list-table:: **Requisiti minimi SERVER-A**
+.. list-table:: Requisiti minimi SERVER-A
 
    * - **Software di virtualizzazione**
      - VMware vSphere 7.5
@@ -28,8 +31,11 @@ dei risultati e loro visualizzazione via Web.
    * - **Servizi e componenti**
      - `config-service <https://cnr-anac.github.io/trasparenzai-doc/components/config-service.html>`__, `public-site-service <https://cnr-anac.github.io/trasparenzai-doc/components/public-site-service.html>`__, `result-aggregator-service <https://cnr-anac.github.io/trasparenzai-doc/components/result-aggregator-service.html>`__, `result-service <https://cnr-anac.github.io/trasparenzai-doc/components/result-service.html>`__, `ui-service <https://cnr-anac.github.io/trasparenzai-doc/components/ui-service.html>`__, `task-scheduler-service <https://cnr-anac.github.io/trasparenzai-doc/components/task-scheduler-service.html>`__, `Traefik <https://github.com/traefik>`__, `Keycloak <https://github.com/keycloak/keycloak>`__, `Minio <https://github.com/minio/>`__
 
+
+**Requisiti minimi SERVER-B**
+
 .. _hwb-tab:
-.. list-table:: **Requisiti minimi SERVER-B**
+.. list-table:: Requisiti minimi SERVER-B
 
    * - **Software di virtualizzazione**
      - VMware vSphere 7.5
@@ -48,8 +54,11 @@ dei risultati e loro visualizzazione via Web.
    * - **Servizi e componenti**
      - `rule-service <https://cnr-anac.github.io/trasparenzai-doc/components/rule-service.html>`__, `conductor-service <https://cnr-anac.github.io/trasparenzai-doc/components/conductor-service.html>`__
 
+
+**Requisiti minimi SERVER-C**
+
 .. _hwc-tab:
-.. list-table:: **Requisiti minimi SERVER-C**
+.. list-table:: Requisiti minimi SERVER-C
 
    * - **Software di virtualizzazione**
      - VMware vSphere 7.5
