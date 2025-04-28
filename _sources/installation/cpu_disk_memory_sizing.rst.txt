@@ -2,7 +2,7 @@ Risorse hardware consigliate
 =============================
 
 I test di funzionamento in produzione hanno evidenziato la necessità
-di suddividere su almeno 3 distinti virtual machine l'architettura del sistema (`SERVER-A <https://cnr-anac.github.io/trasparenzai-doc/installation/cpu_disk_memory_sizing.html#hwa-tab>`__, `SERVER-B <https://cnr-anac.github.io/trasparenzai-doc/installation/cpu_disk_memory_sizing.html#hwB-tab>`__, `SERVER-C <https://cnr-anac.github.io/trasparenzai-doc/installation/cpu_disk_memory_sizing.html#hwc-tab>`__).
+di suddividere su almeno 3 distinti virtual machine l'architettura del sistema (`SERVER-A <https://cnr-anac.github.io/trasparenzai-doc/installation/cpu_disk_memory_sizing.html#hwa-tab>`__, `SERVER-B <https://cnr-anac.github.io/trasparenzai-doc/installation/cpu_disk_memory_sizing.html#hwb-tab>`__, `SERVER-C <https://cnr-anac.github.io/trasparenzai-doc/installation/cpu_disk_memory_sizing.html#hwc-tab>`__).
 
 In particolare è consigliato di mantenere separata la parte del crawler,
 dalla parte del coordinamento (conductor-service), dalla parte di gestione
