@@ -22,8 +22,8 @@ Glossario
       Sezione obbligatoria dei siti delle Pubbliche Amministrazioni prevista dal D.Lgs. 33/2013,
       contenente dati e documenti per garantire trasparenza e accountability.
 
-   ANAC (Autorità Nazionale Anticorruzione)
-      Organismo di controllo e prevenzione della corruzione nella Pubblica Amministrazione. 
+   ANAC
+      Autorità Nazionale Anticorruzione, organismo di controllo e prevenzione della corruzione nella Pubblica Amministrazione. 
       Partner del progetto TrasparenzAI.   
 
    IndicePA

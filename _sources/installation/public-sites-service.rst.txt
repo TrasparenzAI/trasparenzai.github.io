@@ -7,7 +7,7 @@ istituzionali.
 
 Public Sites Service mantiene nel proprio datastore locale le informazioni
 degli enti che possono essere inserite/aggiornate tramite gli OpenData di
-IndicePA, oppure inserite tramite appositi servizi endopoint REST.
+:term:`IndicePA`, oppure inserite tramite appositi servizi endopoint REST.
 Il servizio utilizza Nominatim di OpenStreetMap per la geolocalizzazione degli
 indirizzi degli enti pubblici.
 
@@ -37,7 +37,7 @@ Integrazione API Google Maps
 Il servizio è già predisposto per l'integrazione con l'API di Google Maps per
 la geocalizzazione degli indirizzi degli enti pubblici.
 L'API Google Maps fornisce solitamente una migliore individuazione delle 
-coordinate GPS degli indirizzi indicati nel IndicePA.
+coordinate GPS degli indirizzi indicati nel :term:`IndicePA`.
 L'API Google Maps è però a pagamento, con un freetier per un numero iniziale di
 ricerche, è necessario procurarsi una Google Maps Key per poter utilizzare questo
 servizio, la quale richiede di inserire una carta di credito per gli eventuali

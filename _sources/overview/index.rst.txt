@@ -14,7 +14,7 @@ sotto-sezioni, nei percorsi di accesso e nella tipologia dei file pubblicati.
 Questa frammentazione complica la consultazione delle informazioni e rende 
 estremamente difficoltosa la verifica della loro presenza e conformità. 
 Se per un cittadino alla ricerca di un determinato documento può risultare
-frustrante dover navigare in siti web strutturati in modo diverso, per ANAC
+frustrante dover navigare in siti web strutturati in modo diverso, per :term:`ANAC`
 diventa ancora più complesso ed oneroso monitorare il rispetto degli obblighi
 di pubblicazione su scala nazionale.
 

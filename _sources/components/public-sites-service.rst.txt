@@ -7,20 +7,20 @@ istituzionali.
 
 Public Sites Service mantiene nel proprio datastore locale le informazioni 
 egli enti che possono essere inserite/aggiornate tramite gli OpenData di 
-IndicePA, oppure inserite tramite appositi servizi endopoint REST.
+:term:`IndicePA`, oppure inserite tramite appositi servizi endopoint REST.
 
 L'idea è quella di avere una fonte facile da consultare e estendibile delle
 informazioni delle organizzazioni pubbliche da analizzare. In particolare
-sono trattate automaticamente le info utili derivanti IndicePA ma è possibile
+sono trattate automaticamente le info utili derivanti :term:`IndicePA` ma è possibile
 inserire altri enti da sottoporre a analisi, inserendoli via REST in questo
 servizio oppure integrando altre fonti esterne sincronizzate automaticamente.
 
 Public Sites Service fornisce alcuni servizi REST utilizzabili in produzione 
 per:
 
- * mostrare la lista degli enti presenti negli OpenData di IndicePA
+ * mostrare la lista degli enti presenti negli OpenData di :term:`IndicePA`
  * inserire ed aggiornare all'interno del servizio le informazioni degli Enti
-   tramite gli OpenData di IndicePA 
+   tramite gli OpenData di :term:`IndicePA` 
  * geolocalizzare gli Enti italiani tramite il servizio Nominatim di 
    OpenStreetMap
  * visualizzare i dati di un Ente
@@ -28,16 +28,16 @@ per:
    di filtrarli per codiceCategoria, codiceFiscaleEnte, codiceIpa, 
    denominazioneEnte
  * inserire, aggiornare e cancellare le informazioni degli Enti all'interno del
-   servizio (direttamente senza passare da IndicePA)
+   servizio (direttamente senza passare da :term:`IndicePA`)
 
 Il servizio sincronizza e rendere disponibili via REST anche le informazioni 
 dei comuni italiani, prelevendo ogni notte il CSV dal sito dell'ISTAT dei comuni
 e aggiornando questo info dentro il servizio stesso. Le info dei comuni servono
 anche per effettuare una geolocalizzazione più precisa degli enti, che su 
-IndicePA sono classificati solamente tramite il codice catastale del comune.
+:term:`IndicePA` sono classificati solamente tramite il codice catastale del comune.
 
 L'aggiornamento dei dati locali al servizio Public Sites Service tramite
-IndicePA avviene ogni mattina alle 6:30.
+:term:`IndicePA` avviene ogni mattina alle 6:30.
 L'aggiornamento dei dati locali al servizio Public Sites Service tramite il CSV
 di ISTAT avviene ogni mattina alle 6:40.
 
