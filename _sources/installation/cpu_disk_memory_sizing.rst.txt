@@ -46,7 +46,7 @@ Di seguito il dettaglio delle risorse dedicate alle 3 VM utilizzate per i test d
 
 .. _hwc-tab:
 .. list-table:: Risorse VM-C
-
+   
    * - **Software di virtualizzazione**
      - VMware vSphere 7.5
    * - **HW CPU**
