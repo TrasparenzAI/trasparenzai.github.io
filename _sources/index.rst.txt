@@ -11,7 +11,7 @@ Pubbliche Amministrazioni.
 
 Il Decreto Legislativo 33/2013 ha istituito l’obbligo per le amministrazioni di
 pubblicare una serie di dati, documenti e informazioni nella sezione
-**Amministrazione Trasparente**, con l’obiettivo di prevenire fenomeni di
+:term:`Amministrazione Trasparente`, con l’obiettivo di prevenire fenomeni di
 corruzione e di favorire una maggiore accountability.
 
 Tuttavia, l’applicazione di questa normativa si è rivelata nel tempo complessa
@@ -22,7 +22,7 @@ informazioni.
 
 A fronte di queste criticità, la piattaforma *TrasparenzAI* nasce con lo scopo
 di semplificare e rendere più efficiente l’accesso e il monitoraggio delle 
-informazioni pubblicate nella sezione Amministrazione Trasparente dei siti 
+informazioni pubblicate nella sezione :term:`Amministrazione Trasparente` dei siti 
 delle amministrazioni pubbliche.
 
 La piattaforma è disponibile all'indirizzo:

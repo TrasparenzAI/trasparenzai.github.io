@@ -3,7 +3,7 @@ Panoramica della soluzione
 
 La piattaforma *TransparenzAI* nasce con lo scopo di semplificare e rendere
 più efficiente l’accesso e il monitoraggio delle informazioni pubblicate 
-nella sezione Amministrazione Trasparente dei siti delle amministrazioni pubbliche. 
+nella sezione :term:`Amministrazione Trasparente` dei siti delle amministrazioni pubbliche. 
 
 Il problema principale riscontrato è la grande eterogeneità delle modalità di
 pubblicazione. Ogni amministrazione, pur rispettando formalmente gli obblighi
@@ -20,7 +20,7 @@ di pubblicazione su scala nazionale.
 
 La piattaforma risponde a queste necessità introducendo un sistema 
 automatizzato in grado di verificare in modo sistematico la presenza e la
-struttura delle sezioni Amministrazione Trasparente, fornendo un quadro
+struttura delle sezioni :term:`Amministrazione Trasparente`, fornendo un quadro
 aggiornato della situazione a livello nazionale. 
 
 Questo strumento non si limita a rilevare le irregolarità, ma offre anche un
