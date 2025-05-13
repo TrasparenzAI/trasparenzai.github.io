@@ -869,15 +869,15 @@ mentre i risultati delle validazioni sono inseriti sia nel microservizio
 <em>Result Service</em> che nel servizio <em>Result Aggregator Service</em>.
 Inoltre le screenshot delle pagine HTML ritenute problematiche dal sistema
 vengono archiviate in uno storage <em>S3 like</em>, in particolare nel servizio fornito
-in staging a ANAC viene utilizzato il prodotto Opensource
+in staging ad ANAC viene utilizzato il prodotto Opensource
 <a class="reference external" href="https://min.io/" rel="noreferrer" target="_blank">Minio</a>.</p>
 <p>Le regole applicate per la verifica della corrispondenza del sito con la legge
 sulla trasparenza sono definite tramite il servizio <em>Rule Service</em>.
 Quest'ultimo è stato realizzato in modo da essere un servizio generico
 di applicazioni di regole di parsing e configurabile tramite file JSON.</p>
-<p>Per quando riguarda la parte di crawling e di rendering delle pagine HTML da
-analizzare la soluzione prevede l'utilizzo di un proprio crawler per prelevare lo
-streaming hml delle pagine da analizzare e l'adozione di un
+<p>Per l'attività di crawling e di rendering delle pagine HTML da
+analizzare, la soluzione prevede l'utilizzo di un proprio crawler per prelevare lo
+streaming html delle pagine da analizzare e l'adozione di un
 <a class="reference external" href="https://www.selenium.dev/documentation/grid/" rel="noreferrer" target="_blank">Selenium Hub</a> per distrubuire
 su più istanze di Google Chrome il rendering delle pagine HTML che contengono
 codice javascript da interpretare.</p>
