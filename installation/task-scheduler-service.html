@@ -823,12 +823,12 @@
   <section id="task-scheduler-service">
 <h1><span class="section-number">4.7. </span>Task Scheduler Service<a class="headerlink" href="#task-scheduler-service" title="Link to this heading">¶</a></h1>
 <p>Task Scheduler Service è il componente che si occupa di avviare alcuni processi
-eseguiti a intervalli fissi, come per esempio l'<strong>avvio delle scansioni</strong> dei siti
+eseguiti a intervalli fissi, come per esempio l”<strong>avvio delle scansioni</strong> dei siti
 del PA per la verifica della corrispondenza dei requisiti e la <strong>cancellazione
 dei risultati di scansione più vecchi</strong>.</p>
-<p>Nell'utilizzo tramite <strong>docker-compose.yml</strong> ricordarsi di impostare nel <strong>.env</strong>
-la corretta variabile d'ambiente che specifica l'url del config-service da
-utilizzare e la password per l'autenticazione Basic Auth con il
+<p>Nell’utilizzo tramite <strong>docker-compose.yml</strong> ricordarsi di impostare nel <strong>.env</strong>
+la corretta variabile d’ambiente che specifica l’url del config-service da
+utilizzare e la password per l’autenticazione Basic Auth con il
 <em>config-service</em>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>environment:
   - confighost=${CONFIG_HOST}
@@ -838,12 +838,12 @@ utilizzare e la password per l'autenticazione Basic Auth con il
 <p>Vedi <a class="reference internal" href="config-service.html"><span class="doc">Config service</span></a>.</p>
 <dl class="simple">
 <dt>Il codice sorgente è disponibile su github:</dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://github.com/cnr-anac/task-scheduler-service" rel="noreferrer" target="_blank">https://github.com/cnr-anac/task-scheduler-service</a></p></li>
+<li><p><a class="reference external" href="https://github.com/trasparenzai/task-scheduler-service" rel="noreferrer" target="_blank">https://github.com/trasparenzai/task-scheduler-service</a></p></li>
 </ul>
 </dd>
 </dl>
 <p>Nel repository github è compreso anche un script per la prima installazione
-del servizio <a class="reference external" href="https://github.com/cnr-anac/task-scheduler-service/blob/main/first-setup.sh" rel="noreferrer" target="_blank">first-setup.sh</a>.</p>
+del servizio <a class="reference external" href="https://github.com/trasparenzai/task-scheduler-service/blob/main/first-setup.sh" rel="noreferrer" target="_blank">first-setup.sh</a>.</p>
 <dl class="simple">
 <dt>Questo servizio ha tre dipendenze per funzionare:</dt><dd><ul class="simple">
 <li><p>il conductor-service tramite cui avviare i flussi di verifica e la
@@ -856,7 +856,7 @@ cancellazione dei vecchi workflow</p></li>
 <p>La configurazione del <strong>conductor-service</strong> per avviare i nuovi flussi e
 cancellari quelli vecchi viene letta automaticamente dal <a class="reference internal" href="config-service.html"><span class="doc">Config service</span></a>.</p>
 <p><strong>Attenzione</strong>: è invece importante impostare nel <strong>.env</strong> le URL dei servizi
-<em>result-service</em> e <em>result-aggregator-service</em> modificando le variabili d'ambiente
+<em>result-service</em> e <em>result-aggregator-service</em> modificando le variabili d’ambiente
 <em>TRANSPARENCY_RESULT_SERVICE_URL</em> e <em>TRANSPARENCY_RESULT_AGGREGATOR_SERVICE_URL</em>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Configurazione indirizzi dei servizi dove cancellare i risutalti del workflow scaduti
 - transparency.clients.result-service.url=${TRANSPARENCY_RESULT_SERVICE_URL}
@@ -876,8 +876,8 @@ generato quando si è creato il <em>Service Account</em> <em>task-scheduler</em>
 <h2><span class="section-number">4.7.1. </span>Sicurezza<a class="headerlink" href="#sicurezza" title="Link to this heading">¶</a></h2>
 <p>Gli endpoint REST di questo servizio sono protetti tramite autenticazione
 OAuth con Bearer Token.
-È necessario configurare l'IDP da utilizzare per validare i token OAuth tramite
-le due proprietà impostabili nel docker-compose.yml come nell'esempio seguente:</p>
+È necessario configurare l’IDP da utilizzare per validare i token OAuth tramite
+le due proprietà impostabili nel docker-compose.yml come nell’esempio seguente:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">issuer</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span>
 <span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">jwk</span><span class="o">-</span><span class="nb">set</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span><span class="o">/</span><span class="n">protocol</span><span class="o">/</span><span class="n">openid</span><span class="o">-</span><span class="n">connect</span><span class="o">/</span><span class="n">certs</span>
 </pre></div>

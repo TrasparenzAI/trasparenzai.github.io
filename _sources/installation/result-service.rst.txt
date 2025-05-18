@@ -8,10 +8,10 @@ Result Service mantiene nel proprio datastore locale le informazioni
 relative ai risultati di validazione.
 
 Il codice sorgente è disponibile su github:
-  - https://github.com/cnr-anac/result-service
+  - https://github.com/trasparenzai/result-service
 
 Nel repository github è compreso anche un script per la prima installazione
-del servizio `first-setup.sh <https://github.com/cnr-anac/result-service/blob/main/first-setup.sh>`_.
+del servizio `first-setup.sh <https://github.com/trasparenzai/result-service/blob/main/first-setup.sh>`_.
 
 In particolare è necessario configurare la sezione della sicurezza.
 

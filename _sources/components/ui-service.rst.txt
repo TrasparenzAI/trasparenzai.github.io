@@ -11,7 +11,7 @@ del **design istituzionale**, secondo quanto previsto da `Designers Italia <http
 L’aspetto è professionale, ordinato e coerente con la comunicazione della Pubblica Amministrazione.
 
 .. _home-img:
-.. figure:: https://raw.githubusercontent.com/cnr-anac/ui-service/refs/heads/main/home.png
+.. figure:: https://raw.githubusercontent.com/trasparenzai/ui-service/refs/heads/main/home.png
   :width: 800
   :alt: Home Page
 

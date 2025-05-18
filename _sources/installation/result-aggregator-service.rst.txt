@@ -9,10 +9,10 @@ Result Aggregator Service mantiene nel proprio datastore locale le informazioni
 relative ai risultati di validazione.
 
 Il codice sorgente è disponibile su github:
-  - https://github.com/cnr-anac/result-aggregator-service
+  - https://github.com/trasparenzai/result-aggregator-service
 
 Nel repository github è compreso anche un script per la prima installazione
-del servizio `first-setup.sh <https://github.com/cnr-anac/result-aggregator-service/blob/main/first-setup.sh>`_.
+del servizio `first-setup.sh <https://github.com/trasparenzai/result-aggregator-service/blob/main/first-setup.sh>`_.
 
 Questo servizio ha due dipendenze per funzionare:
  - il :doc:`result-service` da cui leggere le info sulle verifiche

@@ -9,10 +9,10 @@ Config Service mantiene nel proprio datastore locale le configurazioni che sono
 fornite agli altri microservizi.
 
 Il codice sorgente è disponibile su github:
-  - https://github.com/cnr-anac/config-service
+  - https://github.com/trasparenzai/config-service
 
 Nel repository github è compreso anche un script per la prima installazione
-del servizio `first-setup.sh <https://github.com/cnr-anac/config-service/blob/main/first-setup.sh>`_.
+del servizio `first-setup.sh <https://github.com/trasparenzai/config-service/blob/main/first-setup.sh>`_.
 
 In particolare è necessario configurare la sezione della sicurezza.
 

@@ -829,12 +829,12 @@ con altre informazioni sugli enti pubblici prelevate da altri servizi.</p>
 relative ai risultati di validazione.</p>
 <dl class="simple">
 <dt>Il codice sorgente è disponibile su github:</dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://github.com/cnr-anac/result-aggregator-service" rel="noreferrer" target="_blank">https://github.com/cnr-anac/result-aggregator-service</a></p></li>
+<li><p><a class="reference external" href="https://github.com/trasparenzai/result-aggregator-service" rel="noreferrer" target="_blank">https://github.com/trasparenzai/result-aggregator-service</a></p></li>
 </ul>
 </dd>
 </dl>
 <p>Nel repository github è compreso anche un script per la prima installazione
-del servizio <a class="reference external" href="https://github.com/cnr-anac/result-aggregator-service/blob/main/first-setup.sh" rel="noreferrer" target="_blank">first-setup.sh</a>.</p>
+del servizio <a class="reference external" href="https://github.com/trasparenzai/result-aggregator-service/blob/main/first-setup.sh" rel="noreferrer" target="_blank">first-setup.sh</a>.</p>
 <dl class="simple">
 <dt>Questo servizio ha due dipendenze per funzionare:</dt><dd><ul class="simple">
 <li><p>il <a class="reference internal" href="result-service.html"><span class="doc">Result Service</span></a> da cui leggere le info sulle verifiche</p></li>
@@ -843,8 +843,8 @@ del servizio <a class="reference external" href="https://github.com/cnr-anac/res
 </dd>
 </dl>
 <p><strong>Attenzione</strong>: se il public-site-service o il result-service non sono avviati
-sullo stesso server tramite docker è necessario configurare l'url a cui
-rispondono, modificando nel <strong>.env</strong> le variabili d'ambiente
+sullo stesso server tramite docker è necessario configurare l’url a cui
+rispondono, modificando nel <strong>.env</strong> le variabili d’ambiente
 <em>TRANSPARENCY_PUBLIC_SITE_URL</em> e <em>TRANSPARENCY_RESULT_SERVICE_URL</em>.</p>
 <p>Per esempio nel <strong>.env</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TRANSPARENCY_PUBLIC_SITE_URL</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">public</span><span class="o">-</span><span class="n">sites</span><span class="o">-</span><span class="n">service</span>
@@ -860,8 +860,8 @@ generato quando si è creatp il <em>Service Account</em> <em>result-aggregator</
 <h2><span class="section-number">4.6.1. </span>Sicurezza<a class="headerlink" href="#sicurezza" title="Link to this heading">¶</a></h2>
 <p>Gli endpoint REST di questo servizio sono protetti tramite autenticazione
 OAuth con Bearer Token.
-È necessario configurare l'IDP da utilizzare per validare i token OAuth tramite
-le due proprietà impostabili nel docker-compose.yml come nell'esempio seguente:</p>
+È necessario configurare l’IDP da utilizzare per validare i token OAuth tramite
+le due proprietà impostabili nel docker-compose.yml come nell’esempio seguente:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">issuer</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span>
 <span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">jwk</span><span class="o">-</span><span class="nb">set</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span><span class="o">/</span><span class="n">protocol</span><span class="o">/</span><span class="n">openid</span><span class="o">-</span><span class="n">connect</span><span class="o">/</span><span class="n">certs</span>
 </pre></div>

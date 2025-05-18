@@ -822,12 +822,12 @@
           
   <section id="autenticazione">
 <h1><span class="section-number">4.1. </span>Autenticazione<a class="headerlink" href="#autenticazione" title="Link to this heading">¶</a></h1>
-<p>La piattaforma necessità di un Identity Provider OAuth2 per l'autenticazione e
-autorizzazione nell'accesso ai componenti dell'architettura.</p>
-<p>Nell'ambiente di staging è stato utilizzato Keycloak come Identity Provider ma
+<p>La piattaforma necessità di un Identity Provider OAuth2 per l’autenticazione e
+autorizzazione nell’accesso ai componenti dell’architettura.</p>
+<p>Nell’ambiente di staging è stato utilizzato Keycloak come Identity Provider ma
 un qualunque IDP compatibile OAuth2 può andare bene.</p>
-<p>Per configurare i vari componenti è necessario procurarsi l'endpoint per ottenere
-il token jwt e l'endpoint contenente i certificati pubblici del IDP, per esempio:</p>
+<p>Per configurare i vari componenti è necessario procurarsi l’endpoint per ottenere
+il token jwt e l’endpoint contenente i certificati pubblici del IDP, per esempio:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">jwt</span><span class="o">.</span><span class="n">issuer</span><span class="o">-</span><span class="n">uri</span> <span class="o">-&gt;</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span>
 <span class="o">-</span> <span class="n">jwt</span><span class="o">.</span><span class="n">jwk</span><span class="o">-</span><span class="nb">set</span><span class="o">-</span><span class="n">uri</span> <span class="o">-&gt;</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span><span class="o">/</span><span class="n">protocol</span><span class="o">/</span><span class="n">openid</span><span class="o">-</span><span class="n">connect</span><span class="o">/</span><span class="n">certs</span>
 </pre></div>
@@ -852,7 +852,7 @@ client_id devono essere:</p>
 <p>A questi tre service account deve inoltre essere assegnato un
 <em>Service Account Role</em> di tipo <strong>ROLE_SUPERUSER</strong>.</p>
 <p>È inoltre necessario creare un client, sempre di tipo <em>OpenId Connect</em>, per
-l'interfaccia Web Angular JS, il client si deve chiamare <strong>angular-public</strong> e
+l’interfaccia Web Angular JS, il client si deve chiamare <strong>angular-public</strong> e
 deve avere impostato come <strong>valid redirect url</strong> il valore
 <strong>https://www.trasparenzai.it/*</strong>.</p>
 </section>

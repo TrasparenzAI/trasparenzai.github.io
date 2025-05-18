@@ -829,7 +829,7 @@ con altre informazioni sugli enti pubblici prelevate da altri servizi.</p>
 produzione per:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>inserire, aggiornare e cancellare all'interno del servizio le informazioni
+<li><p>inserire, aggiornare e cancellare all’interno del servizio le informazioni
 di una verifica effettuata su un sito web di una PA ed dei dati geografici
 degli enti pubblici</p></li>
 <li><p>esportare in geoJson i risultati delle validazioni presenti arricchiti con
@@ -838,18 +838,18 @@ la geolicazzazione degli enti</p></li>
 </div></blockquote>
 <dl class="simple">
 <dt>Il codice sorgente di questo componente è disponibile su GitHub:</dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://github.com/cnr-anac/result-aggregator-service" rel="noreferrer" target="_blank">https://github.com/cnr-anac/result-aggregator-service</a></p></li>
+<li><p><a class="reference external" href="https://github.com/trasparenzai/result-aggregator-service" rel="noreferrer" target="_blank">https://github.com/trasparenzai/result-aggregator-service</a></p></li>
 </ul>
 </dd>
 </dl>
 <section id="openapi-e-swagger-ui">
 <h2><span class="section-number">3.4.1. </span>OpenAPI e Swagger UI<a class="headerlink" href="#openapi-e-swagger-ui" title="Link to this heading">¶</a></h2>
 <p>Una volta avviato il servizio i servizi REST sono documentati tramite OpenAPI
-e consultabili all'indirizzo /swagger-ui/index.html.</p>
+e consultabili all’indirizzo /swagger-ui/index.html.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/openapi-result-service.png"><img alt="Interfaccia Swagger UI all'OpenAPI del servizio" src="../_images/openapi-result-service.png" style="width: 800px;" /></a>
 </figure>
-<p>L'OpenAPI del servizio di staging è disponibile all'indirizzo
+<p>L’OpenAPI del servizio di staging è disponibile all’indirizzo
 <a class="reference external" href="https://dica33.ba.cnr.it/result-aggregator-service/swagger-ui/index.html" rel="noreferrer" target="_blank">https://dica33.ba.cnr.it/result-aggregator-service/swagger-ui/index.html</a>.</p>
 </section>
 <section id="dipendenze-e-configurazione">
@@ -857,27 +857,27 @@ e consultabili all'indirizzo /swagger-ui/index.html.</p>
 <p>Questo servizio ha due dipendenze dagli altri componenti per funzionare:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>il <a class="reference external" href="https://github.com/cnr-anac/result-service" rel="noreferrer" target="_blank">Result Service</a> da cui
+<li><p>il <a class="reference external" href="https://github.com/trasparenzai/result-service" rel="noreferrer" target="_blank">Result Service</a> da cui
 leggere le info sulle verifiche</p></li>
-<li><p>il <a class="reference external" href="https://github.com/cnr-anac/public-sites-service" rel="noreferrer" target="_blank">Public Site Service</a>
+<li><p>il <a class="reference external" href="https://github.com/trasparenzai/public-sites-service" rel="noreferrer" target="_blank">Public Site Service</a>
 da cui prelevare le info geografiche delle PA</p></li>
 </ul>
 </div></blockquote>
-<p>L'indirizzo di entrambi questi servizi è da configurabile nel file
-<a class="reference external" href="https://github.com/cnr-anac/result-aggregator-service/blob/main/src/main/resources/application.properties" rel="noreferrer" target="_blank">application.properties</a>
-oppure tramite variabili d'ambiente se avviato tramite Docker.</p>
+<p>L’indirizzo di entrambi questi servizi è da configurabile nel file
+<a class="reference external" href="https://github.com/trasparenzai/result-aggregator-service/blob/main/src/main/resources/application.properties" rel="noreferrer" target="_blank">application.properties</a>
+oppure tramite variabili d’ambiente se avviato tramite Docker.</p>
 </section>
 <section id="sicurezza">
 <h2><span class="section-number">3.4.3. </span>Sicurezza<a class="headerlink" href="#sicurezza" title="Link to this heading">¶</a></h2>
 <p>Gli endpoint REST di questo servizio sono protetti tramite autenticazione OAuth
 con Bearer Token.
-E' necessario configurare l'idp da utilizzare per validare i token OAuth tramite
-le due proprietà mostrare nell'esempio seguente:</p>
+E” necessario configurare l’idp da utilizzare per validare i token OAuth tramite
+le due proprietà mostrare nell’esempio seguente:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">issuer</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span>
 <span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">jwk</span><span class="o">-</span><span class="nb">set</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span><span class="o">/</span><span class="n">protocol</span><span class="o">/</span><span class="n">openid</span><span class="o">-</span><span class="n">connect</span><span class="o">/</span><span class="n">certs</span>
 </pre></div>
 </div>
-<p>Per l'accesso in HTTP GET all'API è sufficiente essere autenticati, per gli
+<p>Per l’accesso in HTTP GET all’API è sufficiente essere autenticati, per gli
 endpoint accessibili con PUT/POST/DELETE è necessario oltre che essere autenticati
 che il token OAuth contenga un role ADMIN o SUPERUSER.</p>
 <p>Inoltre questo servizio interagisce con il _result_service_ e il
@@ -885,7 +885,7 @@ _public_site_service_ per prelevare i risultati da aggregare.</p>
 <p>Per configurare il client REST che accede a questi due servizi è necessario
 configurare questi parametri nel <em>docker-compose.yml</em>, in particolare
 verificare <em>client-id</em>, <em>client-secret</em> e <em>issuer-uri</em>.</p>
-<p>Esempio di configurazione dell'environment nel docker-compose.yml:</p>
+<p>Esempio di configurazione dell’environment nel docker-compose.yml:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Generare un Service Account Oidc con questo client-id, oppure cambiare questo valore</span>
 <span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">registration</span><span class="o">.</span><span class="n">oidc</span><span class="o">.</span><span class="n">client</span><span class="o">-</span><span class="nb">id</span><span class="o">=</span><span class="n">result</span><span class="o">-</span><span class="n">aggregator</span>
 <span class="c1"># Client Secret da generare nel Identity Provider e impostare qui</span>

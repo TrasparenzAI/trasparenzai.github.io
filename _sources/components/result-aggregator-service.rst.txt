@@ -15,7 +15,7 @@ produzione per:
    la geolicazzazione degli enti
 
 Il codice sorgente di questo componente è disponibile su GitHub:
- - https://github.com/cnr-anac/result-aggregator-service
+ - https://github.com/trasparenzai/result-aggregator-service
 
 OpenAPI e Swagger UI
 --------------------
@@ -36,13 +36,13 @@ Dipendenze e configurazione
 
 Questo servizio ha due dipendenze dagli altri componenti per funzionare:
 
- * il `Result Service <https://github.com/cnr-anac/result-service>`_ da cui 
+ * il `Result Service <https://github.com/trasparenzai/result-service>`_ da cui 
    leggere le info sulle verifiche
- * il `Public Site Service <https://github.com/cnr-anac/public-sites-service>`_ 
+ * il `Public Site Service <https://github.com/trasparenzai/public-sites-service>`_ 
    da cui prelevare le info geografiche delle PA
 
 L'indirizzo di entrambi questi servizi è da configurabile nel file 
-`application.properties <https://github.com/cnr-anac/result-aggregator-service/blob/main/src/main/resources/application.properties>`_
+`application.properties <https://github.com/trasparenzai/result-aggregator-service/blob/main/src/main/resources/application.properties>`_
 oppure tramite variabili d'ambiente se avviato tramite Docker.
 
 Sicurezza

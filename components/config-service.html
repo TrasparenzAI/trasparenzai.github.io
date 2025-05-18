@@ -832,7 +832,7 @@ endopoint REST presenti in questo servizio.</p>
 <p>Le configurazioni disponibili sono fornite sia sotto forma di endopoint REST
 con le relative CRUD, che nel formato utilizzato da <em>Spring Cloud Config</em>
 attraverso il path <strong>/config</strong>, inserendo il nome del servizio e il profilo
-richiesto nell'url, come per esempio:</p>
+richiesto nell’url, come per esempio:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ http GET :8888/config/task-scheduler/default
 
 {
@@ -866,28 +866,28 @@ parametri tipo:</p>
 <p>Dove naturalmente va impostato il corretto URL a cui risponde questo servizio.</p>
 <dl class="simple">
 <dt>Il codice sorgente di questo componente è disponibile su GitHub:</dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://github.com/cnr-anac/config-service" rel="noreferrer" target="_blank">https://github.com/cnr-anac/config-service</a></p></li>
+<li><p><a class="reference external" href="https://github.com/trasparenzai/config-service" rel="noreferrer" target="_blank">https://github.com/trasparenzai/config-service</a></p></li>
 </ul>
 </dd>
 </dl>
 <section id="openapi-e-swagger-ui">
 <h2><span class="section-number">3.2.1. </span>OpenAPI e Swagger UI<a class="headerlink" href="#openapi-e-swagger-ui" title="Link to this heading">¶</a></h2>
 <p>Una volta avviato il servizio i servizi REST sono documentati tramite OpenAPI
-e consultabili all'indirizzo /swagger-ui/index.html.</p>
+e consultabili all’indirizzo /swagger-ui/index.html.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/openapi-config-service.png"><img alt="Interfaccia Swagger UI all'OpenAPI del servizio" src="../_images/openapi-config-service.png" style="width: 800px;" /></a>
 </figure>
-<p>L'OpenAPI del servizio di staging è disponibile all'indirizzo
+<p>L’OpenAPI del servizio di staging è disponibile all’indirizzo
 <a class="reference external" href="https://dica33.ba.cnr.it/config-service/swagger-ui/index.html" rel="noreferrer" target="_blank">https://dica33.ba.cnr.it/config-service/swagger-ui/index.html</a>.</p>
 </section>
 <section id="sicurezza">
 <h2><span class="section-number">3.2.2. </span>Sicurezza<a class="headerlink" href="#sicurezza" title="Link to this heading">¶</a></h2>
-<p>L'accesso in lettura alla configurazione di tipo <em>Spring Cloud Config</em>
+<p>L’accesso in lettura alla configurazione di tipo <em>Spring Cloud Config</em>
 disponibile al path <strong>/config</strong> è protetto con autenticazione di tipo
 <em>Basic Auth</em>, i microservizi che vogliono utilizzare questo path per ottenere
-la configurazione devono utilizzare l'utente e la password sepcificati tramite
+la configurazione devono utilizzare l’utente e la password sepcificati tramite
 i parametri <em>spring.security.user.name</em> e <em>spring.security.user.password</em> , i
-quali possono essere specificati nel <em>docker-compose.yml</em> come nell'esempio
+quali possono essere specificati nel <em>docker-compose.yml</em> come nell’esempio
 seguente:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="o">=</span><span class="n">config</span><span class="o">-</span><span class="n">service</span><span class="o">-</span><span class="n">user</span>
 <span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">password</span><span class="o">=</span><span class="n">PASSWORD_DA_IMPOSTARE_E_CONDIVIDERE_CON_I_CLIENT</span>
@@ -895,13 +895,13 @@ seguente:</p>
 </div>
 <p>Invece gli endpoint REST di questo servizio disponibili al path <strong>/properties</strong>
 sono protetti tramite autenticazione OAuth con Bearer Token.
-È necessario configurare l'IDP da utilizzare per validare i token OAuth tramite
-le due proprietà impostabili nel <em>docker-compose.yml</em> come nell'esempio seguente:</p>
+È necessario configurare l’IDP da utilizzare per validare i token OAuth tramite
+le due proprietà impostabili nel <em>docker-compose.yml</em> come nell’esempio seguente:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">issuer</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span>
 <span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">jwk</span><span class="o">-</span><span class="nb">set</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span><span class="o">/</span><span class="n">protocol</span><span class="o">/</span><span class="n">openid</span><span class="o">-</span><span class="n">connect</span><span class="o">/</span><span class="n">certs</span>
 </pre></div>
 </div>
-<p>Per l'accesso in HTTP GET all'API è sufficiente essere autenticati, per gli
+<p>Per l’accesso in HTTP GET all’API è sufficiente essere autenticati, per gli
 endpoint accessibili con PUT/POST/DELETE è necessario oltre che essere
 autenticati che il token OAuth contenga un role ADMIN o SUPERUSER.</p>
 </section>

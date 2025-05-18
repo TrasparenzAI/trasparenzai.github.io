@@ -6,14 +6,14 @@ sviluppati ad-hoc per il progetto che da software opensource già disponibili.
 
 I componenti sviluppati per il progetto sono:
 
-  * https://github.com/cnr-anac/public-sites-service
-  * https://github.com/cnr-anac/rule-service
-  * https://github.com/cnr-anac/result-service
-  * https://github.com/cnr-anac/result-aggregator-service
-  * https://github.com/cnr-anac/task-scheduler-service
-  * https://github.com/cnr-anac/conductor
-  * https://github.com/cnr-anac/workflow-definition
-  * https://github.com/cnr-anac/ui-service
+  * https://github.com/trasparenzai/public-sites-service
+  * https://github.com/trasparenzai/rule-service
+  * https://github.com/trasparenzai/result-service
+  * https://github.com/trasparenzai/result-aggregator-service
+  * https://github.com/trasparenzai/task-scheduler-service
+  * https://github.com/trasparenzai/conductor
+  * https://github.com/trasparenzai/workflow-definition
+  * https://github.com/trasparenzai/ui-service
 
 Alcuni di questi componenti sono stati sviluppati in un ottica di possibile 
 riuso da parte della comunità opensource italiana, alcuni così come sono, altri

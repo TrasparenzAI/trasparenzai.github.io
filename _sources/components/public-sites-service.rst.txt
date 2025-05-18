@@ -42,7 +42,7 @@ L'aggiornamento dei dati locali al servizio Public Sites Service tramite il CSV
 di ISTAT avviene ogni mattina alle 6:40.
 
 Il codice sorgente di questo componente è disponibile su GitHub:
- - https://github.com/cnr-anac/public-sites-service
+ - https://github.com/trasparenzai/public-sites-service
 
 OpenAPI e Swagger UI
 --------------------

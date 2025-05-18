@@ -828,7 +828,7 @@ istituzionali.</p>
 <p>Public Sites Service mantiene nel proprio datastore locale le informazioni
 egli enti che possono essere inserite/aggiornate tramite gli OpenData di
 <a class="reference internal" href="../appendix.html#term-IndicePA"><span class="xref std std-term">IndicePA</span></a>, oppure inserite tramite appositi servizi endopoint REST.</p>
-<p>L'idea è quella di avere una fonte facile da consultare e estendibile delle
+<p>L’idea è quella di avere una fonte facile da consultare e estendibile delle
 informazioni delle organizzazioni pubbliche da analizzare. In particolare
 sono trattate automaticamente le info utili derivanti <a class="reference internal" href="../appendix.html#term-IndicePA"><span class="xref std std-term">IndicePA</span></a> ma è possibile
 inserire altri enti da sottoporre a analisi, inserendoli via REST in questo
@@ -838,7 +838,7 @@ per:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>mostrare la lista degli enti presenti negli OpenData di <a class="reference internal" href="../appendix.html#term-IndicePA"><span class="xref std std-term">IndicePA</span></a></p></li>
-<li><p>inserire ed aggiornare all'interno del servizio le informazioni degli Enti
+<li><p>inserire ed aggiornare all’interno del servizio le informazioni degli Enti
 tramite gli OpenData di <a class="reference internal" href="../appendix.html#term-IndicePA"><span class="xref std std-term">IndicePA</span></a></p></li>
 <li><p>geolocalizzare gli Enti italiani tramite il servizio Nominatim di
 OpenStreetMap</p></li>
@@ -846,33 +846,33 @@ OpenStreetMap</p></li>
 <li><p>mostrare la lista paginata degli Enti presenti nel servizio, con possibilità
 di filtrarli per codiceCategoria, codiceFiscaleEnte, codiceIpa,
 denominazioneEnte</p></li>
-<li><p>inserire, aggiornare e cancellare le informazioni degli Enti all'interno del
+<li><p>inserire, aggiornare e cancellare le informazioni degli Enti all’interno del
 servizio (direttamente senza passare da <a class="reference internal" href="../appendix.html#term-IndicePA"><span class="xref std std-term">IndicePA</span></a>)</p></li>
 </ul>
 </div></blockquote>
 <p>Il servizio sincronizza e rendere disponibili via REST anche le informazioni
-dei comuni italiani, prelevendo ogni notte il CSV dal sito dell'ISTAT dei comuni
+dei comuni italiani, prelevendo ogni notte il CSV dal sito dell’ISTAT dei comuni
 e aggiornando questo info dentro il servizio stesso. Le info dei comuni servono
 anche per effettuare una geolocalizzazione più precisa degli enti, che su
 <a class="reference internal" href="../appendix.html#term-IndicePA"><span class="xref std std-term">IndicePA</span></a> sono classificati solamente tramite il codice catastale del comune.</p>
-<p>L'aggiornamento dei dati locali al servizio Public Sites Service tramite
+<p>L’aggiornamento dei dati locali al servizio Public Sites Service tramite
 <a class="reference internal" href="../appendix.html#term-IndicePA"><span class="xref std std-term">IndicePA</span></a> avviene ogni mattina alle 6:30.
-L'aggiornamento dei dati locali al servizio Public Sites Service tramite il CSV
+L’aggiornamento dei dati locali al servizio Public Sites Service tramite il CSV
 di ISTAT avviene ogni mattina alle 6:40.</p>
 <dl class="simple">
 <dt>Il codice sorgente di questo componente è disponibile su GitHub:</dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://github.com/cnr-anac/public-sites-service" rel="noreferrer" target="_blank">https://github.com/cnr-anac/public-sites-service</a></p></li>
+<li><p><a class="reference external" href="https://github.com/trasparenzai/public-sites-service" rel="noreferrer" target="_blank">https://github.com/trasparenzai/public-sites-service</a></p></li>
 </ul>
 </dd>
 </dl>
 <section id="openapi-e-swagger-ui">
 <h2><span class="section-number">3.1.1. </span>OpenAPI e Swagger UI<a class="headerlink" href="#openapi-e-swagger-ui" title="Link to this heading">¶</a></h2>
 <p>Una volta avviato il servizio i servizi REST sono documentati tramite OpenAPI
-e consultabili all'indirizzo /swagger-ui/index.html.</p>
+e consultabili all’indirizzo /swagger-ui/index.html.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/openapi-public-sites-service.png"><img alt="Interfaccia Swagger UI all'OpenAPI del servizio" src="../_images/openapi-public-sites-service.png" style="width: 800px;" /></a>
 </figure>
-<p>L'OpenAPI del servizio di staging è disponibile all'indirizzo
+<p>L’OpenAPI del servizio di staging è disponibile all’indirizzo
 <a class="reference external" href="https://dica33.ba.cnr.it/public-sites-service/swagger-ui/index.html" rel="noreferrer" target="_blank">https://dica33.ba.cnr.it/public-sites-service/swagger-ui/index.html</a>.</p>
 </section>
 <section id="mappa-delle-pa-italiane">
@@ -887,13 +887,13 @@ tramite leaflet.</p>
 <h2><span class="section-number">3.1.3. </span>Sicurezza<a class="headerlink" href="#sicurezza" title="Link to this heading">¶</a></h2>
 <p>Gli endpoint REST di questo servizio sono protetti tramite autenticazione OAuth
 con Bearer Token.
-E' necessario configurare l'idp da utilizzare per validare i token OAuth tramite
-le due proprietà mostrate nell'esempio seguente:</p>
+E” necessario configurare l’idp da utilizzare per validare i token OAuth tramite
+le due proprietà mostrate nell’esempio seguente:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">issuer</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span>
 <span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">jwk</span><span class="o">-</span><span class="nb">set</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span><span class="o">/</span><span class="n">protocol</span><span class="o">/</span><span class="n">openid</span><span class="o">-</span><span class="n">connect</span><span class="o">/</span><span class="n">certs</span>
 </pre></div>
 </div>
-<p>Per l'accesso in HTTP GET all'API è sufficiente essere autenticati, per gli
+<p>Per l’accesso in HTTP GET all’API è sufficiente essere autenticati, per gli
 endpoint accessibili con PUT/POST/DELETE è necessario oltre che essere autenticati
 che il token OAuth contenga un role ADMIN o SUPERUSER.</p>
 </section>

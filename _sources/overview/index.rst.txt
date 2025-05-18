@@ -40,4 +40,4 @@ generale, dei singoli componenti e dei risultati di validazione ottenuti.
 Se sei interessato al codice sorgente della piattaforma lo puoi trovare su
 github:
 
-  * https://github.com/cnr-anac
+  * https://github.com/trasparenzai

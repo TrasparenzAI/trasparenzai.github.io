@@ -832,7 +832,7 @@ pensata.</p>
 <p>È previsto un accesso differenziato alle funzionalità della piattaforma,
 tramite un sistema di autenticazione e autorizzazione basato sul protocollo
 OAuth2 e dei ruoli predefiniti inseriti nel token JWT.</p>
-<p>Sia l'interfaccia WEB, realizzata dal componente <em>UI Service</em>, che ogni API
+<p>Sia l’interfaccia WEB, realizzata dal componente <em>UI Service</em>, che ogni API
 REST, è integrata quindi con un IDP OAuth2.
 IL servizio in staging realizzato per ANAC utilizza
 <a class="reference external" href="https://www.keycloak.org" rel="noreferrer" target="_blank">Keycloak</a> come IDP OAuth2.</p>
@@ -860,7 +860,7 @@ dei siti delle PA è definita tramite alcuni file JSON.
 Questo garantisce una facile configurabilità e adattabilità di questa soluzione
 a evoluzioni di questa piattaforma oppure a problematiche di crawling e analisi
 di natura diversa da quella di questo progetto.</p>
-<p>L'avvio della fase di scansione di tutti i siti delle PA viene avviata dal
+<p>L’avvio della fase di scansione di tutti i siti delle PA viene avviata dal
 microservizio <em>Task Scheduler Service</em>, il quale invoca via REST il
 <em>Conductor Service</em> con una cadenza configurabile (per esempio 3 o 4 volte la
 settimana).</p>
@@ -873,11 +873,11 @@ in staging ad ANAC viene utilizzato il prodotto Opensource
 <a class="reference external" href="https://min.io/" rel="noreferrer" target="_blank">Minio</a>.</p>
 <p>Le regole applicate per la verifica della corrispondenza del sito con la legge
 sulla trasparenza sono definite tramite il servizio <em>Rule Service</em>.
-Quest'ultimo è stato realizzato in modo da essere un servizio generico
+Quest’ultimo è stato realizzato in modo da essere un servizio generico
 di applicazioni di regole di parsing e configurabile tramite file JSON.</p>
-<p>Per l'attività di crawling e di rendering delle pagine HTML da
-analizzare, la soluzione prevede l'utilizzo di un proprio crawler per prelevare lo
-streaming html delle pagine da analizzare e l'adozione di un
+<p>Per l’attività di crawling e di rendering delle pagine HTML da
+analizzare, la soluzione prevede l’utilizzo di un proprio crawler per prelevare lo
+streaming html delle pagine da analizzare e l’adozione di un
 <a class="reference external" href="https://www.selenium.dev/documentation/grid/" rel="noreferrer" target="_blank">Selenium Hub</a> per distrubuire
 su più istanze di Google Chrome il rendering delle pagine HTML che contengono
 codice javascript da interpretare.</p>

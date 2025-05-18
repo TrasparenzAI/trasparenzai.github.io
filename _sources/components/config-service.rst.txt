@@ -47,7 +47,7 @@ parametri tipo::
 Dove naturalmente va impostato il corretto URL a cui risponde questo servizio.
 
 Il codice sorgente di questo componente è disponibile su GitHub:
- - https://github.com/cnr-anac/config-service
+ - https://github.com/trasparenzai/config-service
 
 OpenAPI e Swagger UI
 --------------------

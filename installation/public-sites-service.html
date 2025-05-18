@@ -832,19 +832,19 @@ Il servizio utilizza Nominatim di OpenStreetMap per la geolocalizzazione degli
 indirizzi degli enti pubblici.</p>
 <dl class="simple">
 <dt>Il codice sorgente è disponibile su github:</dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://github.com/cnr-anac/public-sites-service" rel="noreferrer" target="_blank">https://github.com/cnr-anac/public-sites-service</a></p></li>
+<li><p><a class="reference external" href="https://github.com/trasparenzai/public-sites-service" rel="noreferrer" target="_blank">https://github.com/trasparenzai/public-sites-service</a></p></li>
 </ul>
 </dd>
 </dl>
 <p>Nel repository github è compreso anche un script per la prima installazione
-del servizio <a class="reference external" href="https://github.com/cnr-anac/public-sites-service/blob/main/first-setup.sh" rel="noreferrer" target="_blank">first-setup.sh</a>.</p>
+del servizio <a class="reference external" href="https://github.com/trasparenzai/public-sites-service/blob/main/first-setup.sh" rel="noreferrer" target="_blank">first-setup.sh</a>.</p>
 <p>In particolare è necessario configurare la sezione della sicurezza.</p>
 <section id="sicurezza">
 <h2><span class="section-number">4.4.1. </span>Sicurezza<a class="headerlink" href="#sicurezza" title="Link to this heading">¶</a></h2>
 <p>Gli endpoint REST di questo servizio sono protetti tramite autenticazione
 OAuth con Bearer Token.
-È necessario configurare l'IDP da utilizzare per validare i token OAuth tramite
-le due proprietà impostabili nel docker-compose.yml come nell'esempio seguente:</p>
+È necessario configurare l’IDP da utilizzare per validare i token OAuth tramite
+le due proprietà impostabili nel docker-compose.yml come nell’esempio seguente:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">issuer</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span>
 <span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">jwk</span><span class="o">-</span><span class="nb">set</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span><span class="o">/</span><span class="n">protocol</span><span class="o">/</span><span class="n">openid</span><span class="o">-</span><span class="n">connect</span><span class="o">/</span><span class="n">certs</span>
 </pre></div>
@@ -854,16 +854,16 @@ nella sezione <a class="reference internal" href="authentication.html"><span cla
 </section>
 <section id="integrazione-api-google-maps">
 <h2><span class="section-number">4.4.2. </span>Integrazione API Google Maps<a class="headerlink" href="#integrazione-api-google-maps" title="Link to this heading">¶</a></h2>
-<p>Il servizio è già predisposto per l'integrazione con l'API di Google Maps per
+<p>Il servizio è già predisposto per l’integrazione con l’API di Google Maps per
 la geocalizzazione degli indirizzi degli enti pubblici.
-L'API Google Maps fornisce solitamente una migliore individuazione delle
+L’API Google Maps fornisce solitamente una migliore individuazione delle
 coordinate GPS degli indirizzi indicati nel <a class="reference internal" href="../appendix.html#term-IndicePA"><span class="xref std std-term">IndicePA</span></a>.
-L'API Google Maps è però a pagamento, con un freetier per un numero iniziale di
+L’API Google Maps è però a pagamento, con un freetier per un numero iniziale di
 ricerche, è necessario procurarsi una Google Maps Key per poter utilizzare questo
 servizio, la quale richiede di inserire una carta di credito per gli eventuali
 pagamento oltre il freetier.</p>
-<p>L'utilizzo della API Google Maps può essere attivata nel public sites service
-impostando questo parametri nell'environment del docker-compose.yml:</p>
+<p>L’utilizzo della API Google Maps può essere attivata nel public sites service
+impostando questo parametri nell’environment del docker-compose.yml:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">transparency</span><span class="o">.</span><span class="n">google</span><span class="o">.</span><span class="n">maps</span><span class="o">.</span><span class="n">enabled</span><span class="o">=</span><span class="n">true</span>
 <span class="o">-</span> <span class="n">transparency</span><span class="o">.</span><span class="n">google</span><span class="o">.</span><span class="n">maps</span><span class="o">.</span><span class="n">key</span><span class="o">=</span><span class="n">LA_CHIAVE_DA_PRELEVARE_DAI_SISTEMI_GOOGLE</span>
 </pre></div>

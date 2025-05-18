@@ -829,27 +829,27 @@ TrasparenzAI.</p>
 fornite agli altri microservizi.</p>
 <dl class="simple">
 <dt>Il codice sorgente è disponibile su github:</dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://github.com/cnr-anac/config-service" rel="noreferrer" target="_blank">https://github.com/cnr-anac/config-service</a></p></li>
+<li><p><a class="reference external" href="https://github.com/trasparenzai/config-service" rel="noreferrer" target="_blank">https://github.com/trasparenzai/config-service</a></p></li>
 </ul>
 </dd>
 </dl>
 <p>Nel repository github è compreso anche un script per la prima installazione
-del servizio <a class="reference external" href="https://github.com/cnr-anac/config-service/blob/main/first-setup.sh" rel="noreferrer" target="_blank">first-setup.sh</a>.</p>
+del servizio <a class="reference external" href="https://github.com/trasparenzai/config-service/blob/main/first-setup.sh" rel="noreferrer" target="_blank">first-setup.sh</a>.</p>
 <p>In particolare è necessario configurare la sezione della sicurezza.</p>
 <section id="sicurezza">
 <h2><span class="section-number">4.3.1. </span>Sicurezza<a class="headerlink" href="#sicurezza" title="Link to this heading">¶</a></h2>
-<p>L'accesso in lettura alla configurazione di tipo Spring Cloud Config
+<p>L’accesso in lettura alla configurazione di tipo Spring Cloud Config
 disponibile al path /config è protetto con autenticazione di tipo Basic Auth,
-l'utente e la password possono essere indicati nel docker-compose.yml come
-nell'esempio seguente:</p>
+l’utente e la password possono essere indicati nel docker-compose.yml come
+nell’esempio seguente:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="o">=</span><span class="n">config</span><span class="o">-</span><span class="n">service</span><span class="o">-</span><span class="n">user</span>
 <span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">password</span><span class="o">=</span><span class="n">PASSWORD_DA_IMPOSTARE_E_CONDIVIDERE_CON_I_CLIENT</span>
 </pre></div>
 </div>
 <p>Invece gli endpoint REST di questo servizio disponibili al path /properties
 sono protetti tramite autenticazione OAuth con Bearer Token.
-È necessario configurare l'IDP da utilizzare per validare i token OAuth tramite
-le due proprietà impostabili nel docker-compose.yml come nell'esempio seguente:</p>
+È necessario configurare l’IDP da utilizzare per validare i token OAuth tramite
+le due proprietà impostabili nel docker-compose.yml come nell’esempio seguente:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">issuer</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span>
 <span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">jwk</span><span class="o">-</span><span class="nb">set</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span><span class="o">/</span><span class="n">protocol</span><span class="o">/</span><span class="n">openid</span><span class="o">-</span><span class="n">connect</span><span class="o">/</span><span class="n">certs</span>
 </pre></div>
@@ -863,10 +863,10 @@ nella sezione <a class="reference internal" href="authentication.html"><span cla
 personalizzare secondo le proprie esigenze.</p>
 <p>In particolare sono presenti alcune URL degli altri microservizi che è
 necessario configurare secondo il proprio setup.</p>
-<p>I dati di default possono essere modificati sia tramite l'API REST del
-servizio che tramite l'interfaccia web (il componente UI Service).</p>
-<p>Nell'esempio seguente viene mostrata la configurazione predefinita modificabile
-direttamente tramite l'interfaccia web della piattaforma.</p>
+<p>I dati di default possono essere modificati sia tramite l’API REST del
+servizio che tramite l’interfaccia web (il componente UI Service).</p>
+<p>Nell’esempio seguente viene mostrata la configurazione predefinita modificabile
+direttamente tramite l’interfaccia web della piattaforma.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/parametri-configurazione.png"><img alt="TrasparenzAI - Parametri predefiniti" src="../_images/parametri-configurazione.png" style="width: 800px;" /></a>
 </figure>
@@ -881,7 +881,7 @@ direttamente tramite l'interfaccia web della piattaforma.</p>
 </ul>
 </div></blockquote>
 <p>Nel caso si voglia modificare le tempistiche e la frequenza delle scansioni
-complete di tutte le PA è possibile utilizzare sempre l'interfaccia web.</p>
+complete di tutte le PA è possibile utilizzare sempre l’interfaccia web.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/cron-config.png"><img alt="TrasparenzAI - Parametri predefiniti" src="../_images/cron-config.png" style="width: 600px;" /></a>
 </figure>

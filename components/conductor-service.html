@@ -822,14 +822,14 @@
           
   <section id="conductor-service">
 <h1><span class="section-number">3.7. </span>Conductor service<a class="headerlink" href="#conductor-service" title="Link to this heading">¶</a></h1>
-<p>Il coordinatore è basato su <a class="reference external" href="https://conductor-oss.org" rel="noreferrer" target="_blank">Netflix - Conductor</a> una piattaforma gratuita e open source per l'orchestrazione dei microservizi, attraverso flussi di lavoro che definiscono le interazioni tra servizi,
-il progetto principale è stato <a class="reference external" href="https://github.com/cnr-anac/conductor" rel="noreferrer" target="_blank">forkato</a> per permettere e gestire l'autenticazione e l'autorizzazione sull'esecuzione dei flussi e sul passaggio della stessa ai microservizi invocati dal flusso.</p>
-<p>Nel progetto <a class="reference external" href="https://github.com/cnr-anac/workflow-definition" rel="noreferrer" target="_blank">workflow-definition</a> sono presenti le definizioni in formato <em>json</em> dei flussi necessari al completamento degli obiettivi del progetto.</p>
+<p>Il coordinatore è basato su <a class="reference external" href="https://conductor-oss.org" rel="noreferrer" target="_blank">Netflix - Conductor</a> una piattaforma gratuita e open source per l’orchestrazione dei microservizi, attraverso flussi di lavoro che definiscono le interazioni tra servizi,
+il progetto principale è stato <a class="reference external" href="https://github.com/trasparenzai/conductor" rel="noreferrer" target="_blank">forkato</a> per permettere e gestire l’autenticazione e l’autorizzazione sull’esecuzione dei flussi e sul passaggio della stessa ai microservizi invocati dal flusso.</p>
+<p>Nel progetto <a class="reference external" href="https://github.com/trasparenzai/workflow-definition" rel="noreferrer" target="_blank">workflow-definition</a> sono presenti le definizioni in formato <em>json</em> dei flussi necessari al completamento degli obiettivi del progetto.</p>
 <section id="flusso-principale-amministrazione-trasparente">
 <h2><span class="section-number">3.7.1. </span>Flusso principale - Amministrazione Trasparente<a class="headerlink" href="#flusso-principale-amministrazione-trasparente" title="Link to this heading">¶</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Importante</p>
-<p>Il flusso <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json" rel="noreferrer" target="_blank">principale</a> necessita dei seguenti parametri di input per la sua corretta invocazione come mostrato in <a class="reference internal" href="#main-flow-tab"><span class="std std-numref">Tabella 3.1</span></a></p>
+<p>Il flusso <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json" rel="noreferrer" target="_blank">principale</a> necessita dei seguenti parametri di input per la sua corretta invocazione come mostrato in <a class="reference internal" href="#main-flow-tab"><span class="std std-numref">Tabella 3.1</span></a></p>
 </div>
 <span id="main-flow-tab"></span><table class="docutils align-default" id="id1">
 <caption><span class="caption-number">Tabella 3.1 </span><span class="caption-text">Parametri di Input per il flusso principale</span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
@@ -882,7 +882,7 @@ il progetto principale è stato <a class="reference external" href="https://gith
 <td><p>No</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>root_rule</strong></p></td>
-<td><p>Nome della regola di base dell'albero</p></td>
+<td><p>Nome della regola di base dell’albero</p></td>
 <td><p>amministrazione-trasparente</p></td>
 <td><p>No</p></td>
 </tr>
@@ -951,17 +951,17 @@ il progetto principale è stato <a class="reference external" href="https://gith
 </section>
 <section id="dettagli-del-flussso-principale">
 <h2><span class="section-number">3.7.2. </span>Dettagli del flussso principale<a class="headerlink" href="#dettagli-del-flussso-principale" title="Link to this heading">¶</a></h2>
-<p>Il primo <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L8-L22" rel="noreferrer" target="_blank">TASK</a> del flusso si occupa di invocare l'aggiornamento della configurazione del microservizio delle regole, dopo aver valorizzato la variabile necessaria al controllo delle pagine elaborate,
-il flusso invoca il <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L71-L85" rel="noreferrer" target="_blank">microservizio delle PA</a>  descritto in <a class="reference internal" href="../installation/public-sites-service.html#public-sites-service"><span class="std std-ref">Public Sites Service</span></a> e recupera le informazioni necessarie.</p>
+<p>Il primo <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L8-L22" rel="noreferrer" target="_blank">TASK</a> del flusso si occupa di invocare l’aggiornamento della configurazione del microservizio delle regole, dopo aver valorizzato la variabile necessaria al controllo delle pagine elaborate,
+il flusso invoca il <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L71-L85" rel="noreferrer" target="_blank">microservizio delle PA</a>  descritto in <a class="reference internal" href="../installation/public-sites-service.html#public-sites-service"><span class="std std-ref">Public Sites Service</span></a> e recupera le informazioni necessarie.</p>
 <p>Il blocco recuperato contentente le informazioni di <em>n</em> PA viene parcellizzato in base al parametro fornito in input <strong>page_size</strong> e diviso per <em>10</em>,
 utilizzando infine il <a class="reference external" href="https://orkes.io/content/reference-docs/operators/fork-join" rel="noreferrer" target="_blank">TASK FORK/JOIN</a> vengono eseguiti in parallello <em>10</em> istanze
-del flusso <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_workflow.json" rel="noreferrer" target="_blank">Rule</a> valorizzando il parametro in input <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_workflow.json#L278" rel="noreferrer" target="_blank">companies</a>.</p>
-<p>All'uscita del <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L52-L60" rel="noreferrer" target="_blank">TASK delle PA</a>, se il flusso è stato eseguito non per una singola PA, allora vengono
-rielaborati i risultati con i codici <em>400</em> e <em>407</em> con i timeout massimi ed eseguiti i flussi <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_result_failed.json" rel="noreferrer" target="_blank">Crawler Result Failed</a>.</p>
-<p>Infine viene eseguito il <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L581-L596" rel="noreferrer" target="_blank">TASK</a> per elaborare la Mappa geolocalizzata dei risultati.</p>
-<p>In <a class="reference internal" href="#main-flow-img"><span class="std std-numref">Fig. 3.1</span></a> l'immagine del flusso:</p>
+del flusso <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_workflow.json" rel="noreferrer" target="_blank">Rule</a> valorizzando il parametro in input <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_workflow.json#L278" rel="noreferrer" target="_blank">companies</a>.</p>
+<p>All’uscita del <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L52-L60" rel="noreferrer" target="_blank">TASK delle PA</a>, se il flusso è stato eseguito non per una singola PA, allora vengono
+rielaborati i risultati con i codici <em>400</em> e <em>407</em> con i timeout massimi ed eseguiti i flussi <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_result_failed.json" rel="noreferrer" target="_blank">Crawler Result Failed</a>.</p>
+<p>Infine viene eseguito il <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L581-L596" rel="noreferrer" target="_blank">TASK</a> per elaborare la Mappa geolocalizzata dei risultati.</p>
+<p>In <a class="reference internal" href="#main-flow-img"><span class="std std-numref">Fig. 3.1</span></a> l’immagine del flusso:</p>
 <figure class="align-default" id="id2">
-<span id="main-flow-img"></span><a class="reference internal image-reference" href="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/crawler_amministrazione_trasparente.png"><img alt="Flusso principale - Amministrazione Trasparente" src="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/crawler_amministrazione_trasparente.png" style="width: 800px;" /></a>
+<span id="main-flow-img"></span><a class="reference internal image-reference" href="https://raw.githubusercontent.com/trasparenzai/workflow-definition/refs/heads/main/crawler_amministrazione_trasparente.png"><img alt="Flusso principale - Amministrazione Trasparente" src="https://raw.githubusercontent.com/trasparenzai/workflow-definition/refs/heads/main/crawler_amministrazione_trasparente.png" style="width: 800px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 3.1 </span><span class="caption-text">Flusso principale - <a class="reference internal" href="../appendix.html#term-Amministrazione-Trasparente"><span class="xref std std-term">Amministrazione Trasparente</span></a></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
 </figcaption>
@@ -969,13 +969,13 @@ rielaborati i risultati con i codici <em>400</em> e <em>407</em> con i timeout m
 </section>
 <section id="flusso-per-singola-amministrazione">
 <h2><span class="section-number">3.7.3. </span>Flusso per singola Amministrazione<a class="headerlink" href="#flusso-per-singola-amministrazione" title="Link to this heading">¶</a></h2>
-<p>Il flusso <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json" rel="noreferrer" target="_blank">Rule Detail</a> come mostrato in <a class="reference internal" href="#rule-detail-img"><span class="std std-numref">Fig. 3.2</span></a> viene eseguito per una singola PA passata come parametro
-in input <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L860" rel="noreferrer" target="_blank">ipa</a>, controlla inizialmente la <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L19-L28" rel="noreferrer" target="_blank">presenza della URL istituzionale</a>
-e successivamente invoca il <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L38-L52" rel="noreferrer" target="_blank">crawler</a> il cui risultato viene passato
-al <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L76-L92" rel="noreferrer" target="_blank">microservizio delle regole</a> e la cui risposta è utilizzata
-come input al <a class="reference external" href="https://github.com/cnr-anac/workflow-definition/blob/main/rule_detail_workflow.json#L261-L277" rel="noreferrer" target="_blank">Task dei risultati</a></p>
+<p>Il flusso <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_detail_workflow.json" rel="noreferrer" target="_blank">Rule Detail</a> come mostrato in <a class="reference internal" href="#rule-detail-img"><span class="std std-numref">Fig. 3.2</span></a> viene eseguito per una singola PA passata come parametro
+in input <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_detail_workflow.json#L860" rel="noreferrer" target="_blank">ipa</a>, controlla inizialmente la <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_detail_workflow.json#L19-L28" rel="noreferrer" target="_blank">presenza della URL istituzionale</a>
+e successivamente invoca il <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_detail_workflow.json#L38-L52" rel="noreferrer" target="_blank">crawler</a> il cui risultato viene passato
+al <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_detail_workflow.json#L76-L92" rel="noreferrer" target="_blank">microservizio delle regole</a> e la cui risposta è utilizzata
+come input al <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_detail_workflow.json#L261-L277" rel="noreferrer" target="_blank">Task dei risultati</a></p>
 <figure class="align-default" id="id3">
-<span id="rule-detail-img"></span><a class="reference internal image-reference" href="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/rule_detail_workflow.png"><img alt="Flusso per singola Amministrazione" src="https://raw.githubusercontent.com/cnr-anac/workflow-definition/refs/heads/main/rule_detail_workflow.png" style="height: 600px;" /></a>
+<span id="rule-detail-img"></span><a class="reference internal image-reference" href="https://raw.githubusercontent.com/trasparenzai/workflow-definition/refs/heads/main/rule_detail_workflow.png"><img alt="Flusso per singola Amministrazione" src="https://raw.githubusercontent.com/trasparenzai/workflow-definition/refs/heads/main/rule_detail_workflow.png" style="height: 600px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Flusso per singola Amministrazione</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
 </figcaption>

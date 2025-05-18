@@ -18,10 +18,10 @@ utilizzare e la password per l'autenticazione Basic Auth con il
 Vedi :doc:`config-service`.
 
 Il codice sorgente è disponibile su github:
-  - https://github.com/cnr-anac/task-scheduler-service
+  - https://github.com/trasparenzai/task-scheduler-service
 
 Nel repository github è compreso anche un script per la prima installazione
-del servizio `first-setup.sh <https://github.com/cnr-anac/task-scheduler-service/blob/main/first-setup.sh>`_.
+del servizio `first-setup.sh <https://github.com/trasparenzai/task-scheduler-service/blob/main/first-setup.sh>`_.
 
 Questo servizio ha tre dipendenze per funzionare:
  - il conductor-service tramite cui avviare i flussi di verifica e la

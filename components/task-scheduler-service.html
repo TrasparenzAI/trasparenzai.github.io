@@ -823,12 +823,12 @@
   <section id="task-scheduler-service">
 <h1><span class="section-number">3.5. </span>Task Scheduler Service<a class="headerlink" href="#task-scheduler-service" title="Link to this heading">¶</a></h1>
 <p>Task Scheduler Service è il componente che si occupa di avviare alcuni processi
-eseguiti a intervalli fissi, come per esempio l'<strong>avvio delle scansioni</strong> dei siti
+eseguiti a intervalli fissi, come per esempio l”<strong>avvio delle scansioni</strong> dei siti
 del PA per la verifica della corrispondenza dei requisiti e la <strong>cancellazione
 dei risultati di scansione più vecchi</strong>.</p>
-<p>Nell'utilizzo tramite <strong>docker-compose.yml</strong> ricordarsi di impostare nel <strong>.env</strong>
-la corretta variabile d'ambiente che specifica l'url del config-service da
-utilizzare e la password per l'autenticazione Basic Auth con il
+<p>Nell’utilizzo tramite <strong>docker-compose.yml</strong> ricordarsi di impostare nel <strong>.env</strong>
+la corretta variabile d’ambiente che specifica l’url del config-service da
+utilizzare e la password per l’autenticazione Basic Auth con il
 <em>config-service</em>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>environment:
   - confighost=${CONFIG_HOST}
@@ -836,21 +836,21 @@ utilizzare e la password per l'autenticazione Basic Auth con il
 </pre></div>
 </div>
 <p>Le informazioni di configurazione dei cron relativi ai workflow possono essere
-visualizzate all'url <strong>/tasks/workflowCronConfig</strong>.</p>
+visualizzate all’url <strong>/tasks/workflowCronConfig</strong>.</p>
 <dl class="simple">
 <dt>Il codice sorgente di questo componente è disponibile su GitHub:</dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://github.com/cnr-anac/task-scheduler-service" rel="noreferrer" target="_blank">https://github.com/cnr-anac/task-scheduler-service</a></p></li>
+<li><p><a class="reference external" href="https://github.com/trasparenzai/task-scheduler-service" rel="noreferrer" target="_blank">https://github.com/trasparenzai/task-scheduler-service</a></p></li>
 </ul>
 </dd>
 </dl>
 <section id="openapi-e-swagger-ui">
 <h2><span class="section-number">3.5.1. </span>OpenAPI e Swagger UI<a class="headerlink" href="#openapi-e-swagger-ui" title="Link to this heading">¶</a></h2>
 <p>Una volta avviato il servizio i servizi REST sono documentati tramite OpenAPI
-e consultabili all'indirizzo /swagger-ui/index.html.</p>
+e consultabili all’indirizzo /swagger-ui/index.html.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/openapi-task-scheduler-service.png"><img alt="Interfaccia Swagger UI all'OpenAPI del servizio" src="../_images/openapi-task-scheduler-service.png" style="width: 800px;" /></a>
 </figure>
-<p>L'OpenAPI del servizio di staging è disponibile all'indirizzo
+<p>L’OpenAPI del servizio di staging è disponibile all’indirizzo
 <a class="reference external" href="https://dica33.ba.cnr.it/task-scheduler-service/swagger-ui/index.html" rel="noreferrer" target="_blank">https://dica33.ba.cnr.it/task-scheduler-service/swagger-ui/index.html</a>.</p>
 </section>
 <section id="dipendenze-e-configurazione">
@@ -858,21 +858,21 @@ e consultabili all'indirizzo /swagger-ui/index.html.</p>
 <p>Questo servizio ha quattro dipendenze per funzionare:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>il <a class="reference external" href="https://github.com/cnr-anac/config-service" rel="noreferrer" target="_blank">Config Service</a>
-da cui prelevare i parametri per l'avvio dei nuovi flussi e la
+<li><p>il <a class="reference external" href="https://github.com/trasparenzai/config-service" rel="noreferrer" target="_blank">Config Service</a>
+da cui prelevare i parametri per l’avvio dei nuovi flussi e la
 configurazione con le policy di cancellazione dei vecchi risultati</p></li>
-<li><p>il <a class="reference external" href="https://github.com/cnr-anac/conductor" rel="noreferrer" target="_blank">Conductor Service</a> per avviare
+<li><p>il <a class="reference external" href="https://github.com/trasparenzai/conductor" rel="noreferrer" target="_blank">Conductor Service</a> per avviare
 nuovi flussi di scansioni dei siti, per prelevare la lista dei flussi terminati e
 per cancellare dal Conductor i flussi più vecchi</p></li>
-<li><p>il <a class="reference external" href="https://github.com/cnr-anac/result-service" rel="noreferrer" target="_blank">Result Service</a> per
+<li><p>il <a class="reference external" href="https://github.com/trasparenzai/result-service" rel="noreferrer" target="_blank">Result Service</a> per
 cancellare i risultati di validazione più vecchi</p></li>
-<li><p>il <a class="reference external" href="https://github.com/cnr-anac/result-aggregator-service" rel="noreferrer" target="_blank">Result Aggregator Service</a>
+<li><p>il <a class="reference external" href="https://github.com/trasparenzai/result-aggregator-service" rel="noreferrer" target="_blank">Result Aggregator Service</a>
 per cancellare i risultati di validazione aggregati più vecchi</p></li>
 </ul>
 </div></blockquote>
-<p>L'indirizzo di questi servizi è da configurabile nel file
-<a class="reference external" href="https://github.com/cnr-anac/task-scheduler-service/blob/main/src/main/resources/application.properties" rel="noreferrer" target="_blank">application.properties</a>
-oppure tramite variabili d'ambiente se avviato tramite Docker.</p>
+<p>L’indirizzo di questi servizi è da configurabile nel file
+<a class="reference external" href="https://github.com/trasparenzai/task-scheduler-service/blob/main/src/main/resources/application.properties" rel="noreferrer" target="_blank">application.properties</a>
+oppure tramite variabili d’ambiente se avviato tramite Docker.</p>
 </section>
 </section>
 

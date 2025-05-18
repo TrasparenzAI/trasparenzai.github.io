@@ -14,7 +14,7 @@ Result Service fornisce alcuni servizi REST utilizzabili in produzione per:
  - esportare in CSV i risultati delle validazioni presenti
 
 Il codice sorgente di questo componente è disponibile su GitHub:
- - https://github.com/cnr-anac/result-service
+ - https://github.com/trasparenzai/result-service
 
 OpenAPI e Swagger UI
 --------------------
