@@ -65,7 +65,9 @@ Il link "LEGGI DI PIU' ->" mostra la distribuzione geografica dei dati del singo
 
 Sezione timeline
 -----------------------------------------------
-La sezione in homepage presenta una timeline verticale delle scansioni effettuate con il riepilogo dei risultati ottenuti. Ogni nodo nella linea del tempo consente di consultare nel dettaglio i dati della relativa scansione, fornendo una visione cronologica dell’attività di monitoraggio. Per ogni nodo è presente un link attivo alla distribuzione geografica dei dati del singolo controllo.
+La sezione in homepage presenta una timeline verticale delle scansioni con il riepilogo dei risultati ottenuti.
+Ogni nodo nella linea del tempo consente di consultare nel dettaglio i dati della relativa scansione, fornendo una visione cronologica dell’attività di monitoraggio.
+Per ogni nodo è anche presente un link attivo alla distribuzione geografica dei dati del singolo controllo.
 
 .. _home-timeline-img:
 .. figure:: images/ui-timeline.png
