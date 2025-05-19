@@ -52,10 +52,9 @@ mostra una torta con le percentuali degli stati la cui legenda è esplicitata ne
 
 Sezione cronologia dei controlli
 -----------------------------------------------
-La sezione è composta da un carousel che permette di scorrere la cronologia dei controlli evidenziando i dati
-contentuti nel singolo controllo raggruppati per stato, permette l'estrazione *csv* dei dati
-qualora si abbia il ruolo necessario, e contiene il link attivo alla distribuzione
-geografica dei dati del singolo controllo.
+La piattaforma offre un riepilogo visivo delle scansioni precedenti, ciascuna con dati sintetici e la possibilità di esportare i risultati.
+La sezione è composta da un carousel che permette di scorrere la cronologia dei controlli memorizzati dal sistema. Le informazioni includono data e ora del controllo, numero di amministrazioni analizzate, conformità rilevate. Qualora si abbia il ruolo necessario, è possibile l'esportazione in formato *csv* dei dati.
+Il link "LEGGI DI PIU' ->" mostra la distribuzione geografica dei dati del singolo controllo.
 
 .. _home-carousel-img:
 .. figure:: images/ui-carousel.png
@@ -66,8 +65,7 @@ geografica dei dati del singolo controllo.
 
 Sezione timeline
 -----------------------------------------------
-La sezione contiene la visualizzazione cronologica dei controlli effettuati, descrive i risultati ottenuti per ogni
-singolo controllo e contiene anch'essa il link attivo alla distribuzione geografica dei dati del singolo controllo.
+La sezione in homepage presenta una timeline verticale delle scansioni effettuate con il riepilogo dei risultati ottenuti. Ogni nodo nella linea del tempo consente di consultare nel dettaglio i dati della relativa scansione, fornendo una visione cronologica dell’attività di monitoraggio. Per ogni nodo è presente un link attivo alla distribuzione geografica dei dati del singolo controllo.
 
 .. _home-timeline-img:
 .. figure:: images/ui-timeline.png
