@@ -91,8 +91,7 @@ Il sistema consente uno zoom progressivo che, da macro-cluster regionali, permet
 
 Menù "Cerca Amministrazioni"
 ----------------------------
-La piattaforma dispone di un sistema di ricerca avanzata che permette di individuare specifiche pubbliche amministrazioni utilizzando filtri come codice IPA, denominazione dell'ente, codice fiscale, categoria amministrativa, località (comune, provincia, regione). Questa funzionalità semplifica significativamente l’individuazione e il monitoraggio degli enti da parte di ANAC e dei cittadini.
-
+La piattaforma dispone di un sistema di ricerca avanzata che permette di individuare specifiche pubbliche amministrazioni utilizzando filtri come codice IPA, denominazione dell'ente, codice fiscale, categoria amministrativa, località (comune, provincia, regione). Questa funzionalità semplifica significativamente l’individuazione dell'Amministrazione di cui si ricercano le informazioni e i risultati del monitoraggio.
 .. _mappa_amministrazioni-img:
 .. figure:: images/ui-ricerca_amministrazioni.png
   :width: 800
