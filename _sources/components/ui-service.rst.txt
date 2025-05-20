@@ -88,3 +88,13 @@ Il menù "Mappa delle Amministrazioni" offre una visualizzazione geografica inte
 Attraverso la sezione “Mappa delle Amministrazioni”, l’utente accede a una rappresentazione geospaziale delle PA. Ogni area geografica è rappresentata da un grafico a torta che sintetizza il livello di conformità degli enti pubblici locali. Cliccando sulle aree, è possibile visualizzare i risultati per provincia e comune.
 
 Il sistema consente uno zoom progressivo che, da macro-cluster regionali, permette di arrivare fino al dettaglio delle singole amministrazioni, con accesso diretto alla scheda di ciascun ente e alle sue informazioni specifiche.
+
+Menù "Cerca Amministrazioni"
+----------------------------
+La piattaforma dispone di un sistema di ricerca avanzata che permette di individuare specifiche pubbliche amministrazioni utilizzando filtri come codice IPA, denominazione dell'ente, codice fiscale, categoria amministrativa, località (comune, provincia, regione). Questa funzionalità semplifica significativamente l’individuazione e il monitoraggio degli enti da parte di ANAC e dei cittadini.
+
+.. _mappa_amministrazioni-img:
+.. figure:: images/ui-ricerca_amministrazioni.png
+  :width: 800
+  :alt: Home Page - Cerca Amministrazioni
+
