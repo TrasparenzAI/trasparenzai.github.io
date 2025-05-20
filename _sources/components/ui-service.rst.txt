@@ -76,7 +76,7 @@ Per ogni nodo è anche presente un link attivo alla distribuzione geografica dei
 
   Home Page - Timeline
 
-Menù Mappa delle Amministrazioni
+Menù "Mappa delle Amministrazioni"
 ---------------------------------
 Il menù "Mappa delle Amministrazioni" offre una visualizzazione geografica interattiva dei risultati ottenuti. L'utente può consultare grafici a torta che sintetizzano la conformità delle sezioni “Amministrazione Trasparente” per macro-aree. Zoomando sulla mappa, è possibile arrivare fino al dettaglio delle singole amministrazioni, visualizzando informazioni puntuali sulla conformità normativa di ciascun ente.
 
