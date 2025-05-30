@@ -19,7 +19,7 @@ La homepage della piattaforma TrasparenzAI è stata progettata per garantire imm
   :width: 800
   :alt: Home Page
 
-  Home Page - Interfaccia Web
+  Homepage - Interfaccia Web
 
 Header (Intestazione)
 ---------------------
@@ -46,7 +46,7 @@ mostra una torta con le percentuali degli stati la cui legenda è esplicitata ne
   :width: 800
   :alt: Home Page - Ultima scansione
 
-  Home Page - Ultima scansione
+  Homepage - Ultima scansione
 
 Homepage - sezione cronologia dei controlli
 -----------------------------------------------
@@ -59,7 +59,7 @@ Il link *"LEGGI DI PIU' ->"* mostra la distribuzione geografica dei dati del sin
   :width: 800
   :alt: Home Page - Carousel
 
-  Home Page - Carousel
+  Homepage - Carousel
 
 Homepage - sezione timeline
 -----------------------------------------------
@@ -72,7 +72,7 @@ Per ogni nodo è anche presente un link attivo alla distribuzione geografica dei
   :width: 800
   :alt: Home Page - Timeline
 
-  Home Page - Timeline
+  Homepage - Timeline
 
 Menù "Mappa delle Amministrazioni"
 ---------------------------------
@@ -83,7 +83,7 @@ Il menù "Mappa delle Amministrazioni" offre una visualizzazione geografica inte
   :width: 800
   :alt: Menù - Mappa delle Amministrazioni
 
-  Menu "Mappa delle Amministrazioni" - immagine generale
+  Menù "Mappa delle Amministrazioni" - immagine generale
 
 Attraverso la sezione “Mappa delle Amministrazioni”, l’utente accede a una rappresentazione geospaziale delle PA. Ogni area geografica è rappresentata da un grafico a torta che sintetizza il livello di conformità degli enti pubblici locali. Cliccando sulle aree, è possibile visualizzare i risultati per provincia e comune.
 Il sistema consente uno zoom progressivo che, da macro-cluster regionali, permette di arrivare fino al dettaglio delle singole amministrazioni, con accesso diretto alla scheda di ciascun ente e alle sue informazioni specifiche.
@@ -93,20 +93,18 @@ Il sistema consente uno zoom progressivo che, da macro-cluster regionali, permet
   :width: 800
   :alt: Menù - Mappa delle Amministrazioni zoom 1
 
-  Menu "Mappa delle Amministrazioni" - zoom 1
-
+  Menù "Mappa delle Amministrazioni" - zoom 1
 
 .. _mappa_amministrazioni_zoom-2-img:
 .. figure:: images/ui_mappa_amministrazioni_zoom-2.png
   :width: 800
   :alt: Menu - Mappa delle Amministrazioni zoom 2
 
-  Menu "Mappa delle Amministrazioni" - zoom 2
+  Menù "Mappa delle Amministrazioni" - zoom 2
 
-Menu "Cerca Amministrazioni"
+Menù "Cerca Amministrazioni"
 ----------------------------
 La piattaforma dispone di un sistema di ricerca avanzata che permette di individuare specifiche pubbliche amministrazioni utilizzando filtri come codice IPA, denominazione dell'ente, codice fiscale, categoria amministrativa, località (comune, provincia, regione). Questa funzionalità semplifica significativamente l’individuazione dell'Amministrazione di cui si ricercano le informazioni e i risultati del monitoraggio.
-
 L’interfaccia di ricerca avanzata consente il filtraggio degli enti pubblici per codice IPA, denominazione ufficiale, codice fiscale, categoria (es. istituti scolastici, ordini professionali), localizzazione geografica (comune, provincia, regione) e criterio di ordinamento. I risultati restituiti sono immediatamente esplorabili.
 
 .. _ricerca_amministrazioni-img:
@@ -114,4 +112,4 @@ L’interfaccia di ricerca avanzata consente il filtraggio degli enti pubblici p
   :width: 800
   :alt: Menu - Cerca Amministrazioni
 
-  Menu - Cerca Amministrazioni
+  Menù - Cerca Amministrazioni
