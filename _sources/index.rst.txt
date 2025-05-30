@@ -34,6 +34,7 @@ La piattaforma è disponibile all'indirizzo:
    :hidden:
 
    overview/index
+   admin_guide/index
    architecture/index
    components/index
    installation/index
