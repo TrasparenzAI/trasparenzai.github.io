@@ -35,10 +35,9 @@ Header (Intestazione)
     * Grafici e Mappe
     * Esplora Sezioni
 
-Homepage - sezione ultimo controllo / contenuti principali
+Homepage - sezione ultimo controllo
 -----------------------------------------------
 Layout a griglia con card che illustrano i principali dati dell'ultimo controllo eseguito.
-
 La prima card illustra i dati ragruppati per stato, la card centrale invece
 mostra una torta con le percentuali degli stati la cui legenda è esplicitata nell'ultima card a destra.
 
@@ -53,13 +52,12 @@ Homepage - sezione cronologia dei controlli
 -----------------------------------------------
 La piattaforma offre un riepilogo visivo delle scansioni precedenti, ciascuna con dati sintetici e la possibilità di esportare i risultati.
 La sezione è composta da un carousel che permette di scorrere la cronologia dei controlli memorizzati dal sistema. Le informazioni includono data e ora del controllo, numero di amministrazioni analizzate, conformità rilevate. Qualora si abbia il ruolo necessario, è possibile l'esportazione in formato *csv* dei dati.
-Il link "LEGGI DI PIU' ->" mostra la distribuzione geografica dei dati del singolo controllo.
+Il link *"LEGGI DI PIU' ->"* mostra la distribuzione geografica dei dati del singolo controllo.
 
 .. _home-carousel-img:
 .. figure:: images/ui-carousel.png
   :width: 800
   :alt: Home Page - Carousel
-
   Home Page - Carousel
 
 Homepage - sezione timeline
