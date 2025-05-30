@@ -58,6 +58,7 @@ Il link *"LEGGI DI PIU' ->"* mostra la distribuzione geografica dei dati del sin
 .. figure:: images/ui-carousel.png
   :width: 800
   :alt: Home Page - Carousel
+
   Home Page - Carousel
 
 Homepage - sezione timeline
