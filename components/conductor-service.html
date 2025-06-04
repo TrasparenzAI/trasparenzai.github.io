@@ -24,7 +24,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentazione progetto TrasparenzAI | 4.7. Conductor service</title>
+    <title>Documentazione progetto TrasparenzAI | 10.7. Conductor service</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css">
@@ -33,9 +33,9 @@
     <!-- Relations -->
     <link rel="index" title="Indice" href="../index.html">
     <link rel="top" title="Documentazione progetto TrasparenzAI" href="../index.html">
-    <link rel="up" title="4. Componenti principali" href="index.html">
-    <link rel="next" title="4.8. UI service" href="ui-service.html">
-    <link rel="prev" title="4.6. Rule Service" href="rule-service.html">
+    <link rel="up" title="10. Componenti principali" href="index.html">
+    <link rel="next" title="10.8. UI service" href="ui-service.html">
+    <link rel="prev" title="10.6. Rule Service" href="rule-service.html">
 
 
     <!-- Favicons -->
@@ -598,36 +598,42 @@
       
       <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Panoramica della soluzione</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">2. Manuale Amministratore</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">3. Architettura della soluzione</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#scansione-dei-siti-delle-pa">3.1. Scansione dei siti delle PA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">2. Homepage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html#header-intestazione">3. Header (Intestazione)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html#homepage-sezione-ultimo-controllo">4. Homepage - sezione ultimo controllo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html#homepage-sezione-cronologia-dei-controlli">5. Homepage - sezione cronologia dei controlli</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html#homepage-sezione-timeline">6. Homepage - sezione timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html#menu-mappa-delle-amministrazioni">7. Menù «Mappa delle Amministrazioni»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html#menu-cerca-amministrazioni">8. Menù «Cerca Amministrazioni»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">9. Architettura della soluzione</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#scansione-dei-siti-delle-pa">9.1. Scansione dei siti delle PA</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">4. Componenti principali</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="public-sites-service.html">4.1. Public Sites Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="config-service.html">4.2. Config Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="result-service.html">4.3. Result Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="result-aggregator-service.html">4.4. Result Aggregator Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="task-scheduler-service.html">4.5. Task Scheduler Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rule-service.html">4.6. Rule Service</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">4.7. Conductor service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ui-service.html">4.8. UI service</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">10. Componenti principali</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="public-sites-service.html">10.1. Public Sites Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config-service.html">10.2. Config Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="result-service.html">10.3. Result Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="result-aggregator-service.html">10.4. Result Aggregator Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="task-scheduler-service.html">10.5. Task Scheduler Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule-service.html">10.6. Rule Service</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">10.7. Conductor service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui-service.html">10.8. UI service</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../installation/index.html">5. Installazione e configurazione</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../installation/authentication.html">5.1. Autenticazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/authorization.html">5.2. Autorizzazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/config-service.html">5.3. Config service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/public-sites-service.html">5.4. Public Sites Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/result-service.html">5.5. Result Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/result-aggregator-service.html">5.6. Result Aggregator Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/task-scheduler-service.html">5.7. Task Scheduler Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html">5.8. Risorse hardware consigliate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation/index.html">11. Installazione e configurazione</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation/authentication.html">11.1. Autenticazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/authorization.html">11.2. Autorizzazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/config-service.html">11.3. Config service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/public-sites-service.html">11.4. Public Sites Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/result-service.html">11.5. Result Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/result-aggregator-service.html">11.6. Result Aggregator Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/task-scheduler-service.html">11.7. Task Scheduler Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html">11.8. Risorse hardware consigliate</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../appendix.html">6. Appendice</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendix.html#autori">6.1. Autori</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendix.html#glossario">6.2. Glossario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix.html">12. Appendice</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html#autori">12.1. Autori</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html#glossario">12.2. Glossario</a></li>
 </ul>
 </li>
 </ul>
@@ -643,9 +649,17 @@
     </button>
     <div id="figures-index" class="figures-index--menu sidebar-list--wrapper sidebar-accordion-content collapse">
       <ul>
-<li><a class="reference internal" href="../architecture/index.html#id1">Fig. 3.1 - TrasparenzAI - Overview Diagram</a></li>
-<li><a class="reference internal" href="#id2">Fig. 4.1 - Flusso principale - </a></li>
-<li><a class="reference internal" href="#id3">Fig. 4.2 - Flusso per singola Amministrazione</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id1">Fig. 2.1 - Homepage - Interfaccia Web</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id2">Fig. 4.1 - Homepage - Ultima scansione</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id3">Fig. 5.1 - Homepage - Carousel</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id4">Fig. 6.1 - Homepage - Timeline</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id5">Fig. 7.1 - Menù «Mappa delle Amministrazioni» - immagine generale</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id6">Fig. 7.2 - Menù «Mappa delle Amministrazioni» - zoom 1</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id7">Fig. 7.3 - Menù «Mappa delle Amministrazioni» - zoom 2</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id8">Fig. 8.1 - Menù - Cerca Amministrazioni</a></li>
+<li><a class="reference internal" href="../architecture/index.html#id1">Fig. 9.1 - TrasparenzAI - Overview Diagram</a></li>
+<li><a class="reference internal" href="#id2">Fig. 10.1 - Flusso principale - </a></li>
+<li><a class="reference internal" href="#id3">Fig. 10.2 - Flusso per singola Amministrazione</a></li>
 </ul>
 
     </div>
@@ -659,10 +673,10 @@
     </button>
     <div id="table-index" class="table-index--menu collapse sidebar-list--wrapper sidebar-accordion-content collapse">
       <ul>
-<li><a class="reference internal" href="#id1">Tab. 4.1 - Parametri di Input per il flusso principale</a></li>
-<li><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html#id1">Tab. 5.1 - Risorse VM-A</a></li>
-<li><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html#id2">Tab. 5.2 - Risorse VM-B</a></li>
-<li><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html#id3">Tab. 5.3 - Risorse VM-C</a></li>
+<li><a class="reference internal" href="#id1">Tab. 10.1 - Parametri di Input per il flusso principale</a></li>
+<li><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html#id1">Tab. 11.1 - Risorse VM-A</a></li>
+<li><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html#id2">Tab. 11.2 - Risorse VM-B</a></li>
+<li><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html#id3">Tab. 11.3 - Risorse VM-C</a></li>
 </ul>
 
     </div>
@@ -675,7 +689,7 @@
 <div class="navbar-toggler--wrap navbar-toggler--wrap--bottom p-3">
   <div class="navbar-toggler navbar-toggler--open p-0 border-0 ml-auto">
     <div class="navbar-toggler-bottom__chapter align-middle text-truncate">
-      <span class="it-list mr-2"></span><span class="section-number">4.7. </span>Conductor service
+      <span class="it-list mr-2"></span><span class="section-number">10.7. </span>Conductor service
     </div>
   </div>
 </div>
@@ -733,36 +747,42 @@
         
         <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../overview/index.html">1. Panoramica della soluzione</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">2. Manuale Amministratore</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">3. Architettura della soluzione</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#scansione-dei-siti-delle-pa">3.1. Scansione dei siti delle PA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">2. Homepage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html#header-intestazione">3. Header (Intestazione)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html#homepage-sezione-ultimo-controllo">4. Homepage - sezione ultimo controllo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html#homepage-sezione-cronologia-dei-controlli">5. Homepage - sezione cronologia dei controlli</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html#homepage-sezione-timeline">6. Homepage - sezione timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html#menu-mappa-delle-amministrazioni">7. Menù «Mappa delle Amministrazioni»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html#menu-cerca-amministrazioni">8. Menù «Cerca Amministrazioni»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">9. Architettura della soluzione</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#scansione-dei-siti-delle-pa">9.1. Scansione dei siti delle PA</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">4. Componenti principali</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="public-sites-service.html">4.1. Public Sites Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="config-service.html">4.2. Config Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="result-service.html">4.3. Result Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="result-aggregator-service.html">4.4. Result Aggregator Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="task-scheduler-service.html">4.5. Task Scheduler Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rule-service.html">4.6. Rule Service</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">4.7. Conductor service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ui-service.html">4.8. UI service</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">10. Componenti principali</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="public-sites-service.html">10.1. Public Sites Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config-service.html">10.2. Config Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="result-service.html">10.3. Result Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="result-aggregator-service.html">10.4. Result Aggregator Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="task-scheduler-service.html">10.5. Task Scheduler Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule-service.html">10.6. Rule Service</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">10.7. Conductor service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui-service.html">10.8. UI service</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../installation/index.html">5. Installazione e configurazione</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../installation/authentication.html">5.1. Autenticazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/authorization.html">5.2. Autorizzazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/config-service.html">5.3. Config service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/public-sites-service.html">5.4. Public Sites Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/result-service.html">5.5. Result Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/result-aggregator-service.html">5.6. Result Aggregator Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/task-scheduler-service.html">5.7. Task Scheduler Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html">5.8. Risorse hardware consigliate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation/index.html">11. Installazione e configurazione</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation/authentication.html">11.1. Autenticazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/authorization.html">11.2. Autorizzazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/config-service.html">11.3. Config service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/public-sites-service.html">11.4. Public Sites Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/result-service.html">11.5. Result Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/result-aggregator-service.html">11.6. Result Aggregator Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/task-scheduler-service.html">11.7. Task Scheduler Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html">11.8. Risorse hardware consigliate</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../appendix.html">6. Appendice</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendix.html#autori">6.1. Autori</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendix.html#glossario">6.2. Glossario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix.html">12. Appendice</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html#autori">12.1. Autori</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html#glossario">12.2. Glossario</a></li>
 </ul>
 </li>
 </ul>
@@ -772,19 +792,27 @@
 
       <div id="figures-index-mobile" class="figures-index--menu tab-pane sidebar-list--wrapper fade" role="tabpanel" aria-labelledby="figures-index-mobile-tab">
         <ul>
-<li><a class="reference internal" href="../architecture/index.html#id1">Fig. 3.1 - TrasparenzAI - Overview Diagram</a></li>
-<li><a class="reference internal" href="#id2">Fig. 4.1 - Flusso principale - </a></li>
-<li><a class="reference internal" href="#id3">Fig. 4.2 - Flusso per singola Amministrazione</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id1">Fig. 2.1 - Homepage - Interfaccia Web</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id2">Fig. 4.1 - Homepage - Ultima scansione</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id3">Fig. 5.1 - Homepage - Carousel</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id4">Fig. 6.1 - Homepage - Timeline</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id5">Fig. 7.1 - Menù «Mappa delle Amministrazioni» - immagine generale</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id6">Fig. 7.2 - Menù «Mappa delle Amministrazioni» - zoom 1</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id7">Fig. 7.3 - Menù «Mappa delle Amministrazioni» - zoom 2</a></li>
+<li><a class="reference internal" href="../admin_guide/index.html#id8">Fig. 8.1 - Menù - Cerca Amministrazioni</a></li>
+<li><a class="reference internal" href="../architecture/index.html#id1">Fig. 9.1 - TrasparenzAI - Overview Diagram</a></li>
+<li><a class="reference internal" href="#id2">Fig. 10.1 - Flusso principale - </a></li>
+<li><a class="reference internal" href="#id3">Fig. 10.2 - Flusso per singola Amministrazione</a></li>
 </ul>
 
       </div>
 
       <div id="table-index-mobile" class="table-index--menu tab-pane sidebar-list--wrapper fade" role="tabpanel" aria-labelledby="table-index-mobile-tab">
         <ul>
-<li><a class="reference internal" href="#id1">Tab. 4.1 - Parametri di Input per il flusso principale</a></li>
-<li><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html#id1">Tab. 5.1 - Risorse VM-A</a></li>
-<li><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html#id2">Tab. 5.2 - Risorse VM-B</a></li>
-<li><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html#id3">Tab. 5.3 - Risorse VM-C</a></li>
+<li><a class="reference internal" href="#id1">Tab. 10.1 - Parametri di Input per il flusso principale</a></li>
+<li><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html#id1">Tab. 11.1 - Risorse VM-A</a></li>
+<li><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html#id2">Tab. 11.2 - Risorse VM-B</a></li>
+<li><a class="reference internal" href="../installation/cpu_disk_memory_sizing.html#id3">Tab. 11.3 - Risorse VM-C</a></li>
 </ul>
 
       </div>
@@ -803,23 +831,23 @@
           </div>-->
           
             <div class="footer-buttons footer-buttons--prev" role="navigation" aria-label="footer navigation">
-                <a href="rule-service.html" class="" title="4.6. Rule Service" accesskey="p" rel="prev"> Torna a <span class="section-number">4.6. </span>Rule Service</a>
+                <a href="rule-service.html" class="" title="10.6. Rule Service" accesskey="p" rel="prev"> Torna a <span class="section-number">10.6. </span>Rule Service</a>
             </div>
           
           
   <section id="conductor-service">
-<h1><span class="section-number">4.7. </span>Conductor service<a class="headerlink" href="#conductor-service" title="Link to this heading">¶</a></h1>
+<h1><span class="section-number">10.7. </span>Conductor service<a class="headerlink" href="#conductor-service" title="Link to this heading">¶</a></h1>
 <p>Il coordinatore è basato su <a class="reference external" href="https://conductor-oss.org" rel="noreferrer" target="_blank">Netflix - Conductor</a> una piattaforma gratuita e open source per l’orchestrazione dei microservizi, attraverso flussi di lavoro che definiscono le interazioni tra servizi,
 il progetto principale è stato <a class="reference external" href="https://github.com/trasparenzai/conductor" rel="noreferrer" target="_blank">forkato</a> per permettere e gestire l’autenticazione e l’autorizzazione sull’esecuzione dei flussi e sul passaggio della stessa ai microservizi invocati dal flusso.</p>
 <p>Nel progetto <a class="reference external" href="https://github.com/trasparenzai/workflow-definition" rel="noreferrer" target="_blank">workflow-definition</a> sono presenti le definizioni in formato <em>json</em> dei flussi necessari al completamento degli obiettivi del progetto.</p>
 <section id="flusso-principale-amministrazione-trasparente">
-<h2><span class="section-number">4.7.1. </span>Flusso principale - Amministrazione Trasparente<a class="headerlink" href="#flusso-principale-amministrazione-trasparente" title="Link to this heading">¶</a></h2>
+<h2><span class="section-number">10.7.1. </span>Flusso principale - Amministrazione Trasparente<a class="headerlink" href="#flusso-principale-amministrazione-trasparente" title="Link to this heading">¶</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Importante</p>
-<p>Il flusso <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json" rel="noreferrer" target="_blank">principale</a> necessita dei seguenti parametri di input per la sua corretta invocazione come mostrato in <a class="reference internal" href="#main-flow-tab"><span class="std std-numref">Tabella 4.1</span></a></p>
+<p>Il flusso <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json" rel="noreferrer" target="_blank">principale</a> necessita dei seguenti parametri di input per la sua corretta invocazione come mostrato in <a class="reference internal" href="#main-flow-tab"><span class="std std-numref">Tabella 10.1</span></a></p>
 </div>
 <span id="main-flow-tab"></span><table class="docutils align-default" id="id1">
-<caption><span class="caption-number">Tabella 4.1 </span><span class="caption-text">Parametri di Input per il flusso principale</span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
+<caption><span class="caption-number">Tabella 10.1 </span><span class="caption-text">Parametri di Input per il flusso principale</span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p><em>Nome</em></p></th>
 <th class="head"><p><em>Descrizione</em></p></th>
@@ -937,7 +965,7 @@ il progetto principale è stato <a class="reference external" href="https://gith
 </table>
 </section>
 <section id="dettagli-del-flussso-principale">
-<h2><span class="section-number">4.7.2. </span>Dettagli del flussso principale<a class="headerlink" href="#dettagli-del-flussso-principale" title="Link to this heading">¶</a></h2>
+<h2><span class="section-number">10.7.2. </span>Dettagli del flussso principale<a class="headerlink" href="#dettagli-del-flussso-principale" title="Link to this heading">¶</a></h2>
 <p>Il primo <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L8-L22" rel="noreferrer" target="_blank">TASK</a> del flusso si occupa di invocare l’aggiornamento della configurazione del microservizio delle regole, dopo aver valorizzato la variabile necessaria al controllo delle pagine elaborate,
 il flusso invoca il <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L71-L85" rel="noreferrer" target="_blank">microservizio delle PA</a>  descritto in <a class="reference internal" href="../installation/public-sites-service.html#public-sites-service"><span class="std std-ref">Public Sites Service</span></a> e recupera le informazioni necessarie.</p>
 <p>Il blocco recuperato contentente le informazioni di <em>n</em> PA viene parcellizzato in base al parametro fornito in input <strong>page_size</strong> e diviso per <em>10</em>,
@@ -946,17 +974,17 @@ del flusso <a class="reference external" href="https://github.com/trasparenzai/w
 <p>All’uscita del <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L52-L60" rel="noreferrer" target="_blank">TASK delle PA</a>, se il flusso è stato eseguito non per una singola PA, allora vengono
 rielaborati i risultati con i codici <em>400</em> e <em>407</em> con i timeout massimi ed eseguiti i flussi <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_result_failed.json" rel="noreferrer" target="_blank">Crawler Result Failed</a>.</p>
 <p>Infine viene eseguito il <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L581-L596" rel="noreferrer" target="_blank">TASK</a> per elaborare la Mappa geolocalizzata dei risultati.</p>
-<p>In <a class="reference internal" href="#main-flow-img"><span class="std std-numref">Fig. 4.1</span></a> l’immagine del flusso:</p>
+<p>In <a class="reference internal" href="#main-flow-img"><span class="std std-numref">Fig. 10.1</span></a> l’immagine del flusso:</p>
 <figure class="align-default" id="id2">
 <span id="main-flow-img"></span><a class="reference internal image-reference" href="https://raw.githubusercontent.com/trasparenzai/workflow-definition/refs/heads/main/crawler_amministrazione_trasparente.png"><img alt="Flusso principale - Amministrazione Trasparente" src="https://raw.githubusercontent.com/trasparenzai/workflow-definition/refs/heads/main/crawler_amministrazione_trasparente.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Flusso principale - <a class="reference internal" href="../appendix.html#term-Amministrazione-Trasparente"><span class="xref std std-term">Amministrazione Trasparente</span></a></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+<p><span class="caption-number">Fig. 10.1 </span><span class="caption-text">Flusso principale - <a class="reference internal" href="../appendix.html#term-Amministrazione-Trasparente"><span class="xref std std-term">Amministrazione Trasparente</span></a></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="flusso-per-singola-amministrazione">
-<h2><span class="section-number">4.7.3. </span>Flusso per singola Amministrazione<a class="headerlink" href="#flusso-per-singola-amministrazione" title="Link to this heading">¶</a></h2>
-<p>Il flusso <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_detail_workflow.json" rel="noreferrer" target="_blank">Rule Detail</a> come mostrato in <a class="reference internal" href="#rule-detail-img"><span class="std std-numref">Fig. 4.2</span></a> viene eseguito per una singola PA passata come parametro
+<h2><span class="section-number">10.7.3. </span>Flusso per singola Amministrazione<a class="headerlink" href="#flusso-per-singola-amministrazione" title="Link to this heading">¶</a></h2>
+<p>Il flusso <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_detail_workflow.json" rel="noreferrer" target="_blank">Rule Detail</a> come mostrato in <a class="reference internal" href="#rule-detail-img"><span class="std std-numref">Fig. 10.2</span></a> viene eseguito per una singola PA passata come parametro
 in input <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_detail_workflow.json#L860" rel="noreferrer" target="_blank">ipa</a>, controlla inizialmente la <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_detail_workflow.json#L19-L28" rel="noreferrer" target="_blank">presenza della URL istituzionale</a>
 e successivamente invoca il <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_detail_workflow.json#L38-L52" rel="noreferrer" target="_blank">crawler</a> il cui risultato viene passato
 al <a class="reference external" href="https://github.com/trasparenzai/workflow-definition/blob/main/rule_detail_workflow.json#L76-L92" rel="noreferrer" target="_blank">microservizio delle regole</a> e la cui risposta è utilizzata
@@ -964,7 +992,7 @@ come input al <a class="reference external" href="https://github.com/trasparenza
 <figure class="align-default" id="id3">
 <span id="rule-detail-img"></span><a class="reference internal image-reference" href="https://raw.githubusercontent.com/trasparenzai/workflow-definition/refs/heads/main/rule_detail_workflow.png"><img alt="Flusso per singola Amministrazione" src="https://raw.githubusercontent.com/trasparenzai/workflow-definition/refs/heads/main/rule_detail_workflow.png" style="height: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Flusso per singola Amministrazione</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+<p><span class="caption-number">Fig. 10.2 </span><span class="caption-text">Flusso per singola Amministrazione</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
@@ -973,7 +1001,7 @@ come input al <a class="reference external" href="https://github.com/trasparenza
 
           
             <div class="footer-buttons footer-buttons--next" role="navigation" aria-label="footer navigation">
-                  <a href="ui-service.html" class="" title="4.8. UI service" accesskey="n" rel="next"><span class="section-number">4.8. </span>UI service</a>
+                  <a href="ui-service.html" class="" title="10.8. UI service" accesskey="n" rel="next"><span class="section-number">10.8. </span>UI service</a>
               </div>
             
           </div>
