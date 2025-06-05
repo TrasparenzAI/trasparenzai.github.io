@@ -104,3 +104,11 @@ L’interfaccia di ricerca avanzata consente il filtraggio degli enti pubblici p
   :alt: Menu - Cerca Amministrazioni
 
   Menù - Cerca Amministrazioni
+
+Sezioni manuale
+.. toctree::
+   :maxdepth: 3
+   :caption: Manuale Amministratore
+
+   menu_cerca-amministrazioni
+   menu_mappa-amministrazioni
