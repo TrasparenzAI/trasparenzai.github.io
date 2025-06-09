@@ -1,5 +1,6 @@
 Menù "Mappa delle Amministrazioni"
-----------------------------------
+==================================
+
 Il menù "Mappa delle Amministrazioni" offre una visualizzazione geografica interattiva dei risultati ottenuti. L'utente può consultare grafici a torta che sintetizzano la conformità delle sezioni “Amministrazione Trasparente” per macro-aree. Zoomando sulla mappa, è possibile arrivare fino al dettaglio delle singole amministrazioni, visualizzando informazioni puntuali sulla conformità normativa di ciascun Ente.
 
 .. _mappa_amministrazioni-img:
