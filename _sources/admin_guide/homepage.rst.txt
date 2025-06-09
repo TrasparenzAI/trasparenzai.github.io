@@ -4,7 +4,7 @@ Homepage
 La homepage della piattaforma TrasparenzAI è stata progettata per garantire immediatezza e semplicità nella consultazione dei risultati ottenuti. L'interfaccia mostra chiaramente i dati relativi all’ultima scansione effettuata, fornendo un quadro sintetico del numero di pubbliche amministrazioni analizzate e della conformità riscontrata. È possibile visualizzare la cronologia dettagliata dei controlli precedenti, ciascuno accompagnato da un report scaricabile in formato CSV, e una timeline interattiva che permette di consultare rapidamente l’evoluzione dei controlli nel tempo.
 
 .. _home-img:
-.. figure:: https://raw.githubusercontent.com/trasparenzai/ui-service/refs/heads/main/home.png
+.. figure:: images/ui-homepage.png
   :width: 800
   :alt: Home Page
 
