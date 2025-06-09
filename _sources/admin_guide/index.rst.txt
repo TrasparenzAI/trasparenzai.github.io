@@ -11,11 +11,11 @@ Sezioni manuale
    homepage
    menu_cerca-amministrazioni
    menu_mappa-amministrazioni
-   regole
-   grafici_mappe
+   menu_regole
+   menu_grafici_mappe
    grafico_regola
    mappa_regola
-   esplora_sezioni
+   menu_esplora_sezioni
    tutte_le_regole
    amministrazione_trasparente
    patrimonio_immobiliare
