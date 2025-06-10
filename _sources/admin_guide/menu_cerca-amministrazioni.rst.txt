@@ -10,3 +10,10 @@ L’interfaccia di ricerca consente il filtraggio degli enti pubblici per Codice
   :alt: Menu - Cerca Amministrazioni
 
   Menù - Cerca Amministrazioni
+
+.. _esempio_ricerca_amministrazioni-img:
+.. figure:: images/ui-cerca_amministrazioni_esempio.png
+  :width: 800
+  :alt: Esempio - ricerca filtro "Denominazione Ente"
+
+  *Esempio ricerca filtro "Denominazione Ente"*
