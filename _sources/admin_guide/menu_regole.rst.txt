@@ -9,3 +9,12 @@ La sezione dedicata agli alberi delle regole consente agli utenti di visualizzar
   :alt: Menù "Regole"
 
   Menù "Regole"
+
+Il sistema consente di selezionare tra diversi alberi di regole già predisposti o di costruirne di nuovi. È inoltre possibile modificare l’elenco dei termini che devono essere riconosciuti come equivalenti a “Amministrazione Trasparente”, adattando così i controlli alla varietà delle denominazioni effettivamente utilizzate nei siti delle Amministrazioni.
+
+.. _home-img:
+.. figure:: images/ui-regole_alberi_alternativi.png
+  :width: 800
+  :alt: Selezione albero delle regole per scansione
+
+  Selezione albero delle regole per scansione
