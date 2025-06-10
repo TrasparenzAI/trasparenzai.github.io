@@ -6,24 +6,22 @@ La homepage della piattaforma TrasparenzAI è stata progettata per garantire imm
 .. _home-img:
 .. figure:: images/ui-homepage_full.png
   :width: 800
-  :alt: Home Page
+  :alt: Homepage
 
   Homepage - Interfaccia Web
 
 Header (Intestazione)
 ---------------------
 
-#. Presenta la barra superiore istituzionale con il riferimento al `Protocollo d’intesa tra l’Autorità Nazionale Anticorruzione e il Consiglio Nazionale delle Ricerche del 7 agosto 2023 <https://www.anticorruzione.it/-/protocollo-d-intesa-tra-l-autorit%C3%A0-nazionale-anticorruzione-e-il-consiglio-nazionale-delle-ricerche-7-agosto-2023>`__, e al menu di accesso rapido (credits, documentazione, login).
-#. Il menu di navigazione principale è responsive e può essere collassato su dispositivi mobili,
-   presenta le seguenti voci:
+#. Presenta la barra superiore con il link al protocollo di collaborazione tra Consiglio Nazionale delle Ricerche e Autorità Nazionale Anticorruzione nell'ambito del quale è stato sviluppata la **piattaforma TrasparenzAI** (`Protocollo d’intesa tra l’Autorità Nazionale Anticorruzione e il Consiglio Nazionale delle Ricerche del 7 agosto 2023 <https://www.anticorruzione.it/-/protocollo-d-intesa-tra-l-autorit%C3%A0-nazionale-anticorruzione-e-il-consiglio-nazionale-delle-ricerche-7-agosto-2023>`__) e i link di accesso rapido a credits, documentazione, login.
+#. Il menu di navigazione principale per l'accesso alle principali funzioni "Cerca amministrazioni", "Mappa delle Amministrazioni", "Regole", "Grafici e Mappe", "Esplora Sezioni". Il Menù è responsive e può essere collassato su dispositivi mobili.
 
-.. hlist::
-    :columns: 4
+.. _home-img:
+.. figure:: images/ui-homepage_header.png
+  :width: 800
+  :alt: Homepage - Header
 
-    * Mappa delle Amministrazioni
-    * Regole
-    * Grafici e Mappe
-    * Esplora Sezioni
+  Homepage - Header
 
 Homepage - sezione ultimo controllo
 -----------------------------------
@@ -35,7 +33,7 @@ mostra una torta con le percentuali degli stati la cui legenda è esplicitata ne
 .. _home-last_scan-img:
 .. figure:: images/ui-homepage_sez-1.png
   :width: 800
-  :alt: Home Page - Ultima scansione
+  :alt: Homepage - Ultima scansione
 
   Homepage - Ultima scansione
 
@@ -49,7 +47,7 @@ Il link *"LEGGI DI PIU' ->"* mostra la distribuzione geografica dei dati del sin
 .. _home-carousel-img:
 .. figure:: images/ui-homepage_sez-2.png
   :width: 800
-  :alt: Home Page - Carousel
+  :alt: Homepage - Carousel
 
   Homepage - Carousel
 
@@ -63,6 +61,6 @@ Per ogni nodo è anche presente un link attivo alla distribuzione geografica dei
 .. _home-timeline-img:
 .. figure:: images/ui-homepage_sez-3.png
   :width: 800
-  :alt: Home Page - Timeline
+  :alt: Homepage - Timeline
 
   Homepage - Timeline
