@@ -5,16 +5,9 @@ La voce di menù "Grafico per Regola" permette di accedere alla rappresentazione
 
 La figura mostra la visualizzazione dei risultati relativi alla sezione principale Amministrazione Trasparente per la scansione effettuata il 07/06/2025.
 
-.. _grafico-per-regola-esempio-1-img:
-.. figure:: images/ui-grafico_per_regola_esempio-1.png
-  :width: 800
-  :alt: Menù "Grafico per Regola" - Amministrazione Trasparente
-
-  Menù "Grafico per Regola" - Regola "Amministrazione Trasparente"
-
 I dati di scansione relativi alle varie sezioni dell'albero delle regole, sono selezionabili dal menù a tendina "Nome della Regola".
 
-.. _grafico-per-regola-esempio-3-img:
+.. _grafico-per-regola-esempio-4-img:
 .. figure:: images/ui-garfico_per_regola_esempio-4.png
   :width: 800
   :alt: Menù "Grafico per Regola" - selezione "Nome della Regola"
