@@ -4,7 +4,10 @@ Menù "Regole"
 La sezione dedicata agli alberi delle regole consente agli utenti di visualizzare e interagire direttamente con la struttura normativa prevista da ANAC. Gli alberi delle regole sono navigabili tramite comandi intuitivi quali zoom, rotazione e adattamento alla finestra.
 Il tasto "Nuovo albero delle regole" permette di creare nuovi alberi delle regole da applicare a scansioni generali o controlli specifici per singola Amministrazioni o classi di Amministrazioni.
 
-Per ogni elemento di un determinato albero, sono presenti i tasti "Modifica", "Nuovo" ed "Elimina". L'opzione "Modifica" permette di modificare i termini da ricercare per ogni regola. L'opzione "Nuovo" consente la creazione di una nuova regola-figlia della regola attuale (sotto-sezione). Il tasto "Elimina" consente di cancellare definitivamente la regola selezionata.
+Per ogni elemento di un determinato albero, sono presenti i tasti "Modifica", "Nuovo" ed "Elimina".
+"Modifica" permette di modificare i termini da ricercare per ogni regola.
+"Nuovo" consente la creazione di una nuova regola-figlia della regola attuale (sotto-sezione). 
+Con "Elimina" si cancella definitivamente la regola selezionata.
 
 .. _menu-regole-img:
 .. figure:: images/ui-menu_regole.png
