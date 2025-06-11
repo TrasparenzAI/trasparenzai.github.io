@@ -15,3 +15,4 @@ Sezioni manuale
    funzione_storico
    menu_regole
    menu_grafico_per_regola
+   menu_mappa_per_regola
