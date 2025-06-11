@@ -1,7 +1,7 @@
 Manuale Amministratore
 ======================
 
-Il manuale amministratore illusta tutte le funzioni disponibili, agli utenti con ruolo "Amministratore", attraverso l'uso dell'interfaccia web della piattaforma TrasparenzAI. Per la parametrizzazione e configurazione avanzata dei singoli microservizi, si rinvia alle sezioni della documentazione che descrivono le funzionalita dei singoli servizi e componenti della piattaforma TrasparenzAI.
+Il manuale amministratore della piattaforma TrsparenzAI illusta tutte le funzioni rese disponibili attraverso interfaccia web, agli utenti con ruolo "Amministratore". Per la configurazione avanzata, si rinvia alle sezioni della documentazione che descrivono le funzionalità dei singoli servizi e componenti della piattaforma TrasparenzAI.
 
 .. toctree::
    :maxdepth: 3
