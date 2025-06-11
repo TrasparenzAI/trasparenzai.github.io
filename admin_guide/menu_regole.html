@@ -24,7 +24,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentazione progetto TrasparenzAI | 2.4. Menù «Regole»</title>
+    <title>Documentazione progetto TrasparenzAI | 2.6. Menù «Regole»</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css">
@@ -35,7 +35,7 @@
     <link rel="top" title="Documentazione progetto TrasparenzAI" href="../index.html">
     <link rel="up" title="2. Manuale Amministratore" href="index.html">
     <link rel="next" title="3. Architettura della soluzione" href="../architecture/index.html">
-    <link rel="prev" title="2.3. Menù «Mappa delle Amministrazioni»" href="menu_mappa-amministrazioni.html">
+    <link rel="prev" title="2.5. Funzione «Storico» - Cronologia controlli" href="funzione_storico.html">
 
 
     <!-- Favicons -->
@@ -602,7 +602,9 @@
 <li class="toctree-l2"><a class="reference internal" href="homepage.html">2.1. Homepage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="menu_cerca-amministrazioni.html">2.2. Menù «Cerca Amministrazioni»</a></li>
 <li class="toctree-l2"><a class="reference internal" href="menu_mappa-amministrazioni.html">2.3. Menù «Mappa delle Amministrazioni»</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">2.4. Menù «Regole»</a></li>
+<li class="toctree-l2"><a class="reference internal" href="funzione_controlli_scan-on-demand.html">2.4. Funzione «Controlli» - Cronologia controlli e Scan-On-Demand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="funzione_storico.html">2.5. Funzione «Storico» - Cronologia controlli</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.6. Menù «Regole»</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">3. Architettura della soluzione</a><ul>
@@ -659,8 +661,12 @@
 <li><a class="reference internal" href="menu_mappa-amministrazioni.html#id1">Fig. 2.8 - Menù «Mappa delle Amministrazioni» - immagine generale</a></li>
 <li><a class="reference internal" href="menu_mappa-amministrazioni.html#id2">Fig. 2.9 - Menù «Mappa delle Amministrazioni» - zoom 1</a></li>
 <li><a class="reference internal" href="menu_mappa-amministrazioni.html#id3">Fig. 2.10 - Menù «Mappa delle Amministrazioni» - zoom 2</a></li>
-<li><a class="reference internal" href="#id2">Fig. 2.11 - Menù «Regole»</a></li>
-<li><a class="reference internal" href="#id3">Fig. 2.12 - Selezione albero delle regole per scansione</a></li>
+<li><a class="reference internal" href="funzione_controlli_scan-on-demand.html#id1">Fig. 2.11 - Funzione «Controlli» e «Effettua controllo immediato»</a></li>
+<li><a class="reference internal" href="funzione_storico.html#id1">Fig. 2.12 - Funzione «Storico» - esempio 1</a></li>
+<li><a class="reference internal" href="funzione_storico.html#id2">Fig. 2.13 - Funzione «Storico» - esempio 2</a></li>
+<li><a class="reference internal" href="funzione_storico.html#id3">Fig. 2.14 - Funzione «Storico» - esempio 3</a></li>
+<li><a class="reference internal" href="#id2">Fig. 2.15 - Menù «Regole»</a></li>
+<li><a class="reference internal" href="#id3">Fig. 2.16 - Selezione albero delle regole per scansione</a></li>
 <li><a class="reference internal" href="../architecture/index.html#id1">Fig. 3.1 - TrasparenzAI - Overview Diagram</a></li>
 <li><a class="reference internal" href="../components/conductor-service.html#id2">Fig. 4.1 - Flusso principale - </a></li>
 <li><a class="reference internal" href="../components/conductor-service.html#id3">Fig. 4.2 - Flusso per singola Amministrazione</a></li>
@@ -693,7 +699,7 @@
 <div class="navbar-toggler--wrap navbar-toggler--wrap--bottom p-3">
   <div class="navbar-toggler navbar-toggler--open p-0 border-0 ml-auto">
     <div class="navbar-toggler-bottom__chapter align-middle text-truncate">
-      <span class="it-list mr-2"></span><span class="section-number">2.4. </span>Menù «Regole»
+      <span class="it-list mr-2"></span><span class="section-number">2.6. </span>Menù «Regole»
     </div>
   </div>
 </div>
@@ -755,7 +761,9 @@
 <li class="toctree-l2"><a class="reference internal" href="homepage.html">2.1. Homepage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="menu_cerca-amministrazioni.html">2.2. Menù «Cerca Amministrazioni»</a></li>
 <li class="toctree-l2"><a class="reference internal" href="menu_mappa-amministrazioni.html">2.3. Menù «Mappa delle Amministrazioni»</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">2.4. Menù «Regole»</a></li>
+<li class="toctree-l2"><a class="reference internal" href="funzione_controlli_scan-on-demand.html">2.4. Funzione «Controlli» - Cronologia controlli e Scan-On-Demand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="funzione_storico.html">2.5. Funzione «Storico» - Cronologia controlli</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.6. Menù «Regole»</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">3. Architettura della soluzione</a><ul>
@@ -806,8 +814,12 @@
 <li><a class="reference internal" href="menu_mappa-amministrazioni.html#id1">Fig. 2.8 - Menù «Mappa delle Amministrazioni» - immagine generale</a></li>
 <li><a class="reference internal" href="menu_mappa-amministrazioni.html#id2">Fig. 2.9 - Menù «Mappa delle Amministrazioni» - zoom 1</a></li>
 <li><a class="reference internal" href="menu_mappa-amministrazioni.html#id3">Fig. 2.10 - Menù «Mappa delle Amministrazioni» - zoom 2</a></li>
-<li><a class="reference internal" href="#id2">Fig. 2.11 - Menù «Regole»</a></li>
-<li><a class="reference internal" href="#id3">Fig. 2.12 - Selezione albero delle regole per scansione</a></li>
+<li><a class="reference internal" href="funzione_controlli_scan-on-demand.html#id1">Fig. 2.11 - Funzione «Controlli» e «Effettua controllo immediato»</a></li>
+<li><a class="reference internal" href="funzione_storico.html#id1">Fig. 2.12 - Funzione «Storico» - esempio 1</a></li>
+<li><a class="reference internal" href="funzione_storico.html#id2">Fig. 2.13 - Funzione «Storico» - esempio 2</a></li>
+<li><a class="reference internal" href="funzione_storico.html#id3">Fig. 2.14 - Funzione «Storico» - esempio 3</a></li>
+<li><a class="reference internal" href="#id2">Fig. 2.15 - Menù «Regole»</a></li>
+<li><a class="reference internal" href="#id3">Fig. 2.16 - Selezione albero delle regole per scansione</a></li>
 <li><a class="reference internal" href="../architecture/index.html#id1">Fig. 3.1 - TrasparenzAI - Overview Diagram</a></li>
 <li><a class="reference internal" href="../components/conductor-service.html#id2">Fig. 4.1 - Flusso principale - </a></li>
 <li><a class="reference internal" href="../components/conductor-service.html#id3">Fig. 4.2 - Flusso per singola Amministrazione</a></li>
@@ -839,24 +851,24 @@
           </div>-->
           
             <div class="footer-buttons footer-buttons--prev" role="navigation" aria-label="footer navigation">
-                <a href="menu_mappa-amministrazioni.html" class="" title="2.3. Menù «Mappa delle Amministrazioni»" accesskey="p" rel="prev"> Torna a <span class="section-number">2.3. </span>Menù «Mappa delle Amministrazioni»</a>
+                <a href="funzione_storico.html" class="" title="2.5. Funzione «Storico» - Cronologia controlli" accesskey="p" rel="prev"> Torna a <span class="section-number">2.5. </span>Funzione «Storico» - Cronologia controlli</a>
             </div>
           
           
   <section id="menu-regole">
-<h1><span class="section-number">2.4. </span>Menù «Regole»<a class="headerlink" href="#menu-regole" title="Link to this heading">¶</a></h1>
+<h1><span class="section-number">2.6. </span>Menù «Regole»<a class="headerlink" href="#menu-regole" title="Link to this heading">¶</a></h1>
 <p>La sezione dedicata agli alberi delle regole consente agli utenti di visualizzare e interagire direttamente con la struttura normativa prevista da ANAC. Gli alberi delle regole sono navigabili tramite comandi intuitivi quali zoom, rotazione e adattamento alla finestra. L’interfaccia grafica indica chiaramente la possibilità di creare nuovi alberi delle regole per specifiche condizioni, modificare o eliminare quelli già esistenti. Pertanto, sarà possibile effettuare scansioni (controlli) applicando specifici alberi delle regole preventivamente creati.</p>
 <figure class="align-default" id="id2">
 <span id="home-img"></span><a class="reference internal image-reference" href="../_images/ui-regole.png"><img alt="Menù &quot;Regole&quot;" src="../_images/ui-regole.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.11 </span><span class="caption-text">Menù «Regole»</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+<p><span class="caption-number">Fig. 2.15 </span><span class="caption-text">Menù «Regole»</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Il sistema consente di selezionare tra diversi alberi di regole già predisposti o di costruirne di nuovi. È inoltre possibile modificare l’elenco dei termini che devono essere riconosciuti come equivalenti a “Amministrazione Trasparente”, adattando così i controlli alla varietà delle denominazioni effettivamente utilizzate nei siti delle Amministrazioni.</p>
 <figure class="align-default" id="id3">
 <span id="id1"></span><a class="reference internal image-reference" href="../_images/ui-regole_alberi_alternativi.png"><img alt="Selezione albero delle regole per scansione" src="../_images/ui-regole_alberi_alternativi.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.12 </span><span class="caption-text">Selezione albero delle regole per scansione</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+<p><span class="caption-number">Fig. 2.16 </span><span class="caption-text">Selezione albero delle regole per scansione</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>

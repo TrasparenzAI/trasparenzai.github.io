@@ -12,15 +12,15 @@ Le figure rappresentano lo stato dello storico delle scansioni di Amministrazion
 
   Funzione "Storico" - esempio 1
  
-  .. _storico-2-img:
-  .. figure:: images/ui-storico-controlli_esempio-2.png
+.. _storico-2-img:
+.. figure:: images/ui-storico-controlli_esempio-2.png
   :width: 800
   :alt: Funzione "Storico" - esempio 2
 
   Funzione "Storico" - esempio 2
 
-  .. _storico-3-img:
-  .. figure:: images/ui-storico-controlli_esempio-3.png
+.. _storico-3-img:
+.. figure:: images/ui-storico-controlli_esempio-3.png
   :width: 800
   :alt: Funzione "Storico" - esempio 3
 
