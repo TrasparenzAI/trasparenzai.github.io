@@ -1,7 +1,16 @@
 Menù "Grafici e Mappe" -> "Grafico per Regola"
 ==============================================
 
-La voce di menù "Grafico per Regola" permette di accedere alla rappresentazione grafica dei risultati generati da ogni scansione. Per ogni sezione dell'albero delle regole esplorato, vengono forniti dati in percentuale e numerici (muovendo il cursore del mouse sulle sezioni dei grafici a torta).
+La voce di menù "Grafico per Regola" permette di accedere alla rappresentazione grafica dei risultati generati da ogni scansione. 
+
+.. _grafico-per-regola-menu-img:
+.. figure:: images/ui-grafico_per_regola_menu.png
+  :width: 800
+  :alt: Menù "Grafico per Regola"
+
+  Menù "Grafico per Regola"
+
+Selezionando una sezione dell'albero delle regole, vengono visualizzati i dati in percentuale e numerici (muovendo il cursore del mouse sulle sezioni dei grafici a torta) relativi alla scansione in esame.
 
 La figura mostra la visualizzazione dei risultati relativi alla sezione principale Amministrazione Trasparente per la scansione effettuata il 07/06/2025.
 
@@ -12,7 +21,7 @@ La figura mostra la visualizzazione dei risultati relativi alla sezione principa
 
   Menù "Grafico per Regola" - Regola "Amministrazione Trasparente" (radice albero)
 
-I dati di scansione relativi alle varie sezioni dell'albero delle regole, sono selezionabili dal menù a tendina "Nome della Regola".
+Il menù a tendina "Nome della Regola" permette la selezione dei dati di scansione relativi alle varie sezioni dell'albero delle regole.
 
 .. _grafico-per-regola-esempio-4-img:
 .. figure:: images/ui-grafico_per_regola_esempio-4.png
