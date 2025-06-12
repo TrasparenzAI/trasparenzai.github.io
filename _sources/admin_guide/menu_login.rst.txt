@@ -11,7 +11,7 @@ Inserite le credenziali, si avrà accesso tutte le funzioni della piattaforma ac
 
   Menù "Accesso area riservata"
 
-Attraverso il sotto-menù "Configurazione" si accede alla pagina di configurazione che permette di definire il calendario di scansione dei siti; i parametri di controllo per le scansioni (alberi delle regole, , screenshots, timeouts, storico delle scansioni da memorizzare, ecc.); la personalizzazione dei colori per i grafici.
+Attraverso il sotto-menù "Configurazione" si accede alla pagina di configurazione che permette di definire il calendario di scansione dei siti; i parametri di controllo per le scansioni (alberi delle regole, , screenshots, timeouts, storico delle scansioni da memorizzare, ecc.); la personalizzazione dei colori.
 
 .. _menu-login-img:
 .. figure:: images/ui-menu_login-configurazione.png
