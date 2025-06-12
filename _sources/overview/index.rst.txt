@@ -1,7 +1,7 @@
 Panoramica della soluzione
 ==========================
 
-La piattaforma *TransparenzAI* nasce con lo scopo di semplificare e rendere
+La **piattaforma TransparenzAI** (sviluppata dal :term:`CNR`) nasce con lo scopo di semplificare e rendere
 più efficiente l’accesso e il monitoraggio delle informazioni pubblicate 
 nella sezione :term:`Amministrazione Trasparente` dei siti delle amministrazioni pubbliche. 
 
