@@ -1,7 +1,7 @@
-Menù "Grafico per regola" ("Grafici e Mappe")
-=============================================
+Menù "Grafico per regola"
+=========================
 
-La voce di menù "Grafico per regola" permette di accedere alla rappresentazione grafica dei risultati generati da ogni scansione. 
+La voce di menù "Grafico per regola" (:numref:`grafico-per-regola-menu-img`) permette di accedere alla rappresentazione grafica dei risultati generati da ogni scansione. 
 
 .. _grafico-per-regola-menu-img:
 .. figure:: images/ui-grafico_per_regola_menu.png
@@ -12,7 +12,7 @@ La voce di menù "Grafico per regola" permette di accedere alla rappresentazione
 
 Selezionando una sezione dell'albero delle regole, vengono visualizzati i dati in percentuale e numerici (muovendo il cursore del mouse sulle sezioni dei grafici a torta) relativi alla scansione in esame.
 
-La figura mostra la visualizzazione dei risultati relativi alla sezione principale Amministrazione Trasparente per la scansione effettuata il 07/06/2025.
+La :numref:`grafico-per-regola-esempio-1-img` mostra la visualizzazione dei risultati relativi alla sezione principale Amministrazione Trasparente per la scansione effettuata il 07/06/2025.
 
 .. _grafico-per-regola-esempio-1-img:
 .. figure:: images/ui-grafico_per_regola_esempio-1.png
@@ -21,7 +21,7 @@ La figura mostra la visualizzazione dei risultati relativi alla sezione principa
 
   Menù "Grafico per regola" - Regola "Amministrazione Trasparente" (radice albero)
 
-Il menù a tendina "Nome della Regola" permette la selezione dei dati di scansione relativi alle varie sezioni dell'albero delle regole.
+Il menù a tendina "Nome della Regola" (:numref:`grafico-per-regola-esempio-4-img`) permette la selezione dei dati di scansione relativi alle varie sezioni dell'albero delle regole.
 
 .. _grafico-per-regola-esempio-4-img:
 .. figure:: images/ui-grafico_per_regola_esempio-4.png
@@ -30,7 +30,7 @@ Il menù a tendina "Nome della Regola" permette la selezione dei dati di scansio
 
   Menù "Grafico per regola" - selezione "Nome della Regola" da visualizzare
 
-Nelle figure successive sono mostrati i risultati delle sezioni "Organizzazione" e "Tassi di assenza".
+Nelle figure :numref:`grafico-per-regola-esempio-2-img` e :numref:`grafico-per-regola-esempio-3-img` sono mostrati i risultati delle sezioni "Organizzazione" e "Tassi di assenza".
 
 .. _grafico-per-regola-esempio-2-img:
 .. figure:: images/ui-grafico_per_regola_esempio-2.png
