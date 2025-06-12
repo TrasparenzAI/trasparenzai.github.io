@@ -109,15 +109,11 @@ Flusso principale - Amministrazione Trasparente
 Dettagli del flussso principale
 -------------------------------
 
-Il primo `TASK <https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L8-L22>`__ del flusso si occupa di invocare l'aggiornamento della configurazione del microservizio delle regole, dopo aver valorizzato la variabile necessaria al controllo delle pagine elaborate, 
-il flusso invoca il `microservizio delle PA <https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L71-L85>`__  descritto in :ref:`Public Sites Service` e recupera le informazioni necessarie.
+Il primo `TASK <https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L8-L22>`__ del flusso si occupa di invocare l'aggiornamento della configurazione del microservizio delle regole. Dopo aver valorizzato la variabile necessaria al controllo delle pagine elaborate, il flusso invoca il `microservizio delle PA <https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L71-L85>`__  descritto in :ref:`Public Sites Service` e recupera le informazioni necessarie.
 
-Il blocco recuperato contentente le informazioni di *n* PA viene parcellizzato in base al parametro fornito in input **page_size** e diviso per *10*, 
-utilizzando infine il `TASK FORK/JOIN <https://orkes.io/content/reference-docs/operators/fork-join>`__ vengono eseguiti in parallello *10* istanze 
-del flusso `Rule <https://github.com/trasparenzai/workflow-definition/blob/main/rule_workflow.json>`__ valorizzando il parametro in input `companies <https://github.com/trasparenzai/workflow-definition/blob/main/rule_workflow.json#L278>`__.
+Il blocco recuperato contentente le informazioni di *n* PA viene parcellizzato in base al parametro fornito in input **page_size** e diviso per *10*, utilizzando infine il `TASK FORK/JOIN <https://orkes.io/content/reference-docs/operators/fork-join>`__ vengono eseguiti in parallello *10* istanze del flusso `Rule <https://github.com/trasparenzai/workflow-definition/blob/main/rule_workflow.json>`__ valorizzando il parametro in input `companies <https://github.com/trasparenzai/workflow-definition/blob/main/rule_workflow.json#L278>`__.
 
-All'uscita del `TASK delle PA <https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L52-L60>`__, se il flusso è stato eseguito non per una singola PA, allora vengono 
-rielaborati i risultati con i codici *400* e *407* con i timeout massimi ed eseguiti i flussi `Crawler Result Failed <https://github.com/trasparenzai/workflow-definition/blob/main/crawler_result_failed.json>`__.
+All'uscita del `TASK delle PA <https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L52-L60>`__, se il flusso è stato eseguito non per una singola PA, allora vengono rielaborati i risultati con i codici *400* e *407* con i timeout massimi ed eseguiti i flussi `Crawler Result Failed <https://github.com/trasparenzai/workflow-definition/blob/main/crawler_result_failed.json>`__.
 
 Infine viene eseguito il `TASK <https://github.com/trasparenzai/workflow-definition/blob/main/crawler_amministrazione_trasparente.json#L581-L596>`__ per elaborare la Mappa geolocalizzata dei risultati.
 
