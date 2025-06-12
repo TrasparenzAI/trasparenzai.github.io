@@ -1,7 +1,7 @@
 Menù "Mappa delle Amministrazioni"
 ==================================
 
-Il menù "Mappa delle Amministrazioni" offre una visualizzazione geografica interattiva dei risultati ottenuti. L'utente può consultare grafici a torta che sintetizzano la conformità delle sezioni “Amministrazione Trasparente” per macro-aree. Zoomando sulla mappa, è possibile arrivare fino al dettaglio delle singole amministrazioni, visualizzando informazioni puntuali sulla conformità normativa di ciascun Ente.
+Il menù "Mappa delle Amministrazioni" accede alla funzione di visualizzazione geografica interattiva deelle Amministrazioni (:numref:`ui-mappa_amministrazioni-img`). L'utente può così individuare l'Amministrazione che intende visualizzare. I sistema resituisce la informazioni generali dell'Amministrazione, le sezioni relative alla trasparenza pubblicate sul sito web e le statistiche relative allo stato dei dati rilevati. Se l'utente lo permette, il sistema permette di individuare le Amministrazioni presenti nell'area dell'utente attraverso un meccanismo di geolocalizzazione locale (l'applicazione richiede l'autorizzazione all'utente per rilevare le coordinate geografiche di posizione che rimangono esclusivamente sul dispotivo utente e non vengono acquisite dalla piattaforma).
 
 .. _mappa_amministrazioni-img:
 .. figure:: images/ui-mappa_amministrazioni.png
@@ -10,8 +10,7 @@ Il menù "Mappa delle Amministrazioni" offre una visualizzazione geografica inte
 
   Menù "Mappa delle Amministrazioni" - immagine generale
 
-Attraverso la sezione “Mappa delle Amministrazioni”, l’utente accede a una rappresentazione geospaziale delle PA. Ogni area geografica è rappresentata da un grafico a torta che sintetizza il livello di conformità degli enti pubblici locali. Cliccando sulle aree, è possibile visualizzare i risultati per provincia e comune.
-Il sistema consente uno zoom progressivo che, da macro-cluster regionali, permette di arrivare fino al dettaglio delle singole amministrazioni, con accesso diretto alla scheda di ciascun ente e alle sue informazioni specifiche.
+Zoomando sulla mappa (:numref:`ui-mappa_amministrazioni_zoom-1-img`), è possibile arrivare fino al dettaglio delle singole amministrazioni (:numref:`ui-mappa_amministrazioni_zoom-2-img`), visualizzando informazioni puntuali sulla conformità normativa di ciascun Ente.
 
 .. _mappa_amministrazioni_zoom-1-img:
 .. figure:: images/ui-mappa_amministrazioni_zoom-1.png
