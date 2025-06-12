@@ -1,7 +1,7 @@
 Menù "Mappa per regola"
 =======================
 
-La voce di menù "Mappa per regola" (:numref:`mappa-per-regola-img`) permette di accedere alla rappresentazione grafica geolocalizzata dei risultati generati da ogni scansione. Il menù a tendina "Nome della Regola" permette la selezione della sezione dell'albero "Amministrazione Trasparente" di cui si vuole mostrare lo stato su scala geografica.
+La voce di menù "Mappa per regola" (:numref:`mappa-per-regola-menu-img`) permette di accedere alla rappresentazione grafica geolocalizzata dei risultati generati da ogni scansione. Il menù a tendina "Nome della Regola" permette la selezione della sezione dell'albero "Amministrazione Trasparente" di cui si vuole mostrare lo stato su scala geografica.
 Attraverso la funzione di zoom è possibile definire la dimensione spaziale da visualizzare ed i relativi dati aggregati per area (macro-cluster spaziali). La funzione di zoom permette l'individuazione della singola Amministrazione per visualizzarne i risultati della scansione.
 
 .. _mappa-per-regola-menu-img:
