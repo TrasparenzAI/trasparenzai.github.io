@@ -28,14 +28,14 @@ supporto alle amministrazioni per adeguarsi agli standard richiesti,
 migliorando così il livello complessivo della trasparenza amministrativa. 
 
 L’assenza di un meccanismo centralizzato che permetta di uniformare la
-pubblicazione delle informazioni rappresenta oggi un ostacolo alla piena
-efficacia della normativa vigente, e la piattaforma si pone l’obiettivo
+pubblicazione delle informazioni, rappresenta un ostacolo alla piena
+efficacia della normativa vigente e la piattaforma si pone l’obiettivo
 di colmare questa lacuna attraverso l’adozione di strumenti tecnologici
 avanzati.
 
-L'architettura della piattaforma realizzata è composta da molti componenti
-integrati tra di loro, qui puoi trovare la documentazione dell'architettura
-generale, dei singoli componenti e dei risultati di validazione ottenuti.
+L'architettura della piattaforma realizzata è composta da microservizi software
+integrati tra loro. Qui puoi trovare la documentazione dell'architettura
+generale, dei singoli componenti, dei risultati di validazione ottenuti e il manuale amministratore dell'interfaccia web.
 
 Se sei interessato al codice sorgente della piattaforma lo puoi trovare su
 github:
