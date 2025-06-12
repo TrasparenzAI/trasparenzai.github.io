@@ -29,7 +29,7 @@ Il tasto "Nuovo albero delle regole" permette di creare nuovi alberi delle regol
   Creazione di un nuovo albero delle regole
 
 Per ogni elemento dell'albero selezionato, sono presenti i tasti "Modifica", "Nuovo" ed "Elimina".
-Il tasto "Modifica" permette di modificare i termini da ricercare per ogni regola definendo un elenco di termini che la piattaforma deve considerare equivalenti al termine ricercato nel corso delle scansioni a cui si applica l'albero (Esempio termine ricercato "Amministrazione Trasparente", termini alternativi "Società Trasparente", "Amm. Trasparente"). Tale funzionalità, aumenta il grado di tolleranza della piattaforma e permette controlli con gradi di libertà configurabili, adattando la ricerca alla terminologia effettivamente utilizzata nei siti delle Amministrazioni.
+Il tasto "Modifica" permette di modificare i termini da ricercare per ogni regola definendo un elenco di termini che la piattaforma deve considerare equivalenti al termine ricercato nel corso delle scansioni a cui si applica l'albero (esempio termine ricercato "Amministrazione Trasparente", termini alternativi "Società Trasparente", "Amm. Trasparente"). Tale funzionalità, aumenta il grado di tolleranza della piattaforma e permette controlli con gradi di libertà configurabili, adattando la ricerca alla terminologia effettivamente utilizzata nei siti delle Amministrazioni.
 Il tasto "Nuovo" attiva la funzione di creazione di una nuova regola-figlia della regola attuale (sotto-sezione).
 Il tasto "Elimina" cancella definitivamente la regola selezionata.
 
