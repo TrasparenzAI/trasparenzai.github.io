@@ -26,6 +26,10 @@ Glossario
       Autorità Nazionale Anticorruzione, organismo di controllo e prevenzione della corruzione nella Pubblica Amministrazione. 
       Partner del progetto TrasparenzAI.   
 
+   CNR
+      Consiglio Nazionale delle Ricerche.
+      Ente pubblico di ricerca nazionale con competenze multidisciplinari, vigilato dal Ministero dell'Università e della Ricerca (MUR).
+
    IndicePA
       Fonte OpenData ufficiale che elenca tutte le Pubbliche Amministrazioni italiane,
       utilizzata per alimentare la base dati della piattaforma.
