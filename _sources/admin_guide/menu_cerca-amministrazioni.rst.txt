@@ -16,4 +16,4 @@ L’interfaccia di ricerca consente il filtraggio degli enti pubblici per Codice
   :width: 800
   :alt: Esempio - ricerca filtro "Denominazione Ente"
 
-  *Esempio ricerca filtro "Denominazione Ente"*
+  Esempio ricerca filtro "Denominazione Ente"
