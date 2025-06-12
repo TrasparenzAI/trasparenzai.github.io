@@ -26,8 +26,6 @@ e consultabili all'indirizzo /swagger-ui/index.html.
   :width: 800
   :alt: Interfaccia Swagger UI all'OpenAPI del servizio
 
-L'OpenAPI del servizio di staging è disponibile all'indirizzo 
-https://dica33.ba.cnr.it/result-service/swagger-ui/index.html.
 
 
 Sicurezza
