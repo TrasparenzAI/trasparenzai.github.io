@@ -14,6 +14,7 @@ Header (intestazione)
 ---------------------
 
 Nella parte superiore della homepage (:numref:`home-header-img`) sono presenti:
+
 #. La barra superiore con il link al protocollo di collaborazione tra Consiglio Nazionale delle Ricerche e Autorità Nazionale Anticorruzione nell'ambito del quale è stato sviluppata la **piattaforma TrasparenzAI** (`Protocollo d’intesa tra l’Autorità Nazionale Anticorruzione e il Consiglio Nazionale delle Ricerche del 7 agosto 2023 <https://www.anticorruzione.it/-/protocollo-d-intesa-tra-l-autorit%C3%A0-nazionale-anticorruzione-e-il-consiglio-nazionale-delle-ricerche-7-agosto-2023>`__) e i link di accesso rapido a credits, documentazione, login.
 #. Il menu di navigazione principale per l'accesso alle principali funzioni "Cerca amministrazioni", "Mappa delle Amministrazioni", "Regole", "Grafici e Mappe", "Esplora Sezioni". Il Menù è responsive e può essere collassato su dispositivi mobili.
 
