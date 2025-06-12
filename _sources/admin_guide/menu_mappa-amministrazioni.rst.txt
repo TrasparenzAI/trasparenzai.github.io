@@ -10,7 +10,7 @@ Il menù "Mappa delle Amministrazioni" accede alla funzione di visualizzazione g
 
   Menù "Mappa delle Amministrazioni" - immagine generale
 
-Utilizzando la rotellina del mouse oppure tramite la funzione di zoom dei sistemi touch screen (mobile e tablet) è possibile ingrandire e ridurre la mappa (:numref:`mappa_amministrazioni_zoom-1-img`) fino ad individure il dettaglio della singole Amministrazione (:numref:`mappa_amministrazioni_zoom-2-img`) e visualizzare le informazioni puntuali di ciascun Ente.
+Utilizzando la rotellina del mouse oppure tramite la funzione di zoom dei sistemi touch screen (mobile e tablet) è possibile ingrandire e ridurre la mappa (:numref:`mappa_amministrazioni_zoom-1-img`) fino ad individure il dettaglio della singola Amministrazione (:numref:`mappa_amministrazioni_zoom-2-img`), visualizzarne le informazioni e raggiungere i dati pubblicati della trasparenza amministrativa.
 
 .. _mappa_amministrazioni_zoom-1-img:
 .. figure:: images/ui-mappa_amministrazioni_zoom-1.png
