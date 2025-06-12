@@ -1,4 +1,4 @@
-Config service
+Config Service
 ==============
 
 Config Service è il componente che si occupa di archiviare e distribuire alcune
