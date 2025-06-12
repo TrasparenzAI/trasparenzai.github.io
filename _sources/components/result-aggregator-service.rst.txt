@@ -20,7 +20,7 @@ Il codice sorgente di questo componente è disponibile su GitHub:
 OpenAPI e Swagger UI
 --------------------
 
-Una volta avviato il servizio i servizi REST sono documentati tramite OpenAPI 
+Una volta avviato il servizio, i servizi REST sono documentati tramite OpenAPI 
 e consultabili all'indirizzo /swagger-ui/index.html.
 
 .. figure:: images/openapi-result-service.png
