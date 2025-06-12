@@ -1,10 +1,9 @@
 Componenti principali
 =====================
 
-Il sistema TrasparenzAI è di tipo modulare ed è composta sia da componenti
-sviluppati ad-hoc per il progetto che da software opensource già disponibili.
+Il sistema TrasparenzAI è di tipo modulare ed è composta sia da componenti sviluppati ad-hoc per il progetto che da software opensource già disponibili.
 
-I componenti sviluppati per il progetto sono:
+Di seguito la lista dei componenti sviluppati per il progetto:
 
   * https://github.com/trasparenzai/public-sites-service
   * https://github.com/trasparenzai/rule-service
@@ -15,14 +14,8 @@ I componenti sviluppati per il progetto sono:
   * https://github.com/trasparenzai/workflow-definition
   * https://github.com/trasparenzai/ui-service
 
-Alcuni di questi componenti sono stati sviluppati in un ottica di possibile 
-riuso da parte della comunità opensource italiana, alcuni così come sono, altri
-come esempio per progetti di crawling e analisi di siti di web similari.
-I componenti stati sviluppati principalmente in Java 
-(con `Spring Boot <https://spring.io/projects/spring-boot>`_) e Python 
-(`FastAPI <https://fastapi.tiangolo.com/>`_ e `Uvicorn <https://www.uvicorn.org/>`_) 
-per la parte backend e typescript (`Angular <https://angular.dev/>`_) per
-la parte frontend.
+Ogni componente è stato realizzato nell'ottica di un possibile riuso da parte della comunità opensource italiana (per esempio, progetti di crawling e analisi di siti di web similari).
+I componenti sono stati sviluppati principalmente in Java (con `Spring Boot <https://spring.io/projects/spring-boot>`_) e Python (`FastAPI <https://fastapi.tiangolo.com/>`_ e `Uvicorn <https://www.uvicorn.org/>`_) per la parte backend e typescript (`Angular <https://angular.dev/>`_) per la parte frontend.
 
 I software opensource utilizzati sono:
   * `Keycloak <https://www.keycloak.org/>`_
