@@ -20,7 +20,7 @@ devono gestire la pubblicazione e l’aggiornamento dei dati, sia per gli utenti
 finali, che incontrano ostacoli nell’individuazione e nella consultazione delle
 informazioni.
 
-A fronte di queste criticità, la **piattaforma TrasparenzAI** nasce con lo scopo
+A fronte di queste criticità, la **piattaforma TrasparenzAI** (realizzata nell'ambito della collaborazione istituzionale tra :term:'CNR' e :term:ANAC) nasce con lo scopo
 di semplificare e rendere più efficiente l’accesso e il monitoraggio delle 
 informazioni pubblicate nella sezione :term:`Amministrazione Trasparente` dei siti 
 delle amministrazioni pubbliche.
@@ -34,9 +34,8 @@ La piattaforma è disponibile all'indirizzo:
    :hidden:
 
    overview/index
-   admin_guide/index
    architecture/index
    components/index
    installation/index
-
+   admin_guide/index
    appendix
