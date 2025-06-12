@@ -2,7 +2,7 @@ Task Scheduler Service
 =======================
 
 Task Scheduler Service è il componente che si occupa di avviare alcuni processi
-eseguiti a intervalli fissi, come per esempio l'**avvio delle scansioni** dei siti 
+eseguiti a intervalli fissi, come per esempio l"**avvio delle scansioni** dei siti 
 del PA per la verifica della corrispondenza dei requisiti e la **cancellazione
 dei risultati di scansione più vecchi**.
 
@@ -24,7 +24,7 @@ Il codice sorgente di questo componente è disponibile su GitHub:
 OpenAPI e Swagger UI
 --------------------
 
-Una volta avviato il servizio i servizi REST sono documentati tramite OpenAPI 
+Una volta avviato il servizio, i servizi REST sono documentati tramite OpenAPI 
 e consultabili all'indirizzo /swagger-ui/index.html.
 
 .. figure:: images/openapi-task-scheduler-service.png
@@ -48,6 +48,6 @@ Questo servizio ha quattro dipendenze per funzionare:
   * il `Result Aggregator Service <https://github.com/trasparenzai/result-aggregator-service>`_ 
     per cancellare i risultati di validazione aggregati più vecchi
 
-L'indirizzo di questi servizi è da configurabile nel file 
+L'indirizzo di questi servizi è configurabile nel file 
 `application.properties <https://github.com/trasparenzai/task-scheduler-service/blob/main/src/main/resources/application.properties>`_
 oppure tramite variabili d'ambiente se avviato tramite Docker.
