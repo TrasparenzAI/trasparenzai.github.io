@@ -14,7 +14,7 @@ indirizzi degli enti pubblici.
 Il codice sorgente è disponibile su github:
   - https://github.com/trasparenzai/public-sites-service
 
-Nel repository github è compreso anche un script per la prima installazione
+Nel repository github è compreso anche uno script per la prima installazione
 del servizio `first-setup.sh <https://github.com/trasparenzai/public-sites-service/blob/main/first-setup.sh>`_.
 
 In particolare è necessario configurare la sezione della sicurezza.

@@ -11,7 +11,7 @@ relative ai risultati di validazione.
 Il codice sorgente è disponibile su github:
   - https://github.com/trasparenzai/result-aggregator-service
 
-Nel repository github è compreso anche un script per la prima installazione
+Nel repository github è compreso anche uno script per la prima installazione
 del servizio `first-setup.sh <https://github.com/trasparenzai/result-aggregator-service/blob/main/first-setup.sh>`_.
 
 Questo servizio ha due dipendenze per funzionare:
