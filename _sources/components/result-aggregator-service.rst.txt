@@ -38,7 +38,7 @@ Questo servizio ha due dipendenze dagli altri componenti per funzionare:
  * il `Public Site Service <https://github.com/trasparenzai/public-sites-service>`_ 
    da cui prelevare le info geografiche delle PA
 
-L'indirizzo di entrambi questi servizi è da configurabile nel file 
+L'indirizzo di entrambi questi servizi è configurabile nel file 
 `application.properties <https://github.com/trasparenzai/result-aggregator-service/blob/main/src/main/resources/application.properties>`_
 oppure tramite variabili d'ambiente se avviato tramite Docker.
 
@@ -47,7 +47,7 @@ Sicurezza
 
 Gli endpoint REST di questo servizio sono protetti tramite autenticazione OAuth
 con Bearer Token.
-E' necessario configurare l'idp da utilizzare per validare i token OAuth tramite
+È necessario configurare l'idp da utilizzare per validare i token OAuth tramite
 le due proprietà mostrare nell'esempio seguente::
 
   - spring.security.oauth2.resourceserver.jwt.issuer-uri=https://dica33.ba.cnr.it/keycloak/realms/trasparenzai

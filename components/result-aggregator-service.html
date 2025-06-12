@@ -944,7 +944,7 @@ leggere le info sulle verifiche</p></li>
 da cui prelevare le info geografiche delle PA</p></li>
 </ul>
 </div></blockquote>
-<p>L’indirizzo di entrambi questi servizi è da configurabile nel file
+<p>L’indirizzo di entrambi questi servizi è configurabile nel file
 <a class="reference external" href="https://github.com/trasparenzai/result-aggregator-service/blob/main/src/main/resources/application.properties" rel="noreferrer" target="_blank">application.properties</a>
 oppure tramite variabili d’ambiente se avviato tramite Docker.</p>
 </section>
@@ -952,7 +952,7 @@ oppure tramite variabili d’ambiente se avviato tramite Docker.</p>
 <h2><span class="section-number">3.4.3. </span>Sicurezza<a class="headerlink" href="#sicurezza" title="Link to this heading">¶</a></h2>
 <p>Gli endpoint REST di questo servizio sono protetti tramite autenticazione OAuth
 con Bearer Token.
-E” necessario configurare l’idp da utilizzare per validare i token OAuth tramite
+È necessario configurare l’idp da utilizzare per validare i token OAuth tramite
 le due proprietà mostrare nell’esempio seguente:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">issuer</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span>
 <span class="o">-</span> <span class="n">spring</span><span class="o">.</span><span class="n">security</span><span class="o">.</span><span class="n">oauth2</span><span class="o">.</span><span class="n">resourceserver</span><span class="o">.</span><span class="n">jwt</span><span class="o">.</span><span class="n">jwk</span><span class="o">-</span><span class="nb">set</span><span class="o">-</span><span class="n">uri</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dica33</span><span class="o">.</span><span class="n">ba</span><span class="o">.</span><span class="n">cnr</span><span class="o">.</span><span class="n">it</span><span class="o">/</span><span class="n">keycloak</span><span class="o">/</span><span class="n">realms</span><span class="o">/</span><span class="n">trasparenzai</span><span class="o">/</span><span class="n">protocol</span><span class="o">/</span><span class="n">openid</span><span class="o">-</span><span class="n">connect</span><span class="o">/</span><span class="n">certs</span>
