@@ -11,8 +11,8 @@ Inserite le credenziali, si avrà accesso tutte le funzioni della piattaforma ac
 
   Menù "Accesso area riservata"
 
-Attraverso il sotto-menù "Configurazione" si accede alla pagina di configurazione che permette di definire il calendario di scansione dei siti; i parametri di controllo per le scansioni (alberi delle regole, , screenshots, timeouts, storico delle scansioni da memorizzare, ecc.); la personalizzazione dei colori.
-I valori dei parametri sono quelli già descritti nel `paragrafo 4.3.2 Configurazione di default della sezione Installazione e configurazione - 4.3 Config Service <https://trasparenzai.github.io/installation/config-service.html#configurazione-di-default>`_.
+Attraverso il sotto-menù "Configurazione" si accede alla pagina di configurazione che permette di definire il calendario di scansione dei siti; i parametri di controllo per le scansioni (alberi delle regole, ,screenshots, timeouts, storico delle scansioni da memorizzare, ecc.); la personalizzazione dei colori.
+I valori dei parametri sono quelli già descritti nella sezione configurazione del `Config Service <https://trasparenzai.github.io/installation/config-service.html#configurazione-di-default>`_.
 
 .. _menu-login-img:
 .. figure:: images/ui-menu_login-configurazione.png
