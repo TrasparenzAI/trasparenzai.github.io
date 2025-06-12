@@ -1,5 +1,5 @@
-Menù "Mappa per regola" ("Grafici e Mappe")
-===========================================
+Menù "Mappa per regola"
+=======================
 
 La voce di menù "Mappa per regola" (:numref:`mappa-per-regola-img`) permette di accedere alla rappresentazione grafica geolocalizzata dei risultati generati da ogni scansione. Il menù a tendina "Nome della Regola" permette la selezione della sezione dell'albero "Amministrazione Trasparente" di cui si vuole mostrare lo stato su scala geografica.
 Attraverso la funzione di zoom è possibile definire la dimensione spaziale da visualizzare ed i relativi dati aggregati per area (macro-cluster spaziali). La funzione di zoom permette l'individuazione della singola Amministrazione per visualizzarne i risultati della scansione.
@@ -11,7 +11,7 @@ Attraverso la funzione di zoom è possibile definire la dimensione spaziale da v
 
   Menù "Mappa per regola"
 
-La figura di seguito mostra uno zoom relativo alle macro-area italiane (:numref:`mappa-per-regola-zoom-1-img`). I grafici sono riferiti alla scansione effettuata il 07/06/2025 per la sezione principale "Amministrazione Trasparente".
+La :numref:`mappa-per-regola-zoom-1-img` mostra lo zoom relativo alle macro-area italiane. I grafici sono riferiti alla scansione effettuata il 07/06/2025 per la sezione principale "Amministrazione Trasparente".
 
 .. _mappa-per-regola-zoom-1-img:
 .. figure:: images/ui-mappa_per_regola_zoom-1.png
@@ -29,7 +29,7 @@ Il menù a tendina «Nome della Regola» (:numref:`mappa-per-regola-selezione-re
 
   Menù "Mappa per regola" - selezione "Nome della Regola"
 
-Le seguenti 3 figure mostrano visualizzazioni della sezione principale "Amministrazione Trasparente" con livelli di zoom differenti.
+Le figure :numref:`mappa-per-regola-zoom-2-img` e :numref:`mappa-per-regola-zoom-3-img` mostrano visualizzazioni della sezione principale "Amministrazione Trasparente" con livelli di zoom differenti.
 
 .. _mappa-per-regola-zoom-2-img:
 .. figure:: images/ui-mappa_per_regola_zoom-2.png
@@ -45,7 +45,7 @@ Le seguenti 3 figure mostrano visualizzazioni della sezione principale "Amminist
 
   Menù "Mappa per regola" - Grafici per macro aree zoom 3
 
-La figura di sotto (:numref:`mappa-per-regola-zoom-4-img`) mostra il livello di zoom massimo con identificazione della singola Amministrazione (esempio: Agenzia Nazionale di Valutazione del Sistema Universitario e della Ricerca). Cliccando sulla denominazione dell'Amministrazione è possibile accedere alla funzione di analisi delle singole regole, per la verifica di tutte le sezioni Amministrazione Trasparente. Per ogni sezione è fornito il link di accesso diretto alle relative pagine informative.
+La :numref:`mappa-per-regola-zoom-4-img` mostra il livello di zoom massimo con identificazione della singola Amministrazione (esempio: Agenzia Nazionale di Valutazione del Sistema Universitario e della Ricerca). Cliccando sulla denominazione dell'Amministrazione è possibile accedere alla funzione di analisi delle singole regole, per la verifica di tutte le sezioni Amministrazione Trasparente. Per ogni sezione è fornito il link di accesso diretto alle relative pagine informative.
 
 .. _mappa-per-regola-zoom-4-img:
 .. figure:: images/ui-mappa_per_regola_zoom-4.png
