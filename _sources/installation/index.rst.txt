@@ -21,8 +21,7 @@ Per la piattaforma fornita in staging è stato utilizzato
 `Traefik <https://traefik.io/traefik/>`_.
 
 .. toctree::
-   :maxdepth: 2
-   :hidden:
+   :maxdepth: 3
    :caption: Descrizione procedure installazione e configurazione
 
    authentication
