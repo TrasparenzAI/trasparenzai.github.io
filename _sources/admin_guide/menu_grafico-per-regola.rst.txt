@@ -1,7 +1,7 @@
 Menù "Grafico per regola"
 =========================
 
-La voce di menù "Grafico per regola" (:numref:`grafico-per-regola-menu-img`) permette di accedere alla rappresentazione grafica dei risultati generati da ogni scansione. 
+Il menù "Grafico per regola" (:numref:`grafico-per-regola-menu-img`) accede alle funzioni di rappresentazione grafica dei risultati generati da ogni scansione. 
 
 .. _grafico-per-regola-menu-img:
 .. figure:: images/ui-grafico_per_regola_menu.png
