@@ -1,7 +1,8 @@
 Menù "Esplora Sezioni"
 ======================
 
-La voce di menù "Esplora Sezioni" permette di accedere alle funzioni di analisi filtrata dei dati. Il menù permette di accedere alla ricerca con filtro relativa ai controlli effettuati durante le scansioni temporali. E' possibile scegliere la scansione temporale, il nome della regola da verificare, lo stato, la denominazione dell'Amministrazione, il codice fiscale dell'Amministrazione, il codice IPA, la categoria.
+Il menù "Esplora Sezioni" (:numref:`esplora-sezioni-menu-img`) accede alle funzioni di analisi filtrata dei dati relativa ai controlli effettuati durante le scansioni temporali. E' possibile scegliere la scansione temporale, il nome della regola da verificare, lo stato, la denominazione dell'Amministrazione, il codice fiscale dell'Amministrazione, il codice IPA, la categoria.
+
 Tutti i dati sono esportabili con file di interscambio in formato CSV.
 
 .. _esplora-sezioni-menu-img:
@@ -11,7 +12,7 @@ Tutti i dati sono esportabili con file di interscambio in formato CSV.
 
   Menù "Esplora Sezioni"
 
-La prima voce di menù "Tutte le Regole" permette la ricerca con selezione interamente configurabile dall'utente. Le ulteriori voci di menù offrono ricerche predefinite per specifiche sezioni: Amministrazione Trasparente, Patrimonio immobiliare, Canoni di locazione o affitto, Bandi di gara e contratti, Bandi di concorso, Prevenzione della corruzione, Indicatore di tempestività dei pagamenti, Bilanci.
+Il primo sotto-menù "Tutte le Regole" (:numref:`esplora-sezioni-menu-img`) accede alla ricerca avanzata interamente configurabile dall'utente. Gli ulteriori sotto-menù offrono ricerche predefinite per le sezioni "Amministrazione Trasparente", "Patrimonio immobiliare", "Canoni di locazione o affitto", "Bandi di gara e contratti", "Bandi di concorso", "Prevenzione della corruzione", "Indicatore di tempestività dei pagamenti", "Bilanci".
 
 .. _esplora-sezioni-tutte-le-regole-img:
 .. figure:: images/ui-esplora-sezioni_tutte-le-regole.png
@@ -20,8 +21,7 @@ La prima voce di menù "Tutte le Regole" permette la ricerca con selezione inter
 
   Menù "Esplora Sezioni" - Filtro "Tutte le Regole"
 
-
-Le figure di seguito mostrano un esempio di selezione relative alla sezione "Prevenzione della corruzione" con tabelle relative a tutte la Amministrazioni ed alle sole Amministrazioni per le quali la sezione non è stata trovata sul sito web istituzionale.
+Le figure :numref:`esplora-sezioni-prevenzione-corruzione-img`, :numref:`esplora-sezioni-prevenzione-corruzione-tutti-img` e :numref:`esplora-sezioni-prevenzione-corruzione-non-trovato-img` mostrano alcuni esempi di selezioni relative alla sezione "Prevenzione della corruzione" con tabelle che evidenziano tutte le Amministrazioni (:numref:`esplora-sezioni-prevenzione-corruzione-tutti-img`) e le sole Amministrazioni per le quali la sezione non è stata trovata sul sito web istituzionale (:numref:`esplora-sezioni-prevenzione-corruzione-non-trovato-img`).
 
 .. _esplora-sezioni-prevenzione-corruzione-img:
 .. figure:: images/ui-esplora-sezioni_prevenzione-corruzione.png
