@@ -1,7 +1,7 @@
 Menù "Mappa delle Amministrazioni"
 ==================================
 
-Il menù "Mappa delle Amministrazioni" accede alla funzione di visualizzazione geografica interattiva deelle Amministrazioni (:numref:`mappa_amministrazioni-img`). L'utente può così individuare l'Amministrazione che intende visualizzare. I sistema resituisce la informazioni generali dell'Amministrazione, le sezioni relative alla trasparenza pubblicate sul sito web e le statistiche relative allo stato dei dati rilevati. Se l'utente lo permette, il sistema permette di individuare le Amministrazioni presenti nell'area dell'utente attraverso un meccanismo di geolocalizzazione locale (l'applicazione richiede l'autorizzazione all'utente per rilevare le coordinate geografiche di posizione che rimangono esclusivamente sul dispotivo utente e non vengono acquisite dalla piattaforma).
+Il menù "Mappa delle Amministrazioni" (:numref:`mappa_amministrazioni-img`) accede alla funzione di visualizzazione geografica interattiva deelle Amministrazioni (:numref:`mappa_amministrazioni-img`). L'utente può così individuare l'Amministrazione che intende visualizzare. La piattaforma viualizza le informazioni generali dell'Amministrazione selezionata, le relative sezioni della trasparenza amministrativa pubblicate sul sito web e le statistiche dei dati rilevati. Se l'utente permette la geolocalizzazione del dispositivo, la piattaforma visualizza le Amministrazioni presenti nell'area dell'utente (si precisa che le coordinate geografiche di posizione sono gestite dal dispotivo utente e non vengono acquisite dalla piattaforma).
 
 .. _mappa_amministrazioni-img:
 .. figure:: images/ui-mappa_amministrazioni.png
