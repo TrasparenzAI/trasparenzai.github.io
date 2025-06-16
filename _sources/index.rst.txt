@@ -24,4 +24,5 @@ La piattaforma è disponibile all'indirizzo:
    components/index
    installation/index
    admin_guide/index
+   user_guide/index
    appendix
