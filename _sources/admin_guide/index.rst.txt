@@ -5,7 +5,7 @@ Questo manuale descrive le funzioni disponibili agli utenti con ruolo "Amministr
 
 .. toctree::
    :maxdepth: 3
-   :caption: Manuale Amministratore
+   :caption: Paragrafi manuale Amministratore
    
    homepage
    menu_cerca-amministrazioni
