@@ -7,7 +7,7 @@ Come effettuare la ricerca delle Amministrazioni e le relative informazioni di t
          
 .. toctree::
    :maxdepth: 3
-   :caption: Manuale Utente - contenuti
+   :caption: Paragrafi manuale Utente
    
    homepage
    ui-menu_mappa-amministrazioni
