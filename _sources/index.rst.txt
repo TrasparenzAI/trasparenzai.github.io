@@ -26,3 +26,9 @@ La piattaforma è disponibile all'indirizzo:
    admin_guide/index
    user_guide/index
    appendix
+
+.. toctree::
+   :name: glossary_toc
+   :hidden:
+
+   glossario
