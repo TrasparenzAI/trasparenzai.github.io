@@ -10,7 +10,7 @@ Il menù "Regole" (:numref:`menu-regole-img`) attiva le funzioni relative alla g
 
   Menù "Regole"
 
-L'utente con ruolo "Amministratore" può effettuare operazioni per la creazione di nuovi alberi delle regole (:numref:`menu-regole-nuovo.albero-regole-img`), la gestione di alberi di regole già predisposti (:numref:`menu-regole-alberi-alternativi-img`), l'eliminazioni di nodi o dell'intero albero (:numref:`menu-regole-modifica-nuovo-elimina-img`).
+L'utente con ruolo "Amministratore" può effettuare operazioni per la creazione di nuovi alberi delle regole (:numref:`menu-regole-nuovo-albero-delle-regole-img`), la gestione di alberi di regole già predisposti (:numref:`menu-regole-alberi-alternativi-img`), l'eliminazioni di nodi o dell'intero albero (:numref:`menu-regole-modifica-nuovo-elimina-img`).
 
 .. _menu-regole-alberi-alternativi-img:
 .. figure:: images/ui-regole_alberi_alternativi.png
@@ -19,7 +19,7 @@ L'utente con ruolo "Amministratore" può effettuare operazioni per la creazione 
 
   Selezione albero delle regole per scansione
 
-Il tasto "Nuovo albero delle regole" (:numref:`menu-regole-nuovo.albero-regole-img`) permette di creare nuovi alberi delle regole da applicare a scansioni generali o controlli specifici per singola Amministrazioni o classi di Amministrazioni.
+Il tasto "Nuovo albero delle regole" (:numref:`menu-regole-nuovo-albero-delle-regole-img`) permette di creare nuovi alberi delle regole da applicare a scansioni generali o controlli specifici per singola Amministrazioni o classi di Amministrazioni.
 
 .. _menu-regole-nuovo-albero-delle-regole-img:
 .. figure:: images/ui-menu_regole_nuovo-albero-delle-regole.png
