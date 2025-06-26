@@ -1,7 +1,7 @@
 Piattaforma TrasparenzAI
 ========================
 
-**Piattaforma opensource per l'analisi e la consultazione della trasparenza amministrativa delle Pubbliche Amministrazioni**
+**Piattaforma opensource per l'analisi e la consultazione della trasparenza amministrativa**
 
 La trasparenza amministrativa rappresenta un pilastro fondamentale per il buon funzionamento delle istituzioni pubbliche, garantendo ai cittadini, agli operatori economici e agli organismi di controllo la possibilità di accedere in modo semplice e immediato alle informazioni riguardanti l’attività delle Pubbliche Amministrazioni.
 
