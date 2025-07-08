@@ -13,7 +13,7 @@ Di seguito la lista dei componenti sviluppati per il progetto:
   * https://github.com/trasparenzai/conductor
   * https://github.com/trasparenzai/workflow-definition
   * https://github.com/trasparenzai/ui-service
-  * https://github.com/trasparenzai/webscraping-service
+  * https://github.com/trasparenzai/crawler-service
 
 Ogni componente è stato realizzato nell'ottica di un possibile riuso da parte della comunità opensource italiana (per esempio, progetti di crawling e analisi di siti di web similari).
 I componenti sono stati sviluppati principalmente in Java (con `Spring Boot <https://spring.io/projects/spring-boot>`_) e Python (`FastAPI <https://fastapi.tiangolo.com/>`_ e `Uvicorn <https://www.uvicorn.org/>`_) per la parte backend e typescript (`Angular <https://angular.dev/>`_) per la parte frontend.
@@ -40,6 +40,7 @@ come client OAuth2 nei task che interagiscono con le API REST della piattaforma.
    result-aggregator-service
    task-scheduler-service
    rule-service
+   crawler-service
    conductor-service
    ui-service
    
