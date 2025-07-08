@@ -9,3 +9,5 @@ autenticazione per la sola consultazione dei dati, per poi richiederla successiv
 L'interfaccia web è progettata seguendo le linee guida dell’**accessibilità**, della **responsività** e
 del **design istituzionale**, secondo quanto previsto da `Designers Italia <https://designers.italia.it/>`__.
 L’aspetto è professionale, ordinato e coerente con la comunicazione della Pubblica Amministrazione.
+
+Le sezioni `Manuale Amministratore <https://trasparenzai.github.io/admin_guide/>`__ e `Manuale Utente <https://trasparenzai.github.io/user_guide/>`__ descrivono nel dettaglio le funzioni disponibili attraverso la User Interface della piattaforma TrasaprenzAI.

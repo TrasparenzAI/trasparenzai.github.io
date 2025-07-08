@@ -1,7 +1,7 @@
 Componenti principali
 =====================
 
-Il sistema TrasparenzAI è di tipo modulare ed è composta sia da componenti sviluppati ad-hoc per il progetto che da software opensource già disponibili.
+Il sistema TrasparenzAI è di tipo modulare ed è composto da componenti sviluppati ad-hoc per il progetto e da altro software opensource disponibile.
 
 Di seguito la lista dei componenti sviluppati per il progetto:
 
