@@ -30,7 +30,7 @@ Questo servizio ha tre dipendenze per funzionare:
  - il :doc:`result-aggregator-service` da cui cancellare i vecchi workflow
 
 La configurazione del **conductor-service** per avviare i nuovi flussi e
-cancellari quelli vecchi viene letta automaticamente dal :doc:`config-service`.
+cancellare quelli vecchi viene letta automaticamente dal :doc:`config-service`.
 
 **Attenzione**: è invece importante impostare nel **.env** le URL dei servizi
 *result-service* e *result-aggregator-service* modificando le variabili d'ambiente 

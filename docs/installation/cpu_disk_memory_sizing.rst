@@ -1,7 +1,7 @@
 Risorse hardware consigliate
 =============================
 
-I test di funzionamento in produzione hanno evidenziato la necessità di suddividere l'architettura del sistema su almeno 3 distinte virtual machine (*VM-A*, *VM-B*, *VM-C*). In particolare, attese le risorse computazionali necessarie ai vari servizi, si consiglia l'installazione della piattaforma *TrasparenzAI* su almeno tre sistemi separati: VM-A) crawler ; VM-B) coordinamento; VM-C) gestione dei risultati e visualizzazione via Web.
+I test di funzionamento in produzione hanno evidenziato la necessità di suddividere l'architettura del sistema su almeno tre distinte virtual machine (*VM-A*, *VM-B*, *VM-C*). In particolare, attese le risorse computazionali necessarie ai vari servizi, si consiglia l'installazione della piattaforma *TrasparenzAI* su almeno tre sistemi separati: VM-A) crawler ; VM-B) coordinamento; VM-C) gestione dei risultati e visualizzazione via Web.
 
 Di seguito le risorse utilizzate per i test di funzionameto della piattaforma *TrasparenzAI*:
 

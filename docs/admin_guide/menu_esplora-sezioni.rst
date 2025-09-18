@@ -1,7 +1,7 @@
 Menù "Esplora Sezioni"
 ======================
 
-Il menù "Esplora Sezioni" (:numref:`esplora-sezioni-menu-img`) accede alle funzioni di analisi filtrata dei dati relativa ai controlli effettuati durante le scansioni temporali. E' possibile scegliere la scansione temporale, il nome della regola da verificare, lo stato, la denominazione dell'Amministrazione, il codice fiscale dell'Amministrazione, il codice IPA, la categoria.
+Il menù "Esplora Sezioni" (:numref:`esplora-sezioni-menu-img`) accede alle funzioni di analisi filtrata dei dati relativa ai controlli effettuati durante le scansioni temporali. È possibile scegliere la scansione temporale, il nome della regola da verificare, lo stato, la denominazione dell'Amministrazione, il codice fiscale dell'Amministrazione, il codice IPA, la categoria.
 
 Tutti i dati sono esportabili con file di interscambio in formato CSV.
 

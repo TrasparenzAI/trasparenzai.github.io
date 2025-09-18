@@ -41,7 +41,7 @@ coordinate GPS degli indirizzi indicati nel :term:`IndicePA`.
 L'API Google Maps è però a pagamento, con un freetier per un numero iniziale di
 ricerche, è necessario procurarsi una Google Maps Key per poter utilizzare questo
 servizio, la quale richiede di inserire una carta di credito per gli eventuali
-pagamento oltre il freetier.
+pagamenti oltre il freetier.
 
 L'utilizzo della API Google Maps può essere attivata nel public sites service
 impostando questo parametri nell'environment del docker-compose.yml::

@@ -1,7 +1,7 @@
 Autenticazione
 ==============
 
-La piattaforma necessità di un Identity Provider OAuth2 per l'autenticazione e
+La piattaforma necessita di un Identity Provider OAuth2 per l'autenticazione e
 autorizzazione nell'accesso ai componenti dell'architettura.
 
 Nell'ambiente di staging è stato utilizzato Keycloak come Identity Provider ma
