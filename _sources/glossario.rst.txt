@@ -5,12 +5,12 @@ Glossario
    :sorted:
    
    Amministrazione Trasparente
-      Sezione obbligatoria dei siti delle Pubbliche Amministrazioni prevista dal D.Lgs. 33/2013,
-      contenente dati e documenti per garantire trasparenza e accountability.
+      Sezione obbligatoria dei siti delle Pubbliche Amministrazioni prevista dal D.Lgs. n. 33/2013,
+      contenente dati, informazioni e documenti per garantire trasparenza e accountability.
 
    ANAC
-      Autorità Nazionale Anticorruzione, organismo di controllo e prevenzione della corruzione nella Pubblica Amministrazione. 
-      Partner del progetto TrasparenzAI.   
+      Autorità amministrativa indipendente preposta alla prevenzione e al contrasto della corruzione nella pubblica amministrazione.
+      È inoltre partner del progetto TrasparenzAI   
 
    CNR
       Consiglio Nazionale delle Ricerche.
